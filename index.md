@@ -125,12 +125,12 @@ The tools operationalise claims developed across the vector theory sequence on S
 
 ### The vector theory sequence (Stunlaw)
 
-- <a href="https://github.com/vector-lab-tools/manifold-atlas>*The Vector Medium*</a> — names the vector regime as a periodising category for contemporary media.
-- *Vector Theory* — develops vector logic as the regime succeeding disciplinary and control formations.
-- *What Is Vector Space?* — characterises vector space as a material substrate with grain and dimensionality, not a metaphor. Vectorscope is the empirical instrument that follows.
-- *What Is the Manifold?* — develops the manifold as the medium through which large language models render meaning legible. Manifold Atlas and Manifoldscope follow.
-- *Generation Vector* — addresses the dynamics of selection and the shape of generated outputs.
-- *What Is Theory Space?* — names the space of counterfactual media from which any particular manifold is selected.
+- [*The Vector Medium*](https://stunlaw.blogspot.com/2026/03/the-vector-medium.html) — names the vector regime as a periodising category for contemporary media.
+- [*Vector Theory*](https://stunlaw.blogspot.com/2026/02/vector-theory.html?m=1) - gives the theoretisation of the move from digital to vectors. 
+- [*Generation Vector*](https://stunlaw.blogspot.com/2026/02/generation-vector.html) — addresses the dynamics of selection and the shape of generated outputs.
+- [*What Is Vector Space?*](https://stunlaw.blogspot.com/2026/03/what-is-vector-space.html) — characterises vector space as a material substrate with grain and dimensionality, not a metaphor. Vectorscope is the empirical instrument that follows.
+- *What Is the Manifold?* Coming soon! — develops the manifold as the medium through which large language models render meaning legible. Manifold Atlas and Manifoldscope follow.
+- *What Is Theory Space?* Coming soon !— names the space of counterfactual media from which any particular manifold is selected.
 
 ### Books and longer work
 
