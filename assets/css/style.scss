@@ -1,11 +1,7 @@
 ---
 ---
 
-@import "minima";
-
-// Editorial overrides for Vector Lab.
-// Dark background, serif typography, gold and burgundy accents.
-// Matches the design language of the tools.
+// Vector Lab: editorial dark theme with geometric accents.
 
 $vl-bg: #0f0f0f;
 $vl-surface: #1a1a1a;
@@ -15,110 +11,271 @@ $vl-gold: #d4af37;
 $vl-burgundy: #8b3a3a;
 $vl-rule: #2a2a28;
 
+$wrap: 960px;
+$serif: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+$display: "Optima", "Futura", "Iowan Old Style", Georgia, serif;
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: $vl-bg;
   color: $vl-text;
-  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  font-family: $serif;
   font-size: 17px;
-  line-height: 1.6;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 
-.site-header,
-.site-footer {
+.wrap {
+  max-width: $wrap;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+// ============================================
+// Header
+// ============================================
+
+.site-header {
   background: $vl-bg;
-  border-color: $vl-rule;
+  border-bottom: 1px solid $vl-rule;
+  padding: 1rem 0;
+
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 }
 
-.site-title,
-.site-title:visited {
-  color: $vl-text;
-  font-family: "Optima", "Futura", Georgia, serif;
-  letter-spacing: 0.02em;
-}
-
-.page-link,
-.page-link:visited {
-  color: $vl-muted;
-}
-
-.page-link:hover {
-  color: $vl-gold;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   text-decoration: none;
+  color: $vl-text;
+  border: none;
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    display: block;
+  }
+
+  .brand-text {
+    font-family: $display;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  &:hover .brand-text {
+    color: $vl-gold;
+  }
 }
+
+.site-nav {
+  display: flex;
+  gap: 1.75rem;
+
+  a {
+    color: $vl-muted;
+    text-decoration: none;
+    font-family: $display;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      color: $vl-gold;
+      border-bottom-color: $vl-gold;
+    }
+  }
+}
+
+// ============================================
+// Typography
+// ============================================
 
 a {
   color: $vl-gold;
   text-decoration: none;
-  border-bottom: 1px solid rgba($vl-gold, 0.35);
-}
+  border-bottom: 1px solid rgba($vl-gold, 0.4);
+  transition: color 0.15s ease, border-color 0.15s ease;
 
-a:hover {
-  color: lighten($vl-gold, 8%);
-  border-bottom-color: $vl-gold;
+  &:hover {
+    color: lighten($vl-gold, 10%);
+    border-bottom-color: $vl-gold;
+  }
 }
 
 h1, h2, h3, h4 {
   color: $vl-text;
-  font-family: "Optima", "Futura", Georgia, serif;
+  font-family: $display;
   font-weight: 500;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
 }
 
-h1 { font-size: 2.4rem; margin-top: 1.5rem; }
+h1 {
+  font-size: 2.8rem;
+  margin: 2rem 0 1rem;
+  letter-spacing: 0.04em;
+}
+
 h2 {
-  font-size: 1.6rem;
-  margin-top: 2.5rem;
-  padding-bottom: 0.4rem;
+  font-size: 1.75rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid $vl-rule;
 }
-h3 { font-size: 1.2rem; margin-top: 2rem; }
 
-blockquote,
-hr {
-  border-color: $vl-rule;
+h3 {
+  font-size: 1.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: $vl-gold;
+  font-style: italic;
+  font-family: $serif;
+  letter-spacing: 0;
+}
+
+p {
+  margin: 0 0 1.1em;
+}
+
+blockquote {
+  border-left: 3px solid $vl-gold;
+  margin: 1.5rem 0;
+  padding: 0.25rem 0 0.25rem 1.25rem;
   color: $vl-muted;
+  font-style: italic;
 }
 
 code, pre {
+  font-family: "SF Mono", "Menlo", "Consolas", monospace;
   background: $vl-surface;
   color: $vl-text;
   border: 1px solid $vl-rule;
   border-radius: 2px;
+  font-size: 0.9em;
 }
 
+code { padding: 0.1em 0.35em; }
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+
+  code {
+    border: 0;
+    padding: 0;
+    background: transparent;
+  }
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $vl-rule;
+  margin: 3rem 0;
+}
+
+// ============================================
+// Content
+// ============================================
+
+.content {
+  padding: 2rem 0 4rem;
+}
+
+// ============================================
 // Hero
+// ============================================
 
 .hero {
-  padding: 4rem 0 2rem;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem 0 2rem;
   border-bottom: 1px solid $vl-rule;
   margin-bottom: 2.5rem;
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 3.6rem;
+    margin: 0 0 0.5rem;
+    letter-spacing: 0.05em;
+  }
+
+  .tagline {
+    color: $vl-muted;
+    font-style: italic;
+    font-size: 1.25rem;
+    margin: 0;
+    font-family: $serif;
+  }
+
+  .hero-visual {
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
 }
 
-.hero h1 {
-  font-size: 3.4rem;
-  margin: 0;
-  letter-spacing: 0.04em;
+// ============================================
+// Lede
+// ============================================
+
+.lede {
+  margin: 0 auto 3rem;
+  max-width: 44rem;
+  font-size: 1.08rem;
+
+  p {
+    margin-bottom: 1.25em;
+  }
+
+  p:first-of-type {
+    font-size: 1.2rem;
+    line-height: 1.55;
+    color: $vl-text;
+
+    &::first-letter {
+      font-family: $display;
+      font-size: 3.2em;
+      float: left;
+      line-height: 0.9;
+      padding: 0.05em 0.15em 0 0;
+      color: $vl-gold;
+    }
+  }
 }
 
-.hero .tagline {
-  color: $vl-muted;
-  font-style: italic;
-  font-size: 1.15rem;
-  margin-top: 0.5rem;
-}
-
-.intro {
-  max-width: 42rem;
-  margin: 0 auto 2rem;
-  font-size: 1.05rem;
-}
-
+// ============================================
 // Tools grid
+// ============================================
 
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.25rem;
   margin: 1.5rem 0 2.5rem;
 }
@@ -127,61 +284,148 @@ code, pre {
   background: $vl-surface;
   border: 1px solid $vl-rule;
   border-left: 3px solid $vl-gold;
-  padding: 1.25rem 1.5rem;
+  padding: 1.5rem;
   border-radius: 2px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    border-color: $vl-gold;
+    border-left-color: $vl-gold;
+  }
+
+  &.comparative {
+    border-left-color: $vl-burgundy;
+
+    &:hover {
+      border-color: $vl-burgundy;
+    }
+  }
+
+  .tool-icon {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 0 0 0.75rem;
+  }
+
+  h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.35rem;
+    color: $vl-text;
+    font-family: $display;
+    font-style: normal;
+    letter-spacing: 0.02em;
+
+    a {
+      color: inherit;
+      border-bottom: none;
+
+      &:hover { color: $vl-gold; }
+    }
+  }
+
+  .object {
+    color: $vl-muted;
+    font-style: italic;
+    font-size: 0.92rem;
+    margin: 0 0 0.75rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.55;
+  }
 }
 
-.tool-card.comparative {
-  border-left-color: $vl-burgundy;
+// ============================================
+// Tool entries (tools.md)
+// ============================================
+
+.tool-entry {
+  margin: 3rem 0;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid $vl-rule;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  .tool-entry-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+
+    h2 {
+      margin: 0 0 0.3rem;
+      padding: 0;
+      border: 0;
+    }
+
+    p {
+      margin: 0 0 0.2rem;
+    }
+  }
+
+  .tool-icon-lg {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    display: block;
+  }
+
+  .object em {
+    color: $vl-muted;
+    font-style: italic;
+  }
+
+  .tool-meta {
+    color: $vl-muted;
+    font-size: 0.92rem;
+    margin-top: 0.75rem;
+
+    em { color: $vl-muted; }
+  }
+
+  &.scope h2 { color: $vl-gold; }
+  &.comparative h2 { color: lighten($vl-burgundy, 20%); }
 }
 
-.tool-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.35rem;
-  font-size: 1.25rem;
-}
-
-.tool-card h3 a {
-  border-bottom: none;
-}
-
-.tool-card .object {
-  color: $vl-muted;
-  font-style: italic;
-  font-size: 0.9rem;
-  margin: 0 0 0.6rem;
-}
-
-.tool-card p {
-  margin: 0.4rem 0 0;
-  font-size: 0.98rem;
-}
-
-// Mermaid blocks
+// ============================================
+// Mermaid
+// ============================================
 
 .mermaid {
   background: $vl-surface;
   border: 1px solid $vl-rule;
   border-radius: 2px;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
   margin: 2rem 0;
   text-align: center;
   overflow-x: auto;
 }
 
-// Footer tweaks
+// ============================================
+// Footer
+// ============================================
 
 .site-footer {
+  border-top: 1px solid $vl-rule;
   color: $vl-muted;
   font-size: 0.9rem;
   padding: 2rem 0;
-}
+  margin-top: 4rem;
 
-.site-footer a {
-  color: $vl-muted;
-  border-bottom-color: transparent;
-}
+  p { margin: 0; }
 
-.site-footer a:hover {
-  color: $vl-gold;
+  a {
+    color: $vl-muted;
+    border-bottom-color: transparent;
+
+    &:hover {
+      color: $vl-gold;
+      border-bottom-color: $vl-gold;
+    }
+  }
 }

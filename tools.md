@@ -5,111 +5,101 @@ title: Tools
 
 # Tools
 
-A brief guide to each instrument. Each tool has its own README with full
-documentation; this page gives the lab-level picture.
+A brief guide to each instrument. Each repository has its own README with full documentation; this page gives the lab-level picture.
 
 ---
 
-## Vectorscope
+<section class="tool-entry scope">
 
-*Tier: single-object scope. Object: a single open-weight model.*
+<div class="tool-entry-head">
+<img src="/assets/images/tools/vectorscope.svg" alt="" class="tool-icon-lg">
+<div>
+<h2>Vectorscope</h2>
+<p class="object"><em>Tier:</em> single-object scope. <em>Object:</em> a single open-weight model.</p>
+<p><a href="https://github.com/vector-lab-tools/vectorscope">github.com/vector-lab-tools/vectorscope</a></p>
+</div>
+</div>
 
-[github.com/vector-lab-tools/vectorscope](https://github.com/vector-lab-tools/vectorscope)
+Vectorscope opens a single open-weight language model for forensic inspection. Where commercial embedding APIs return sentence-level composites from a separately-trained embedding model, Vectorscope works directly with open weights so that activations, attention, and token embeddings are legible at every layer. The signal-degradation capability runs the same inputs across precision regimes (FP32, BF16, INT8, INT4, FP4, INT2) to observe how meaning compresses as the medium is quantised.
 
-Vectorscope opens a single open-weight language model for forensic
-inspection. Where commercial embedding APIs return sentence-level
-composites from a separately-trained embedding model, Vectorscope works
-directly with open weights so that activations, attention, and token
-embeddings are legible at every layer. The signal-degradation capability
-runs the same inputs across precision regimes (FP32, BF16, INT8, INT4,
-FP4, INT2) to observe how meaning compresses as the medium is quantised.
+<p class="tool-meta"><em>Stack:</em> Next.js and FastAPI, with PyTorch and transformers for model loading.</p>
 
-**Stack:** Next.js + FastAPI + PyTorch + transformers.
+</section>
 
----
+<section class="tool-entry scope">
 
-## Manifoldscope
+<div class="tool-entry-head">
+<img src="/assets/images/tools/manifoldscope.svg" alt="" class="tool-icon-lg">
+<div>
+<h2>Manifoldscope</h2>
+<p class="object"><em>Tier:</em> single-object scope. <em>Object:</em> a single manifold.</p>
+<p><a href="https://github.com/vector-lab-tools/manifoldscope">github.com/vector-lab-tools/manifoldscope</a></p>
+</div>
+</div>
 
-*Tier: single-object scope. Object: a single manifold.*
+Manifoldscope treats a single manifold, understood as an embedding output together with its sampling, as both a geometric and an ideological object. It measures intrinsic dimension, curvature, density, and topology, and reads the same manifold critically, asking what it naturalises, what it suppresses, what it sediments. Every critique is backed by a measure attestation. Probes include ideological topography, archaeology of absence, colonial geometry, market-colonisation index, grammatical ideology, and dissensus detection.
 
-[github.com/vector-lab-tools/manifoldscope](https://github.com/vector-lab-tools/manifoldscope)
+<p class="tool-meta"><em>Status:</em> concept and prototype stage.</p>
 
-Manifoldscope treats a single manifold (an embedding output with its
-sampling) as both a geometric and an ideological object. It measures
-intrinsic dimension, curvature, density, and topology, and reads the same
-manifold critically: what it naturalises, what it suppresses, what it
-sediments. Every critique is backed by a measure attestation. Probes
-include ideological topography, archaeology of absence, colonial geometry,
-market-colonisation index, grammatical ideology, and dissensus detection.
+</section>
 
-**Status:** concept / proposal stage.
+<section class="tool-entry scope">
 
----
+<div class="tool-entry-head">
+<img src="/assets/images/tools/theoryscope.svg" alt="" class="tool-icon-lg">
+<div>
+<h2>Theoryscope</h2>
+<p class="object"><em>Tier:</em> single-object scope. <em>Object:</em> a corpus of theoretical texts.</p>
+<p><a href="https://github.com/vector-lab-tools/theoryscope">github.com/vector-lab-tools/theoryscope</a></p>
+</div>
+</div>
 
-## Theoryscope
+Theoryscope maps a corpus of theoretical texts as a high-dimensional point cloud and asks renormalisation-group-style questions of it. Operations include eigendirection analysis, which reveals the axes that actually structure the field (often orthogonal to the axes its participants name), renormalisation-group flow under coarse-graining, fixed points, and universality classes. The critical payoff is the ability to show that positions which look opposed may converge under coarse-graining, and that positions which look similar may diverge.
 
-*Tier: single-object scope. Object: a corpus of theoretical texts.*
+<p class="tool-meta"><em>Stack:</em> Next.js and FastAPI, shared geometry library with the other scopes.</p>
 
-[github.com/vector-lab-tools/theoryscope](https://github.com/vector-lab-tools/theoryscope)
+</section>
 
-Theoryscope maps a corpus of theoretical texts as a high-dimensional point
-cloud and asks renormalisation-group-style questions of it. Operations
-include eigendirection analysis (the axes that actually structure the
-field, which may be orthogonal to the axes its participants name), RG
-flow under coarse-graining (which positions are scale-invariant), fixed
-points, and universality classes (positions that look opposed but
-converge, and positions that look similar but diverge).
+<section class="tool-entry comparative">
 
-**Stack:** Next.js + FastAPI, shared geometry library with the other scopes.
+<div class="tool-entry-head">
+<img src="/assets/images/tools/manifold-atlas.svg" alt="" class="tool-icon-lg">
+<div>
+<h2>Manifold Atlas</h2>
+<p class="object"><em>Tier:</em> comparative instrument. <em>Object:</em> output embeddings across models.</p>
+<p><a href="https://github.com/vector-lab-tools/manifold-atlas">github.com/vector-lab-tools/manifold-atlas</a></p>
+</div>
+</div>
 
----
+Manifold Atlas compares multiple embedding models' output geometries on the same inputs. The tool packages fifteen operations for the critical testing of vector-theoretic claims: Concept Distance, Neighbourhood Map, Negation Gauge, Negation Battery, Semantic Sectioning, Concept Drift, Hegemony Compass, Real Abstraction Test, Silence Detector, Distance Matrix, Agonism Test, Vector Logic, Vector Walk, Text Vectorisation, and more. Each operation makes a theoretical claim empirically testable against the geometry that a given model has learned.
 
-## Manifold Atlas
+<p class="tool-meta"><em>Stack:</em> Next.js 16, React 19, TypeScript, Three.js.</p>
 
-*Tier: comparative instrument. Object: output embeddings across models.*
+</section>
 
-[github.com/vector-lab-tools/manifold-atlas](https://github.com/vector-lab-tools/manifold-atlas)
+<section class="tool-entry comparative">
 
-Manifold Atlas compares multiple embedding models' output geometries on
-the same inputs. The tool packages fifteen operations for the critical
-testing of vector theory claims: Concept Distance, Neighbourhood Map,
-Negation Gauge, Negation Battery, Semantic Sectioning, Concept Drift,
-Hegemony Compass, Real Abstraction Test, Silence Detector, Distance Matrix,
-Agonism Test, Vector Logic, Vector Walk, Text Vectorisation, and more.
-Each operation makes a theoretical claim empirically testable against the
-geometry that a given model has learned.
+<div class="tool-entry-head">
+<img src="/assets/images/tools/llmbench.svg" alt="" class="tool-icon-lg">
+<div>
+<h2>LLMbench</h2>
+<p class="object"><em>Tier:</em> comparative instrument. <em>Object:</em> generated prose across models.</p>
+<p><a href="https://github.com/vector-lab-tools/LLMbench">github.com/vector-lab-tools/LLMbench</a></p>
+</div>
+</div>
 
-**Stack:** Next.js 16 + React 19 + TypeScript + Three.js.
+LLMbench sends a prompt to two models simultaneously and displays their responses side-by-side for annotated close reading. Six modes cover comparison, annotation, and probability visualisation, including heatmap, pixel map, and 3D probability net. Supports OpenAI, Anthropic, Google, Hugging Face, OpenRouter, and Ollama. Annotation infrastructure is shared with the Critical Code Studies Workbench.
 
----
+<p class="tool-meta"><em>Stack:</em> Next.js, TypeScript, Three.js, with multi-provider adapters.</p>
 
-## LLMbench
-
-*Tier: comparative instrument. Object: generated prose across models.*
-
-[github.com/vector-lab-tools/LLMbench](https://github.com/vector-lab-tools/LLMbench)
-
-LLMbench sends a prompt to two models simultaneously and displays their
-responses side-by-side for annotated close reading. Six modes cover
-comparison, annotation, and probability visualisation (heatmap, pixel map,
-3D probability net). Supports OpenAI, Anthropic, Google, Hugging Face,
-OpenRouter, and Ollama. Annotation infrastructure is shared with the
-Critical Code Studies Workbench.
-
-**Stack:** Next.js + TypeScript + Three.js, multi-provider adapters.
-
----
+</section>
 
 ## A note on naming
 
 The naming grammar is consistent across the lab:
 
-- **-scope**: an instrument of intensive inspection of a single object.
-  Named after the real-instrument convention (vectorscope, oscilloscope,
-  microscope).
-- **Atlas**: a comparative cartographic instrument that maps across
-  objects.
-- **bench**: a workbench for close, iterative work with the surface of
-  an object.
+- <strong>-scope</strong>: an instrument of intensive inspection of a single object. Named after the real-instrument convention (vectorscope, oscilloscope, microscope).
+- <strong>Atlas</strong>: a comparative cartographic instrument that maps across objects.
+- <strong>bench</strong>: a workbench for close, iterative work with the surface of an object.
 
 {% include mermaid.html %}

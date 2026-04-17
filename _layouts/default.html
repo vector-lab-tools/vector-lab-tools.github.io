@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description | strip_newlines }}">
+
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+  <link rel="alternate icon" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ site.description | strip_newlines }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | relative_url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/images/og-card.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ site.url }}/assets/images/og-card.svg">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Vector Lab home">
+        <img src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" class="brand-mark">
+        <span class="brand-text">Vector Lab</span>
+      </a>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/tools.html' | relative_url }}">Tools</a>
+        <a href="https://github.com/vector-lab-tools">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Vector Lab is directed by <a href="https://github.com/dmberry">David M. Berry</a>. Source at <a href="https://github.com/vector-lab-tools">github.com/vector-lab-tools</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
