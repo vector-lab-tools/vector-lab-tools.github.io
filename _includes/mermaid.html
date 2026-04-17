@@ -40,6 +40,12 @@
     // Remove any existing scope/comp classDef lines so we can re-inject theme-aware ones.
     let out = src.replace(/^\s*classDef\s+scope\s+[^\n]*$/gm, '');
     out = out.replace(/^\s*classDef\s+comp\s+[^\n]*$/gm, '');
+    // Mermaid 11 strips HTML from unquoted node labels. Wrap any label that
+    // contains an HTML tag in quotes so it becomes a string label and renders
+    // the HTML (requires securityLevel: 'loose', set below).
+    out = out.replace(/(\w+)\[([^\[\]]*<[^\[\]]*)\]/g, function(m, id, label) {
+      return id + '["' + label.replace(/"/g, '&quot;') + '"]';
+    });
     const scopeDef = theme === 'dark' ? SCOPE_DARK : SCOPE_LIGHT;
     const compDef  = theme === 'dark' ? COMP_DARK  : COMP_LIGHT;
     return out + '\n  ' + scopeDef + ';\n  ' + compDef + ';';
