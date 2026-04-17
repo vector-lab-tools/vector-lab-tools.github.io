@@ -15,7 +15,7 @@ A brief guide to each instrument. Each repository has its own README with full d
 <img src="/assets/images/tools/vectorscope.svg" alt="" class="tool-icon-lg">
 <div>
 <h2>Vectorscope</h2>
-<p class="object"><em>Tier:</em> single-object scope. <em>Object:</em> a single open-weight model.</p>
+<p class="object"><em>Tier:</em> single-model scope. <em>Object:</em> a single open-weight model.</p>
 <p><a href="https://github.com/vector-lab-tools/vectorscope">github.com/vector-lab-tools/vectorscope</a></p>
 </div>
 </div>
@@ -32,7 +32,7 @@ Vectorscope opens a single open-weight language model for forensic inspection. W
 <img src="/assets/images/tools/manifoldscope.svg" alt="" class="tool-icon-lg">
 <div>
 <h2>Manifoldscope</h2>
-<p class="object"><em>Tier:</em> single-object scope. <em>Object:</em> a single manifold.</p>
+<p class="object"><em>Tier:</em> single-model scope. <em>Object:</em> a single manifold.</p>
 <p><a href="https://github.com/vector-lab-tools/manifoldscope">github.com/vector-lab-tools/manifoldscope</a></p>
 </div>
 </div>
@@ -49,7 +49,7 @@ Manifoldscope treats a single manifold, understood as an embedding output togeth
 <img src="/assets/images/tools/theoryscope.svg" alt="" class="tool-icon-lg">
 <div>
 <h2>Theoryscope</h2>
-<p class="object"><em>Tier:</em> single-object scope. <em>Object:</em> a corpus of theoretical texts.</p>
+<p class="object"><em>Tier:</em> single-model scope. <em>Object:</em> a corpus of theoretical texts.</p>
 <p><a href="https://github.com/vector-lab-tools/theoryscope">github.com/vector-lab-tools/theoryscope</a></p>
 </div>
 </div>
@@ -66,7 +66,7 @@ Theoryscope maps a corpus of theoretical texts as a high-dimensional point cloud
 <img src="/assets/images/tools/manifold-atlas.svg" alt="" class="tool-icon-lg">
 <div>
 <h2>Manifold Atlas</h2>
-<p class="object"><em>Tier:</em> comparative instrument. <em>Object:</em> output embeddings across models.</p>
+<p class="object"><em>Tier:</em> comparative model tool. <em>Object:</em> output embeddings across models.</p>
 <p><a href="https://github.com/vector-lab-tools/manifold-atlas">github.com/vector-lab-tools/manifold-atlas</a></p>
 </div>
 </div>
@@ -83,7 +83,7 @@ Manifold Atlas compares multiple embedding models' output geometries on the same
 <img src="/assets/images/tools/llmbench.svg" alt="" class="tool-icon-lg">
 <div>
 <h2>LLMbench</h2>
-<p class="object"><em>Tier:</em> comparative instrument. <em>Object:</em> generated prose across models.</p>
+<p class="object"><em>Tier:</em> comparative model tool. <em>Object:</em> generated prose across models.</p>
 <p><a href="https://github.com/vector-lab-tools/LLMbench">github.com/vector-lab-tools/LLMbench</a></p>
 </div>
 </div>

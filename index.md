@@ -27,7 +27,7 @@ Vector Lab is that toolkit. Five instruments, arranged in two tiers. The inner t
 
 <div class="mermaid">
 graph TB
-  subgraph scopes["Single-object scopes (intensive)"]
+  subgraph scopes["Single-model scopes (intensive)"]
     T[Theoryscope<br/><i>corpus</i>]
     V[Vectorscope<br/><i>model internals</i>]
     M[Manifoldscope<br/><i>one manifold</i>]
@@ -69,7 +69,7 @@ graph TB
 
 </div>
 
-### Single-object scopes
+### Single-model scopes
 
 <div class="tools-grid">
 
