@@ -125,7 +125,7 @@ The tools operationalise claims developed across the vector theory sequence on S
 
 ### The vector theory sequence (Stunlaw)
 
-- *The Vector Medium* — names the vector regime as a periodising category for contemporary media.
+- <a href="https://github.com/vector-lab-tools/manifold-atlas>*The Vector Medium*</a> — names the vector regime as a periodising category for contemporary media.
 - *Vector Theory* — develops vector logic as the regime succeeding disciplinary and control formations.
 - *What Is Vector Space?* — characterises vector space as a material substrate with grain and dimensionality, not a metaphor. Vectorscope is the empirical instrument that follows.
 - *What Is the Manifold?* — develops the manifold as the medium through which large language models render meaning legible. Manifold Atlas and Manifoldscope follow.
