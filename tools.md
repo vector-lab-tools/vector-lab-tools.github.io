@@ -98,7 +98,7 @@ LLMbench sends a prompt to two models simultaneously and displays their response
 
 The naming grammar is consistent across the lab:
 
-- <strong>-scope</strong>: an instrument of intensive inspection of a single object. Named after the real-instrument convention (vectorscope, oscilloscope, microscope).
+- <strong>-scope</strong>: an instrument of intensive inspection. Named after the real-instrument convention (vectorscope, oscilloscope, microscope).
 - <strong>Atlas</strong>: a comparative cartographic instrument that maps across objects.
 - <strong>bench</strong>: a workbench for close, iterative work with the surface of an object.
 
