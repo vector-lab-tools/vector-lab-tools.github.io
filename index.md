@@ -134,9 +134,15 @@ The tools operationalise claims developed across the vector theory sequence on S
 
 ### Books and longer work
 
-- *Critical Theory and the Digital* (Bloomsbury, 2014).
-- *AI Critical Theory*, in progress.
-- *Synthetic Media and Computational Capitalism*, AI & SOCIETY (2025).
+- Beguš, N. (2025) Artificial Humanities. University of Michigan Press.
+- Berry, D. M. (2014) Critical Theory and the Digital. Bloomsbury.
+- Berry, D.M. (2025) ‘Synthetic media and computational capitalism: towards a critical theory of artificial intelligence’, AI & SOCIETY, 40(7), pp. 5257–5269. Available at: https://doi.org/10.1007/s00146-025-02265-2.
+- Impett, L. and Offert, F. (2026) Vector Media. University of Minnesota Press.
+- Kittler, F. (1999) Gramophone, Film, Typewriter. Stanford University Press.
+- McLuhan, M. (1962) The Gutenberg Galaxy: The Making of Typographic Man. University of Toronto Press.
+- Pasquinelli, M. (2023) The Eye of the Master: A Social History of AI. Verso.
+- Somaini, A. (2023) ‘A Theory of Latent Spaces’, Grey Room, 93.
+- Steyerl, H. (2025) Medium Hot: Images in the Age of Heat. London: Verso.
 
 ## Using the tools
 
