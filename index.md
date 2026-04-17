@@ -15,7 +15,7 @@ title: Vector Lab
 
 <section class="lede">
 
-Large language models reorganise meaning as geometry. Every token, every concept, every sentence is assigned a position in a high-dimensional vector space whose axes are no-one's axes and whose distances no-one chose. What any given model can say about democracy, about poltics, democracy, the economy or society, even about contested ideas of intelligence, is constrained by the geometry that model has learned. And that geometry carries the sedimented assumptions of the corpus, the labour regime, and the economic pressures that produced it.
+Large language models reorganise meaning as geometry. Every token, every concept, every sentence is assigned a position in a high-dimensional vector space whose axes are no-one's axes and whose distances no-one chose. What any given model can say about democracy, about poltics, the economy, society, or everyday life. Questions even about contested ideas of intelligence are constrained by the geometry that model has learned. And that geometry carries the sedimented assumptions of the corpus, the labour regime, and the economic pressures that produced it.
 
 We could call this the geometrisation of thought. What has been missing is the corresponding set of tools. Reading papers about the manifold is not the same as inspecting the manifold. Claiming that a model has naturalised market-liberal notions of democracy is not the same as measuring the pull. The work is critical-empirical, and vector tools are needed to address this.
 
