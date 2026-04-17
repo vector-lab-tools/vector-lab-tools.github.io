@@ -5,9 +5,49 @@ title: Tools
 
 # Tools
 
-A brief guide to each instrument. Each repository has its own README with full documentation; this page gives the lab-level picture.
+A brief guide to each instrument. Each repository has its own README with full documentation; this page gives the lab-level picture. The comparative tools are the most mature and are listed first; the single-model scopes are in early alpha and are listed below.
 
 ---
+
+## Comparative tools
+
+<section class="tool-entry comparative">
+
+<div class="tool-entry-head">
+<img src="/assets/images/tools/manifold-atlas.svg" alt="" class="tool-icon-lg">
+<div>
+<h2>Manifold Atlas</h2>
+<p class="object"><em>Tier:</em> comparative model tool. <em>Object:</em> output embeddings across models.</p>
+<p><a href="https://github.com/vector-lab-tools/manifold-atlas">github.com/vector-lab-tools/manifold-atlas</a></p>
+</div>
+</div>
+
+Manifold Atlas compares multiple embedding models' output geometries on the same inputs. The tool packages fifteen operations for the critical testing of vector-theoretic claims: Concept Distance, Neighbourhood Map, Negation Gauge, Negation Battery, Semantic Sectioning, Concept Drift, Hegemony Compass, Real Abstraction Test, Silence Detector, Distance Matrix, Agonism Test, Vector Logic, Vector Walk, Text Vectorisation, and more. Each operation makes a theoretical claim empirically testable against the geometry that a given model has learned.
+
+<p class="tool-meta"><em>Stack:</em> Next.js 16, React 19, TypeScript, Three.js.</p>
+
+</section>
+
+<section class="tool-entry comparative">
+
+<div class="tool-entry-head">
+<img src="/assets/images/tools/llmbench.svg" alt="" class="tool-icon-lg">
+<div>
+<h2>LLMbench</h2>
+<p class="object"><em>Tier:</em> comparative model tool. <em>Object:</em> generated prose across models.</p>
+<p><a href="https://github.com/vector-lab-tools/LLMbench">github.com/vector-lab-tools/LLMbench</a></p>
+</div>
+</div>
+
+LLMbench sends a prompt to two models simultaneously and displays their responses side-by-side for annotated close reading. Six modes cover comparison, annotation, and probability visualisation, including heatmap, pixel map, and 3D probability net. Supports OpenAI, Anthropic, Google, Hugging Face, OpenRouter, and Ollama. Annotation infrastructure is shared with the Critical Code Studies Workbench.
+
+<p class="tool-meta"><em>Stack:</em> Next.js, TypeScript, Three.js, with multi-provider adapters.</p>
+
+</section>
+
+---
+
+## Single-model scopes (alpha)
 
 <section class="tool-entry scope">
 
@@ -57,40 +97,6 @@ Manifoldscope treats a single manifold, understood as an embedding output togeth
 Theoryscope maps a corpus of theoretical texts as a high-dimensional point cloud and asks renormalisation-group-style questions of it. Operations include eigendirection analysis, which reveals the axes that actually structure the field (often orthogonal to the axes its participants name), renormalisation-group flow under coarse-graining, fixed points, and universality classes. The critical payoff is the ability to show that positions which look opposed may converge under coarse-graining, and that positions which look similar may diverge.
 
 <p class="tool-meta"><em>Stack:</em> Next.js and FastAPI, shared geometry library with the other scopes.</p>
-
-</section>
-
-<section class="tool-entry comparative">
-
-<div class="tool-entry-head">
-<img src="/assets/images/tools/manifold-atlas.svg" alt="" class="tool-icon-lg">
-<div>
-<h2>Manifold Atlas</h2>
-<p class="object"><em>Tier:</em> comparative model tool. <em>Object:</em> output embeddings across models.</p>
-<p><a href="https://github.com/vector-lab-tools/manifold-atlas">github.com/vector-lab-tools/manifold-atlas</a></p>
-</div>
-</div>
-
-Manifold Atlas compares multiple embedding models' output geometries on the same inputs. The tool packages fifteen operations for the critical testing of vector-theoretic claims: Concept Distance, Neighbourhood Map, Negation Gauge, Negation Battery, Semantic Sectioning, Concept Drift, Hegemony Compass, Real Abstraction Test, Silence Detector, Distance Matrix, Agonism Test, Vector Logic, Vector Walk, Text Vectorisation, and more. Each operation makes a theoretical claim empirically testable against the geometry that a given model has learned.
-
-<p class="tool-meta"><em>Stack:</em> Next.js 16, React 19, TypeScript, Three.js.</p>
-
-</section>
-
-<section class="tool-entry comparative">
-
-<div class="tool-entry-head">
-<img src="/assets/images/tools/llmbench.svg" alt="" class="tool-icon-lg">
-<div>
-<h2>LLMbench</h2>
-<p class="object"><em>Tier:</em> comparative model tool. <em>Object:</em> generated prose across models.</p>
-<p><a href="https://github.com/vector-lab-tools/LLMbench">github.com/vector-lab-tools/LLMbench</a></p>
-</div>
-</div>
-
-LLMbench sends a prompt to two models simultaneously and displays their responses side-by-side for annotated close reading. Six modes cover comparison, annotation, and probability visualisation, including heatmap, pixel map, and 3D probability net. Supports OpenAI, Anthropic, Google, Hugging Face, OpenRouter, and Ollama. Annotation infrastructure is shared with the Critical Code Studies Workbench.
-
-<p class="tool-meta"><em>Stack:</em> Next.js, TypeScript, Three.js, with multi-provider adapters.</p>
 
 </section>
 
