@@ -131,17 +131,12 @@ The tools operationalise claims developed across the vector theory sequence on S
 - *What Is the Manifold?* — develops the manifold as the medium through which large language models render meaning legible. Manifold Atlas and Manifoldscope follow.
 - *Generation Vector* — addresses the dynamics of selection and the shape of generated outputs.
 - *What Is Theory Space?* — names the space of counterfactual media from which any particular manifold is selected.
-- *Renormalising Theory* — introduces the renormalisation-group method that Theoryscope operationalises.
 
 ### Books and longer work
 
 - *Critical Theory and the Digital* (Bloomsbury, 2014).
 - *AI Critical Theory*, in progress.
 - *Synthetic Media and Computational Capitalism*, AI & SOCIETY (2025).
-
-### Centre for Vector Media
-
-The Leverhulme Centre for Vector Media bid develops the institutional and methodological frame within which Vector Lab operates. The Signal Degradation Laboratory described there is implemented in Vectorscope's precision-regime pipeline.
 
 ## Using the tools
 
