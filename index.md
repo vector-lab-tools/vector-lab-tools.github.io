@@ -106,18 +106,9 @@ The tools are designed to explore the new media theoretic landscape of AI, which
 
 ## How the instruments relate
 
-Vectorscope explains the internal geometry of a single model
+The five instruments work at different scales of the same object. Vectorscope explains the internal geometry of a single open-weight model, reading weights, activations, and attention at every layer. Manifoldscope opens one manifold for sustained close reading, often a manifold produced by a Vectorscope-inspected model, binding geometric measurement to critical interpretation. Manifold Atlas maps the terrain between models, comparing how different embedding models organise the same inputs. Manifoldscope and Atlas are anatomical and cartographic of the same kind of object, one entering a manifold and the other surveying across manifolds.
 
-Manifoldscope characterises a single manifold in its own right, often one produced by a Vectorscope-inspected model. 
-Manifoldscope opens up any one terrain for sustained close reading.
-
-Manifold Atlas maps the terrain between models
- 
-Manifold Atlas and Manifoldscope are cartographic and anatomical of the same object at different scales. 
-
-Theoryscope stands apart in its object, addressing the geometry of meso structures in vector space rather than the geometry of a model, and so opens a reflexive possibility, comparing the eigendirections of a theoretical corpus against the model trained on that corpus. 
-
-LLMbench is oriented to the hermeneutic reading of generated prose, the level at which models are usually encountered. It sits above the geometric instruments and is often the presentation layer for findings that begin lower down.
+Theoryscope stands apart in its object, addressing the geometry of meso structures in vector space rather than the geometry of a model. It opens a reflexive possibility, comparing the eigendirections of a theoretical corpus against the model trained on that corpus. LLMbench is oriented to the hermeneutic reading of generated prose, the level at which models are usually encountered. It sits above the geometric instruments and often serves as the presentation layer for findings that begin lower down.
 
 ## Further reading
 
