@@ -1,0 +1,39 @@
+title: Vector Lab
+tagline: Research instruments for critical vector theory
+description: >
+  A suite of tools that make the geometry of large language models,
+  embedding spaces, and theoretical corpora legible as objects of
+  empirical and critical analysis.
+url: https://vector-lab-tools.github.io
+repository: vector-lab-tools/vector-lab-tools.github.io
+
+author:
+  name: David M. Berry
+  url: https://github.com/dmberry
+
+theme: minima
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+header_pages:
+  - index.md
+  - tools.md
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
