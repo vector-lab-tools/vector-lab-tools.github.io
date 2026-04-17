@@ -9,7 +9,7 @@ title: Vector Lab
     <p class="tagline">Vector methods for vector theory.</p>
   </div>
   <div class="hero-visual">
-    <img src="/assets/images/hero.svg" alt="A warped manifold surveyed by five small instruments, rendered as a wireframe grid over a dark editorial background.">
+    <img src="/assets/images/hero.svg" alt="A warped manifold surveyed by five small instruments, rendered as a wireframe grid.">
   </div>
 </section>
 
@@ -43,10 +43,30 @@ graph TB
   A -.surface reading.-> L
   T -.eigendirections of theory.-> V
 
-  classDef scope fill:#1a1a1a,stroke:#d4af37,color:#f5f5f0,stroke-width:1px;
-  classDef comp fill:#1a1a1a,stroke:#8b3a3a,color:#f5f5f0,stroke-width:1px;
+  classDef scope fill:#faf8f2,stroke:#b8941e,color:#1a1a1a,stroke-width:1.2px;
+  classDef comp fill:#faf8f2,stroke:#8b3a3a,color:#1a1a1a,stroke-width:1.2px;
   class T,V,M scope;
   class A,L comp;
+</div>
+
+### Comparative instruments
+
+<div class="tools-grid">
+
+<article class="tool-card comparative">
+  <img class="tool-icon" src="/assets/images/tools/manifold-atlas.svg" alt="">
+  <h3><a href="https://github.com/vector-lab-tools/manifold-atlas">Manifold Atlas</a></h3>
+  <p class="object">Object: output embeddings across models.</p>
+  <p>Concept distance, negation gauge, hegemony compass, silence detector, agonism test, vector logic. The comparative cartographic instrument.</p>
+</article>
+
+<article class="tool-card comparative">
+  <img class="tool-icon" src="/assets/images/tools/llmbench.svg" alt="">
+  <h3><a href="https://github.com/vector-lab-tools/LLMbench">LLMbench</a></h3>
+  <p class="object">Object: generated prose across models.</p>
+  <p>Dual-panel close reading, annotation, logprobs, probability visualisation. The hermeneutic surface instrument.</p>
+</article>
+
 </div>
 
 ### Single-object scopes
@@ -76,26 +96,6 @@ graph TB
 
 </div>
 
-### Comparative instruments
-
-<div class="tools-grid">
-
-<article class="tool-card comparative">
-  <img class="tool-icon" src="/assets/images/tools/manifold-atlas.svg" alt="">
-  <h3><a href="https://github.com/vector-lab-tools/manifold-atlas">Manifold Atlas</a></h3>
-  <p class="object">Object: output embeddings across models.</p>
-  <p>Concept distance, negation gauge, hegemony compass, silence detector, agonism test, vector logic. The comparative cartographic instrument.</p>
-</article>
-
-<article class="tool-card comparative">
-  <img class="tool-icon" src="/assets/images/tools/llmbench.svg" alt="">
-  <h3><a href="https://github.com/vector-lab-tools/LLMbench">LLMbench</a></h3>
-  <p class="object">Object: generated prose across models.</p>
-  <p>Dual-panel close reading, annotation, logprobs, probability visualisation. The hermeneutic surface instrument.</p>
-</article>
-
-</div>
-
 ## Theoretical Background
 
 The vector lab tools are designed to open the "vector box" of artificial intelligence. The key argument is that there is a shift from the digital to the vector. Our tools and approaches have to correspondingly shift also. Commercial embedding APIs return sentence-level composites from separately-trained embedding models, the output of a pipeline rather than a window into the representations themselves. This is fine for some tasks. It is inadequate for critical work. If we want to know what the geometry of a particular model has sedimented, we have to work with open-weight models where the weights, activations, and token embeddings can be read at every layer. Vector Lab tools therefore privilege open-weight models wherever the question requires internal access, and treat commercial outputs as a separate object, the retrieval surface, with its own interest.
@@ -118,6 +118,30 @@ Manifold Atlas and Manifoldscope are cartographic and anatomical of the same obj
 Theoryscope stands apart in its object, addressing the geometry of meso structures in vector space rather than the geometry of a model, and so opens a reflexive possibility, comparing the eigendirections of a theoretical corpus against the model trained on that corpus. 
 
 LLMbench is oriented to the hermeneutic reading of generated prose, the level at which models are usually encountered. It sits above the geometric instruments and is often the presentation layer for findings that begin lower down.
+
+## Further reading
+
+The tools operationalise claims developed across the vector theory sequence on Stunlaw and in the wider research programme. The essays are the conceptual statements; the tools are the empirical instruments that test, extend, and sometimes contradict them.
+
+### The vector theory sequence (Stunlaw)
+
+- *The Vector Medium* — names the vector regime as a periodising category for contemporary media.
+- *Vector Theory* — develops vector logic as the regime succeeding disciplinary and control formations.
+- *What Is Vector Space?* — characterises vector space as a material substrate with grain and dimensionality, not a metaphor. Vectorscope is the empirical instrument that follows.
+- *What Is the Manifold?* — develops the manifold as the medium through which large language models render meaning legible. Manifold Atlas and Manifoldscope follow.
+- *Generation Vector* — addresses the dynamics of selection and the shape of generated outputs.
+- *What Is Theory Space?* — names the space of counterfactual media from which any particular manifold is selected.
+- *Renormalising Theory* — introduces the renormalisation-group method that Theoryscope operationalises.
+
+### Books and longer work
+
+- *Critical Theory and the Digital* (Bloomsbury, 2014).
+- *AI Critical Theory*, in progress.
+- *Synthetic Media and Computational Capitalism*, AI & SOCIETY (2025).
+
+### Centre for Vector Media
+
+The Leverhulme Centre for Vector Media bid develops the institutional and methodological frame within which Vector Lab operates. The Signal Degradation Laboratory described there is implemented in Vectorscope's precision-regime pipeline.
 
 ## Using the tools
 

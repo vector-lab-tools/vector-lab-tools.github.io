@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <title>Theoryscope</title>
   <!-- Point cloud of texts in theory space -->
-  <g fill="#f5f5f0" opacity="0.85">
+  <g fill="#1a1a1a" opacity="0.85">
     <circle cx="16" cy="18" r="1.5"/>
     <circle cx="22" cy="26" r="1.5"/>
     <circle cx="30" cy="15" r="1.5"/>
@@ -16,11 +16,11 @@
     <circle cx="42" cy="50" r="1.5"/>
     <circle cx="24" cy="52" r="1.5"/>
   </g>
-  <!-- Two eigenvector axes through centroid, at an angle (computed, not asserted) -->
-  <g stroke="#d4af37" stroke-width="1.3" stroke-linecap="round">
+  <!-- Two eigenvector axes through centroid (computed, not asserted) -->
+  <g stroke="#b8941e" stroke-width="1.3" stroke-linecap="round">
     <line x1="8" y1="24" x2="56" y2="40"/>
     <line x1="22" y1="56" x2="42" y2="8"/>
   </g>
   <!-- Centroid -->
-  <circle cx="32" cy="32" r="2" fill="#d4af37"/>
+  <circle cx="32" cy="32" r="2" fill="#b8941e"/>
 </svg>
