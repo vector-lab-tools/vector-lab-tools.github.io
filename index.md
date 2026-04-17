@@ -15,7 +15,7 @@ title: Vector Lab
 
 <section class="lede">
 
-Large language models reorganise meaning as geometry. Every token, every concept, every sentence is assigned a position in a high-dimensional vector space whose axes are no-one's axes and whose distances no-one chose. What any given model can say about democracy, about poltics, the economy, society, or everyday life is filtered through this vector space. Questions even about contested ideas of intelligence are constrained by the geometry that model has learned. And that geometry carries the sedimented assumptions of the corpus, the labour regime, and the economic pressures that produced it.
+Large language models, the neural networks behind contemporary AI systems such as ChatGPT, Gemini, and Claude, reorganise meaning as geometry. Every token, every concept, every sentence is assigned a position in a high-dimensional vector space whose axes are no-one's axes and whose distances no-one chose. What any given model can say about democracy, about poltics, the economy, society, or everyday life is filtered through this vector space. Questions even about contested ideas of intelligence are constrained by the geometry that model has learned. And that geometry carries the sedimented assumptions of the corpus, the labour regime, and the economic pressures that produced it.
 
 We could call this the geometrisation of thought. What has been missing is the corresponding set of tools. Reading papers about the manifold is not the same as inspecting the manifold. Claiming that a model has naturalised market-liberal notions of democracy is not the same as measuring the pull. The work is critical-empirical, and vector tools are needed to address this.
 
@@ -33,7 +33,7 @@ graph TB
     M[Manifoldscope<br/><i>one manifold</i>]
   end
 
-  subgraph comparative["Comparative instruments (extensive)"]
+  subgraph comparative["Comparative tools (extensive)"]
     A[Manifold Atlas<br/><i>between models</i>]
     L[LLMbench<br/><i>between prose outputs</i>]
   end
@@ -49,7 +49,7 @@ graph TB
   class A,L comp;
 </div>
 
-### Comparative instruments
+### Comparative tools
 
 <div class="tools-grid">
 
@@ -134,15 +134,15 @@ The tools operationalise claims developed across the vector theory sequence on S
 
 ### Books and longer work
 
-- Beguš, N. (2025) Artificial Humanities. University of Michigan Press.
-- Berry, D. M. (2014) Critical Theory and the Digital. Bloomsbury.
-- Berry, D.M. (2025) ‘Synthetic media and computational capitalism: towards a critical theory of artificial intelligence’, AI & SOCIETY, 40(7), pp. 5257–5269. Available at: https://doi.org/10.1007/s00146-025-02265-2.
-- Impett, L. and Offert, F. (2026) Vector Media. University of Minnesota Press.
-- Kittler, F. (1999) Gramophone, Film, Typewriter. Stanford University Press.
-- McLuhan, M. (1962) The Gutenberg Galaxy: The Making of Typographic Man. University of Toronto Press.
-- Pasquinelli, M. (2023) The Eye of the Master: A Social History of AI. Verso.
-- Somaini, A. (2023) ‘A Theory of Latent Spaces’, Grey Room, 93.
-- Steyerl, H. (2025) Medium Hot: Images in the Age of Heat. London: Verso.
+- Beguš, N. (2025) *Artificial Humanities*. University of Michigan Press.
+- Berry, D. M. (2014) *Critical Theory and the Digital*. Bloomsbury.
+- Berry, D.M. (2025) ‘Synthetic media and computational capitalism: towards a critical theory of artificial intelligence’, *AI & SOCIETY*, 40(7), pp. 5257–5269. Available at: https://doi.org/10.1007/s00146-025-02265-2.
+- Impett, L. and Offert, F. (2026) *Vector Media*. University of Minnesota Press.
+- Kittler, F. (1999) *Gramophone, Film, Typewriter*. Stanford University Press.
+- McLuhan, M. (1962) *The Gutenberg Galaxy: The Making of Typographic Man*. University of Toronto Press.
+- Pasquinelli, M. (2023) *The Eye of the Master: A Social History of AI*. Verso.
+- Somaini, A. (2023) ‘A Theory of Latent Spaces’, *Grey Room*, 93.
+- Steyerl, H. (2025) *Medium Hot: Images in the Age of Heat*. London: Verso.
 
 ## Using the tools
 
