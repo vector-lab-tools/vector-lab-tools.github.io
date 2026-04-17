@@ -17,19 +17,35 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{{ site.url }}/assets/images/og-card.svg">
 
+  <script>
+    // FOUC prevention: set data-theme on <html> before the stylesheet applies.
+    (function() {
+      var stored = null;
+      try { stored = localStorage.getItem('vl-theme'); } catch (e) {}
+      var theme = (stored === 'dark' || stored === 'light')
+        ? stored
+        : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="{{ '/' | relative_url }}" aria-label="Vector Lab home">
-        <img src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" class="brand-mark">
+        <img src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" class="brand-mark" data-theme-asset>
         <span class="brand-text">Vector Lab</span>
       </a>
       <nav class="site-nav">
         <a href="{{ '/' | relative_url }}">Home</a>
         <a href="{{ '/tools.html' | relative_url }}">Tools</a>
         <a href="https://github.com/vector-lab-tools">GitHub</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle light and dark theme" title="Toggle light and dark theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
       </nav>
     </div>
   </header>
@@ -43,5 +59,63 @@
       <p>Vector Lab is directed by <a href="https://github.com/dmberry">David M. Berry</a>. Source at <a href="https://github.com/vector-lab-tools">github.com/vector-lab-tools</a>.</p>
     </div>
   </footer>
+
+  <script>
+    (function() {
+      var LIGHT_BASE = '/assets/images/';
+      var DARK_BASE = '/assets/images/dark/';
+
+      function swapImages(theme) {
+        var imgs = document.querySelectorAll('img');
+        for (var i = 0; i < imgs.length; i++) {
+          var img = imgs[i];
+          var src = img.getAttribute('src') || '';
+          // Only swap images under /assets/images/, and only ones that are not already dark.
+          if (!src) continue;
+          var isDark = src.indexOf(DARK_BASE) !== -1;
+          var isLightAsset = src.indexOf(LIGHT_BASE) !== -1 && !isDark;
+          if (theme === 'dark') {
+            if (isLightAsset) {
+              if (!img.dataset.lightSrc) img.dataset.lightSrc = src;
+              img.src = src.replace(LIGHT_BASE, DARK_BASE);
+            }
+          } else {
+            if (img.dataset.lightSrc) {
+              img.src = img.dataset.lightSrc;
+            } else if (isDark) {
+              img.src = src.replace(DARK_BASE, LIGHT_BASE);
+            }
+          }
+        }
+      }
+
+      function currentTheme() {
+        return document.documentElement.getAttribute('data-theme') || 'light';
+      }
+
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        try { localStorage.setItem('vl-theme', theme); } catch (e) {}
+        swapImages(theme);
+        // Re-render Mermaid diagrams if present.
+        if (window.__vlReinitMermaid) window.__vlReinitMermaid(theme);
+      }
+
+      // Initial image swap on DOM ready (HTML attribute is already set by the head script).
+      function onReady(fn) {
+        if (document.readyState !== 'loading') fn();
+        else document.addEventListener('DOMContentLoaded', fn);
+      }
+      onReady(function() {
+        swapImages(currentTheme());
+        var btn = document.querySelector('.theme-toggle');
+        if (btn) {
+          btn.addEventListener('click', function() {
+            applyTheme(currentTheme() === 'dark' ? 'light' : 'dark');
+          });
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
