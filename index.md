@@ -6,7 +6,7 @@ title: Vector Lab
 <section class="hero">
   <div class="hero-text">
     <h1>Vector Lab</h1>
-    <p class="tagline">Research instruments for critical vector theory.</p>
+    <p class="tagline">Vector methods for vector theory.</p>
   </div>
   <div class="hero-visual">
     <img src="/assets/images/hero.svg" alt="A warped manifold surveyed by five small instruments, rendered as a wireframe grid over a dark editorial background.">
