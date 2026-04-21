@@ -5,7 +5,7 @@ title: Tools
 
 # Tools
 
-A brief guide to each instrument. Each repository has its own README with full documentation; this page gives the lab-level picture. The comparative tools are the most mature and are listed first; the single-model scopes are in early alpha and are listed below.
+A brief guide to each instrument. Follow the **Deep dive** link on any tool for its extended page with operations, theoretical background, and status. The comparative tools are the most mature and are listed first; the single-model scopes are in early alpha and are listed below.
 
 ---
 
@@ -16,9 +16,9 @@ A brief guide to each instrument. Each repository has its own README with full d
 <div class="tool-entry-head">
 <img src="/assets/images/tools/manifold-atlas.svg" alt="" class="tool-icon-lg">
 <div>
-<h2>Manifold Atlas</h2>
+<h2><a href="/tools/manifold-atlas.html">Manifold Atlas</a></h2>
 <p class="object"><em>Tier:</em> comparative model tool. <em>Object:</em> output embeddings across models.</p>
-<p><a href="https://github.com/vector-lab-tools/manifold-atlas">github.com/vector-lab-tools/manifold-atlas</a></p>
+<p><a href="/tools/manifold-atlas.html">Deep dive</a> · <a href="https://github.com/vector-lab-tools/manifold-atlas">github.com/vector-lab-tools/manifold-atlas</a></p>
 </div>
 </div>
 
@@ -33,9 +33,9 @@ Manifold Atlas compares multiple embedding models' output geometries on the same
 <div class="tool-entry-head">
 <img src="/assets/images/tools/llmbench.svg" alt="" class="tool-icon-lg">
 <div>
-<h2>LLMbench</h2>
+<h2><a href="/tools/llmbench.html">LLMbench</a></h2>
 <p class="object"><em>Tier:</em> comparative model tool. <em>Object:</em> generated prose across models.</p>
-<p><a href="https://github.com/vector-lab-tools/LLMbench">github.com/vector-lab-tools/LLMbench</a></p>
+<p><a href="/tools/llmbench.html">Deep dive</a> · <a href="https://github.com/vector-lab-tools/LLMbench">github.com/vector-lab-tools/LLMbench</a></p>
 </div>
 </div>
 
@@ -54,9 +54,9 @@ LLMbench sends a prompt to two models simultaneously and displays their response
 <div class="tool-entry-head">
 <img src="/assets/images/tools/vectorscope.svg" alt="" class="tool-icon-lg">
 <div>
-<h2>Vectorscope</h2>
+<h2><a href="/tools/vectorscope.html">Vectorscope</a></h2>
 <p class="object"><em>Tier:</em> single-model scope. <em>Object:</em> a single open-weight model.</p>
-<p><a href="https://github.com/vector-lab-tools/vectorscope">github.com/vector-lab-tools/vectorscope</a></p>
+<p><a href="/tools/vectorscope.html">Deep dive</a> · <a href="https://github.com/vector-lab-tools/vectorscope">github.com/vector-lab-tools/vectorscope</a></p>
 </div>
 </div>
 
@@ -71,9 +71,9 @@ Vectorscope opens a single open-weight language model for forensic inspection. W
 <div class="tool-entry-head">
 <img src="/assets/images/tools/manifoldscope.svg" alt="" class="tool-icon-lg">
 <div>
-<h2>Manifoldscope</h2>
+<h2><a href="/tools/manifoldscope.html">Manifoldscope</a></h2>
 <p class="object"><em>Tier:</em> single-model scope. <em>Object:</em> a single manifold.</p>
-<p><a href="https://github.com/vector-lab-tools/manifoldscope">github.com/vector-lab-tools/manifoldscope</a></p>
+<p><a href="/tools/manifoldscope.html">Deep dive</a> · <a href="https://github.com/vector-lab-tools/manifoldscope">github.com/vector-lab-tools/manifoldscope</a></p>
 </div>
 </div>
 
@@ -88,9 +88,9 @@ Manifoldscope treats a single manifold, understood as an embedding output togeth
 <div class="tool-entry-head">
 <img src="/assets/images/tools/theoryscope.svg" alt="" class="tool-icon-lg">
 <div>
-<h2>Theoryscope</h2>
+<h2><a href="/tools/theoryscope.html">Theoryscope</a></h2>
 <p class="object"><em>Tier:</em> single-model scope. <em>Object:</em> a corpus of theoretical texts.</p>
-<p><a href="https://github.com/vector-lab-tools/theoryscope">github.com/vector-lab-tools/theoryscope</a></p>
+<p><a href="/tools/theoryscope.html">Deep dive</a> · <a href="https://github.com/vector-lab-tools/theoryscope">github.com/vector-lab-tools/theoryscope</a></p>
 </div>
 </div>
 
