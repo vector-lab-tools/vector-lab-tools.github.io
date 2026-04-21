@@ -123,7 +123,7 @@ The tools operationalise claims developed across the vector theory sequence on S
 - *What Is the Manifold?* Coming soon! — develops the manifold as the medium through which large language models render meaning legible. Manifold Atlas and Manifoldscope follow.
 - *What Is Theory Space?* Coming soon !— names the space of counterfactual media from which any particular manifold is selected.
 
-### Books and longer work
+### Books and longer work on Vectors
 
 - Beguš, N. (2025) *Artificial Humanities*. University of Michigan Press.
 - Berry, D. M. (2014) *Critical Theory and the Digital*. Bloomsbury.
