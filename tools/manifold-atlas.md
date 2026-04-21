@@ -53,7 +53,7 @@ Next.js 16, React 19, TypeScript 5, Tailwind, Three.js. Talks to the major embed
 
 ## Status
 
-The most mature instrument in the Vector Lab. Fifteen operations live, editorial design system settled, currently at v0.9.x. In active use for research.
+The most mature instrument in the Vector Lab. Fifteen operations live, editorial design system settled, currently at v1.0.0. In active use for research and teaching.
 
 ## Siblings
 
