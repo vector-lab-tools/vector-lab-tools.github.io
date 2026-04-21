@@ -45,7 +45,7 @@ Next.js frontend, FastAPI backend. Shared geometry library with the other scopes
 
 ## Status
 
-Alpha. The scaffolding is live; individual operations are at varying stages.
+Alpha, v0.4.0. Twelve operations live across the Inspect, Flow, and Critique groups; further probes and a Critical Annotations Layer are planned. See the repository for a per-operation status table.
 
 ## Siblings
 
