@@ -55,14 +55,14 @@ graph TB
 
 <article class="tool-card comparative">
   <img class="tool-icon" src="/assets/images/tools/manifold-atlas.svg" alt="">
-  <h3><a href="https://github.com/vector-lab-tools/manifold-atlas">Manifold Atlas</a></h3>
+  <h3><a href="/tools/manifold-atlas.html">Manifold Atlas</a></h3>
   <p class="object">Object: output embeddings across models.</p>
   <p>Concept distance, negation gauge, hegemony compass, silence detector, agonism test, vector logic. The comparative cartographic instrument.</p>
 </article>
 
 <article class="tool-card comparative">
   <img class="tool-icon" src="/assets/images/tools/llmbench.svg" alt="">
-  <h3><a href="https://github.com/vector-lab-tools/LLMbench">LLMbench</a></h3>
+  <h3><a href="/tools/llmbench.html">LLMbench</a></h3>
   <p class="object">Object: generated prose across models.</p>
   <p>Dual-panel close reading, annotation, logprobs, probability visualisation. The hermeneutic surface instrument.</p>
 </article>
@@ -75,21 +75,21 @@ graph TB
 
 <article class="tool-card scope">
   <img class="tool-icon" src="/assets/images/tools/vectorscope.svg" alt="">
-  <h3><a href="https://github.com/vector-lab-tools/vectorscope">Vectorscope (alpha version)</a></h3>
+  <h3><a href="/tools/vectorscope.html">Vectorscope (alpha version)</a></h3>
   <p class="object">Object: a single open-weight model.</p>
   <p>Layer-by-layer weights, hidden states, attention, precision regimes. The anatomical instrument of the lab.</p>
 </article>
 
 <article class="tool-card scope">
   <img class="tool-icon" src="/assets/images/tools/manifoldscope.svg" alt="">
-  <h3><a href="https://github.com/vector-lab-tools/manifoldscope">Manifoldscope (alpha version)</a></h3>
+  <h3><a href="/tools/manifoldscope.html">Manifoldscope (alpha version)</a></h3>
   <p class="object">Object: a single manifold.</p>
   <p>Intrinsic dimension, curvature, density, topology, and the political reading of what a geometry sediments or refuses. Measure and critique bound together.</p>
 </article>
 
 <article class="tool-card scope">
   <img class="tool-icon" src="/assets/images/tools/theoryscope.svg" alt="">
-  <h3><a href="https://github.com/vector-lab-tools/theoryscope">Theoryscope (alpha version)</a></h3>
+  <h3><a href="/tools/theoryscope.html">Theoryscope (alpha version)</a></h3>
   <p class="object">Object: a corpus of theoretical texts.</p>
   <p>Renormalisation-group flow, eigendirections, fixed points, universality classes. A navigable geometry of theory space.</p>
 </article>
