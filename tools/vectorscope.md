@@ -9,7 +9,7 @@ title: Vectorscope
 <img src="/assets/images/tools/vectorscope.svg" alt="" class="tool-icon-lg">
 <div>
 <h1>Vectorscope</h1>
-<p class="object"><em>Tier:</em> single-model scope (alpha). <em>Object:</em> a single open-weight model.</p>
+<p class="object"><em>Tier:</em> single-model scope (beta). <em>Object:</em> a single open-weight model.</p>
 <p><a href="https://github.com/vector-lab-tools/vectorscope">github.com/vector-lab-tools/vectorscope</a> · <a href="/tools.html">All tools</a></p>
 </div>
 </div>
@@ -39,7 +39,7 @@ Next.js frontend for the interface and visualisations, FastAPI backend running P
 
 ## Status
 
-Alpha. The architecture is stable; individual operations are at varying levels of maturity. See the repository for the current state of each operation and its known limitations.
+Beta. The architecture is stable; individual operations are at varying levels of maturity. See the repository for the current state of each operation and its known limitations.
 
 ## Siblings
 

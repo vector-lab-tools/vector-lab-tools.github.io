@@ -9,7 +9,7 @@ title: Manifoldscope
 <img src="/assets/images/tools/manifoldscope.svg" alt="" class="tool-icon-lg">
 <div>
 <h1>Manifoldscope</h1>
-<p class="object"><em>Tier:</em> single-model scope (alpha). <em>Object:</em> a single manifold.</p>
+<p class="object"><em>Tier:</em> single-model scope (beta). <em>Object:</em> a single manifold.</p>
 <p><a href="https://github.com/vector-lab-tools/manifoldscope">github.com/vector-lab-tools/manifoldscope</a> · <a href="/tools.html">All tools</a></p>
 </div>
 </div>

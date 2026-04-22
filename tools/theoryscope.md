@@ -9,7 +9,7 @@ title: Theoryscope
 <img src="/assets/images/tools/theoryscope.svg" alt="" class="tool-icon-lg">
 <div>
 <h1>Theoryscope</h1>
-<p class="object"><em>Tier:</em> single-model scope (alpha). <em>Object:</em> a corpus of theoretical texts.</p>
+<p class="object"><em>Tier:</em> single-model scope (beta). <em>Object:</em> a corpus of theoretical texts.</p>
 <p><a href="https://github.com/vector-lab-tools/theoryscope">github.com/vector-lab-tools/theoryscope</a> · <a href="/tools.html">All tools</a></p>
 </div>
 </div>
@@ -45,7 +45,7 @@ Next.js frontend, FastAPI backend. Shared geometry library with the other scopes
 
 ## Status
 
-Alpha, v0.4.0. Twelve operations live across the Inspect, Flow, and Critique groups; further probes and a Critical Annotations Layer are planned. See the repository for a per-operation status table.
+Beta, v0.4.0. Twelve operations live across the Inspect, Flow, and Critique groups; further probes and a Critical Annotations Layer are planned. See the repository for a per-operation status table.
 
 ## Siblings
 

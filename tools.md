@@ -5,7 +5,7 @@ title: Tools
 
 # Tools
 
-A brief guide to each instrument. Follow the **Deep dive** link on any tool for its extended page with operations, theoretical background, and status. The comparative tools are the most mature and are listed first; the single-model scopes are in early alpha and are listed below.
+A brief guide to each instrument. Follow the **Deep dive** link on any tool for its extended page with operations, theoretical background, and status. The comparative tools are the most mature and are listed first; the single-model scopes are in beta and are listed below.
 
 ---
 
@@ -47,7 +47,7 @@ LLMbench sends a prompt to two models simultaneously and displays their response
 
 ---
 
-## Single-model scopes (alpha)
+## Single-model scopes (beta)
 
 <section class="tool-entry scope">
 
