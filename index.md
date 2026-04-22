@@ -141,6 +141,7 @@ Wider background in media theory, critical theory of technology, and the pre-his
 
 - Alpaydin, E. (2016) *Machine Learning: The New AI*. Cambridge, Massachusetts: The MIT Press (MIT Press Essential Knowledge series).
 - Berry, D.M. (2011) *The Philosophy of Software: Code and Mediation in the Digital Age*. Basingstoke: Palgrave Macmillan.
+- Berry, D.M. (2019) ‘Against Infrasomatization: Towards a Critical Theory of Algorithms’, in Bigo, D., Isin, E. and Ruppert, E. (eds.) *Data Politics*. London: Routledge.
 - Castells, M. (2013) *Communication Power*. Oxford: Oxford University Press.
 - Chun, W.H.K. (2021) *Discriminating Data: Correlation, Neighborhoods, and the New Politics of Recognition*. Cambridge, MA: MIT Press.
 - Ciston, S., Berry, D.M., Hay, A., Marino, M.C., Millican, P., Shrager, J., Schwarz, A. and Weil, P. (2026) *Inventing ELIZA: How the First Chatbot Shaped the Future of AI*. Software Studies series. MIT Press.
@@ -149,8 +150,10 @@ Wider background in media theory, critical theory of technology, and the pre-his
 - Ernst, W. (2013) *Digital Memory and the Archive*. Minneapolis: University of Minnesota Press.
 - Galloway, A.R. (2004) *Protocol: How Control Exists After Decentralization*. Cambridge, MA: MIT Press.
 - Hayles, N.K. (2017) *Unthought: The Power of the Cognitive Nonconscious*. Chicago: University of Chicago Press.
+- Hayles, N.K. (2025) *Bacteria to AI: Human Futures with Our Nonhuman Symbionts*. Chicago: University of Chicago Press.
 - Kittler, F. (1997) *Literature, Media, Information Systems*. Abingdon, New York: Routledge.
 - Kittler, F. (1997) ‘There Is No Software’, in *Literature, Media, Information Systems*. Abingdon, New York: Routledge, pp. 147–155.
+- Liu, L.H. (2023) ‘After Turing: How Philosophy Migrated to the AI Lab’, *Critical Inquiry*, 50(1), pp. 2–30.
 - Manovich, L. (2002) *The Language of New Media*. Cambridge, Mass.: MIT Press.
 - Polanyi, M. (2009) *The Tacit Dimension*. Revised ed. Chicago: University of Chicago Press.
 - Rogers, R. (2013) *Digital Methods*. Cambridge, Massachusetts: MIT Press.
