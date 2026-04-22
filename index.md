@@ -159,6 +159,7 @@ Wider background in media theory, critical theory of technology, and the pre-his
 - Rogers, R. (2013) *Digital Methods*. Cambridge, Massachusetts: MIT Press.
 - Silverstone, R. (1999) *Why Study the Media?* London: SAGE Publications.
 - Simondon, G. (2017) *On the Mode of Existence of Technical Objects*. Minneapolis: University of Minnesota Press.
+- Sofroniew, N., Kauvar, I., Saunders, W., Chen, R., Henighan, T., Hydrie, S., Citro, C., Pearce, A., Tarng, J., Gurnee, W., Batson, J., Zimmerman, S., Rivoire, K., Fish, K., Olah, C. and Lindsey, J. (2026) ‘Emotion Concepts and their Function in a Large Language Model’, *Transformer Circuits Thread*, 2 April. Available at: <https://transformer-circuits.pub/2026/emotions/index.html>.
 - Stiegler, B. (2016) *Automatic Society: Volume 1: The Future of Work*. Cambridge: Polity.
 - Weizenbaum, J. (1976) *Computer Power and Human Reason: From Judgment to Calculation*. San Francisco: Freeman.
 - Winner, L. (1980) ‘Do Artifacts Have Politics?’, *Daedalus*, 109(1), pp. 121–136.
