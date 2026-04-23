@@ -51,7 +51,7 @@ Each operation ships with a curated library of pre-built tests. These form a sta
 
 Representative items in the library:
 
-- **Hegemony Compass:** pre-loaded tests for Freedom (market liberalism vs emancipatory politics), Democracy (liberal proceduralism vs radical democracy), Intelligence (techno-rationalism vs embodied cognition), Security, and Progress. A new **Hegemonic Defaults Sweep** protocol (research tier) runs three axis presets in one go, Political Compass (economic-left / right, libertarian / authoritarian), Technology Compass (commons / proprietary, human-centred / techno-solutionist), and Knowledge Compass (critical / empiricist, qualitative / quantitative), followed by a pairwise Distance Matrix over an 18-concept political vocabulary.
+- **Hegemony Compass:** pre-loaded tests for Freedom (market liberalism vs emancipatory politics), Democracy (liberal proceduralism vs radical democracy), Intelligence (techno-rationalism vs embodied cognition), Security, and Progress. A new **Hegemonic Defaults Sweep** test (research tier) runs three axis presets in one go, Political Compass (economic-left / right, libertarian / authoritarian), Technology Compass (commons / proprietary, human-centred / techno-solutionist), and Knowledge Compass (critical / empiricist, qualitative / quantitative), followed by a pairwise Distance Matrix over an 18-concept political vocabulary.
 - **Negation Battery:** pre-built sets for political claims, ethical statements, factual assertions, and epistemological claims, runnable 10-40 at a time.
 - **Agonism Test:** eight pre-loaded philosophical debates including Marx vs Burke, Hegel vs Kierkegaard, and Arendt vs Schmitt.
 - **Real Abstraction Test:** twelve concrete use-value to abstract exchange-value pairs after Sohn-Rethel, across domains from clothing to care work.
@@ -59,9 +59,9 @@ Representative items in the library:
 - **Vector Logic:** pre-loaded analogies including ‘capitalism minus exploitation plus cooperation equals ?’
 - **Neighbourhood Map and Vector Walk:** curated concept sets across Philosophy, Carpentry, Critical Theory, Democracy, and other domains, with eight distant-pair presets for walks.
 
-### Protocols
+### Tests
 
-Protocols bundle operations into named sequences, runnable in one click and exportable as a single composite dataset. Seven protocols ship with the current version:
+Tests bundle operations into named sequences, runnable in one click and exportable as a single composite dataset. Seven tests ship with the current version:
 
 - **Hegemonic Defaults Sweep** (research). Three Hegemony Compass probes plus a Distance Matrix over eighteen political concepts. Tests which ideological framings the manifold has naturalised as defaults.
 - **'Fake' News Test** (research). All four pre-built batteries plus the eight-pair Agonism Test, ninety-six claim-and-counter-claim tests per model. Exposes the structural condition behind the fake-news problem, a medium whose geometry cannot sustain truth-and-falsehood.
@@ -70,7 +70,7 @@ Protocols bundle operations into named sequences, runnable in one click and expo
 - **Negation Audit** (critique). Ethical battery, three contested-claim gauges, and the full agonism battery. Establishes the negation deficit empirically and at scale.
 - **Concept Distance Demo** and **Vector Logic Demo** (demos). Minimal runs intended as working demonstrations of the pipeline.
 
-Users can also author their own protocols as markdown files with YAML front matter, persisted in localStorage and round-trippable through a text editor.
+Users can also author their own tests as markdown files with YAML front matter, persisted in localStorage and round-trippable through a text editor.
 
 ### Testing across models and versions
 
