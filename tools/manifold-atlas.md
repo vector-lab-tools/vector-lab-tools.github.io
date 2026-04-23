@@ -43,6 +43,30 @@ The tool packages fifteen operations for the critical testing of vector-theoreti
 
 Each operation makes a theoretical claim empirically testable against the geometry a given model has learned.
 
+## Test library and standardisation
+
+Each operation ships with a curated library of pre-built tests. These form a stable instrument against which any model can be measured, and against which models can be compared to each other. Because the tests are fixed, the same battery can be fired at different models at the same moment, at the same model across versions of its embedding API, or at the same model across dates. The result is a standardised testing regime that lets findings be reproduced across research groups and held durable across model generations.
+
+### The library
+
+Representative items in the library:
+
+- **Hegemony Compass:** pre-loaded tests for Freedom (market liberalism vs emancipatory politics), Democracy (liberal proceduralism vs radical democracy), Intelligence (techno-rationalism vs embodied cognition), Security, and Progress.
+- **Negation Battery:** pre-built sets for political claims, ethical statements, factual assertions, and epistemological claims, runnable 10-40 at a time.
+- **Agonism Test:** eight pre-loaded philosophical debates including Marx vs Burke, Hegel vs Kierkegaard, and Arendt vs Schmitt.
+- **Real Abstraction Test:** twelve concrete use-value to abstract exchange-value pairs after Sohn-Rethel, across domains from clothing to care work.
+- **Silence Detector:** density comparisons across contested domains, such as financial derivatives vs subsistence farming, Silicon Valley vs indigenous ecological knowledge, and corporate management vs care work.
+- **Vector Logic:** pre-loaded analogies including ‘capitalism minus exploitation plus cooperation equals ?’
+- **Neighbourhood Map and Vector Walk:** curated concept sets across Philosophy, Carpentry, Critical Theory, Democracy, and other domains, with eight distant-pair presets for walks.
+
+### Testing across models and versions
+
+Atlas runs any test against any combination of enabled embedding models. Supported providers cover OpenAI, Anthropic, Google, Hugging Face, Cohere, and local Ollama. The Distance Matrix operation, running across multiple enabled models at once, flags the pairs where models most disagree, surfacing contested geometry for critical analysis.
+
+### Export and archive
+
+Operations export to CSV, JSON, PDF, or PNG depending on the visualisation. Exports carry enough metadata (model identifier, date, test preset, parameter values) to reconstruct the run. These exports form the raw material for a longitudinal, comparative archive, a historical resource documenting how large language models have encoded contested concepts over time. Rather than a single ephemeral run against a single version of a single model, findings can be accumulated into a durable record.
+
 ## Theoretical background
 
 Manifold Atlas follows from [*The Vector Medium*](https://stunlaw.blogspot.com/2026/03/the-vector-medium.html) and [*What Is the Manifold?*](https://stunlaw.blogspot.com/). The tool names operations after vector-theoretic concepts (negation gauge, hegemony compass, real abstraction test) rather than statistical generics, so the connection between theory and instrument is explicit.
