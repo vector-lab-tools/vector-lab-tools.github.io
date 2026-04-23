@@ -59,6 +59,19 @@ Representative items in the library:
 - **Vector Logic:** pre-loaded analogies including ‘capitalism minus exploitation plus cooperation equals ?’
 - **Neighbourhood Map and Vector Walk:** curated concept sets across Philosophy, Carpentry, Critical Theory, Democracy, and other domains, with eight distant-pair presets for walks.
 
+### Protocols
+
+Protocols bundle operations into named sequences, runnable in one click and exportable as a single composite dataset. Seven protocols ship with the current version:
+
+- **Hegemonic Defaults Sweep** (research). Three Hegemony Compass probes plus a Distance Matrix over eighteen political concepts. Tests which ideological framings the manifold has naturalised as defaults.
+- **'Fake' News Test** (research). All four pre-built batteries plus the eight-pair Agonism Test, ninety-six claim-and-counter-claim tests per model. Exposes the structural condition behind the fake-news problem, a medium whose geometry cannot sustain truth-and-falsehood.
+- **Political Contestation Test** (research). Ten steps mixing Concept Distance, Semantic Sectioning, and Negation Gauge across politically contested pairs.
+- **Vector Logic Test** (research). Six A − B + C analogical inferences run in one batch, each producing a per-model top-eight nearest-concept table.
+- **Negation Audit** (critique). Ethical battery, three contested-claim gauges, and the full agonism battery. Establishes the negation deficit empirically and at scale.
+- **Concept Distance Demo** and **Vector Logic Demo** (demos). Minimal runs intended as working demonstrations of the pipeline.
+
+Users can also author their own protocols as markdown files with YAML front matter, persisted in localStorage and round-trippable through a text editor.
+
 ### Testing across models and versions
 
 Atlas runs any test against any combination of enabled embedding models. Supported providers cover OpenAI, Anthropic, Google, Hugging Face, Cohere, and local Ollama. The Distance Matrix operation, running across multiple enabled models at once, flags the pairs where models most disagree, surfacing contested geometry for critical analysis.
