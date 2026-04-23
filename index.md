@@ -132,13 +132,12 @@ The tools operationalise claims developed across the vector theory sequence on S
 - Kittler, F. (1999) *Gramophone, Film, Typewriter*. Stanford University Press.
 - McLuhan, M. (1962) *The Gutenberg Galaxy: The Making of Typographic Man*. University of Toronto Press.
 - Pasquinelli, M. (2023) *The Eye of the Master: A Social History of AI*. Verso.
-- Somaini, A. (2023) ‘A Theory of Latent Spaces’, *Grey Room*, 93.
-- Steyerl, H. (2025) *Medium Hot: Images in the Age of Heat*. London: Verso.
 
 ### Further reading
 
 Wider background in media theory, critical theory of technology, and the pre-history of AI.
 
+- Ackerman, A., Gefen, A., Somaini, A. and Viewing, P. (eds.) (2025) *The World Through AI: Exploring Latent Spaces*. Exhibition catalogue. Paris: Jeu de Paume / JBE Books.
 - Alpaydin, E. (2016) *Machine Learning: The New AI*. Cambridge, Massachusetts: The MIT Press (MIT Press Essential Knowledge series).
 - Berry, D.M. (2011) *The Philosophy of Software: Code and Mediation in the Digital Age*. Basingstoke: Palgrave Macmillan.
 - Berry, D.M. (2019) ‘Against Infrasomatization: Towards a Critical Theory of Algorithms’, in Bigo, D., Isin, E. and Ruppert, E. (eds.) *Data Politics*. London: Routledge.
@@ -155,11 +154,14 @@ Wider background in media theory, critical theory of technology, and the pre-his
 - Kittler, F. (1997) ‘There Is No Software’, in *Literature, Media, Information Systems*. Abingdon, New York: Routledge, pp. 147–155.
 - Liu, L.H. (2023) ‘After Turing: How Philosophy Migrated to the AI Lab’, *Critical Inquiry*, 50(1), pp. 2–30.
 - Manovich, L. (2002) *The Language of New Media*. Cambridge, Mass.: MIT Press.
+- Manovich, L. and Arielli, E. (2024) *Artificial Aesthetics: Generative AI, Arts and Visual Media*.
 - Polanyi, M. (2009) *The Tacit Dimension*. Revised ed. Chicago: University of Chicago Press.
 - Rogers, R. (2013) *Digital Methods*. Cambridge, Massachusetts: MIT Press.
 - Silverstone, R. (1999) *Why Study the Media?* London: SAGE Publications.
 - Simondon, G. (2017) *On the Mode of Existence of Technical Objects*. Minneapolis: University of Minnesota Press.
 - Sofroniew, N., Kauvar, I., Saunders, W., Chen, R., Henighan, T., Hydrie, S., Citro, C., Pearce, A., Tarng, J., Gurnee, W., Batson, J., Zimmerman, S., Rivoire, K., Fish, K., Olah, C. and Lindsey, J. (2026) ‘Emotion Concepts and their Function in a Large Language Model’, *Transformer Circuits Thread*, 2 April. Available at: <https://transformer-circuits.pub/2026/emotions/index.html>.
+- Somaini, A. (2023) ‘A Theory of Latent Spaces’, *Grey Room*, 93.
+- Steyerl, H. (2025) *Medium Hot: Images in the Age of Heat*. London: Verso.
 - Stiegler, B. (2016) *Automatic Society: Volume 1: The Future of Work*. Cambridge: Polity.
 - Weizenbaum, J. (1976) *Computer Power and Human Reason: From Judgment to Calculation*. San Francisco: Freeman.
 - Winner, L. (1980) ‘Do Artifacts Have Politics?’, *Daedalus*, 109(1), pp. 121–136.
