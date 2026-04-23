@@ -51,7 +51,7 @@ Each operation ships with a curated library of pre-built tests. These form a sta
 
 Representative items in the library:
 
-- **Hegemony Compass:** pre-loaded tests for Freedom (market liberalism vs emancipatory politics), Democracy (liberal proceduralism vs radical democracy), Intelligence (techno-rationalism vs embodied cognition), Security, and Progress.
+- **Hegemony Compass:** pre-loaded tests for Freedom (market liberalism vs emancipatory politics), Democracy (liberal proceduralism vs radical democracy), Intelligence (techno-rationalism vs embodied cognition), Security, and Progress. A new **Hegemonic Defaults Sweep** protocol (research tier) runs three axis presets in one go, Political Compass (economic-left / right, libertarian / authoritarian), Technology Compass (commons / proprietary, human-centred / techno-solutionist), and Knowledge Compass (critical / empiricist, qualitative / quantitative), followed by a pairwise Distance Matrix over an 18-concept political vocabulary.
 - **Negation Battery:** pre-built sets for political claims, ethical statements, factual assertions, and epistemological claims, runnable 10-40 at a time.
 - **Agonism Test:** eight pre-loaded philosophical debates including Marx vs Burke, Hegel vs Kierkegaard, and Arendt vs Schmitt.
 - **Real Abstraction Test:** twelve concrete use-value to abstract exchange-value pairs after Sohn-Rethel, across domains from clothing to care work.
