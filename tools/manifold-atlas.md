@@ -24,7 +24,7 @@ Without vector theory, a cosine similarity of 0.95 between "fair" and "not fair"
 
 ## Operations
 
-The tool packages fifteen operations for the critical testing of vector-theoretic claims:
+The tool packages sixteen operations for the critical testing of vector-theoretic claims:
 
 - **Concept Distance.** Cosine similarity for two terms across enabled models, with angular separation, euclidean distance, vector norms, and top contributing dimensions.
 - **Neighbourhood Map.** The local structure of the manifold around a concept, rendered as an interactive 3D scatter plot with cluster detection, connection mesh, and cross-domain analysis.
@@ -40,6 +40,7 @@ The tool packages fifteen operations for the critical testing of vector-theoreti
 - **Vector Logic.** A − B + C = ?, the narrowest test of vector logic. Applied to modern embedding models with critical intent.
 - **Vector Walk.** A particle walking through the manifold from one concept to another, built with Three.js.
 - **Text Vectorisation.** Embedding and inspection of arbitrary text.
+- **Grammar of Vectors.** A critique-tier operation that maps discursive quirks of LLM prose onto cosine geometry. Ships with two antithesis patterns ('Not X but Y' and 'Not just X but Y') across four register batteries (Marketing, AI pedagogical, Political op-ed, Technology discourse), ninety-six curated constructions in total. A threshold at cosine 0.55 separates preserved conceptual opposition from what the tool calls synthetic dialectic, where the construction performs antithesis while the underlying move is a small rotation to a near-neighbour.
 
 Each operation makes a theoretical claim empirically testable against the geometry a given model has learned.
 
@@ -61,8 +62,9 @@ Representative items in the library:
 
 ### Tests
 
-Tests bundle operations into named sequences, runnable in one click and exportable as a single composite dataset. Seven tests ship with the current version:
+Tests bundle operations into named sequences, runnable in one click and exportable as a single composite dataset. Eight tests ship with the current version:
 
+- **Grammar of Vectors Sweep** (research). Both launch grammars ('Not X but Y' and 'Not just X but Y') across all four register batteries, around a hundred pairs per model per run. Empirical backbone for the Grammar of Vectors argument on synthetic dialectic in LLM prose.
 - **Hegemonic Defaults Sweep** (research). Three Hegemony Compass probes plus a Distance Matrix over eighteen political concepts. Tests which ideological framings the manifold has naturalised as defaults.
 - **'Fake' News Test** (research). All four pre-built batteries plus the eight-pair Agonism Test, ninety-six claim-and-counter-claim tests per model. Exposes the structural condition behind the fake-news problem, a medium whose geometry cannot sustain truth-and-falsehood.
 - **Political Contestation Test** (research). Ten steps mixing Concept Distance, Semantic Sectioning, and Negation Gauge across politically contested pairs.
@@ -90,7 +92,7 @@ Next.js 16, React 19, TypeScript 5, Tailwind, Three.js. Talks to the major embed
 
 ## Status
 
-The most mature instrument in the Vector Lab. Fifteen operations live, editorial design system settled, currently at v1.0.3. In active use for research and teaching.
+The most mature instrument in the Vector Lab. Sixteen operations live, editorial design system settled, currently at v1.2.0. In active use for research and teaching.
 
 ## Siblings
 

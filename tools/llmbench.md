@@ -24,14 +24,24 @@ AI-generated text is rarely read closely. It is skimmed, summarised, or dismisse
 
 ## Modes
 
-Six modes cover the range of comparative work:
+Modes are organised across three tiers: Compare, Analyse, and Investigate.
+
+**Compare tier**
 
 - **Compare.** Dual-panel generation from two models on the same prompt, with annotation and cross-panel linking.
+
+**Analyse tier**
+
 - **Stochastic.** Repeated generation from the same model to see the distribution of responses.
 - **Temperature.** Generation across temperature settings to see how stochasticity plays at different parameter values.
 - **Divergence.** Cross-model divergence metrics including cosine similarity, Jaccard, word overlap (Dice), and uniqueness.
 - **Probs.** Probability visualisation for models that return logprobs: heatmap, pixel map, and 3D probability net.
-- **Guided exercises.** Scholarly presets drawing on Hyland, Lakoff and Johnson, Hayden White and others. Each exercise provides a preset prompt, methodological context, and guided questions.
+
+**Investigate tier** (new in v2.10.0, extended through v2.12.0)
+
+- **Grammar Probe.** Pattern-specific probes of generation behaviour. Ships with a library of grammatical constructions (Not X but Y, Hyland hedging triplets, tricolon and parallelism, modal stacking), twenty default prompts across six registers, and ten thematic suites organised along Purpose and Domain axes. Phase A runs a prevalence heatmap (prompt × model × temperature). Phase B captures continuation logprobs at each scaffold's fork point; for antithesis patterns, it also plots logprob against cosine(X, Y-phrase) with a Spearman correlation headline, showing whether the construction is rhetorical or collapses into a nearest-neighbour reflex. Results export as a portable `.grammar.json` bundle that Manifold Atlas can import into its Grammar of Vectors operation for paired geometric analysis.
+
+Across the Compare and Analyse modes, ten guided exercises are available as scholarly presets drawing on Hyland, Lakoff and Johnson, Hayden White and others. Each exercise supplies a preset prompt, methodological context, and guided questions.
 
 ## Annotation and cross-panel linking
 
@@ -51,7 +61,7 @@ Next.js, TypeScript, Three.js. Multi-provider adapters with explicit capability 
 
 ## Status
 
-Mature. Currently at v2.8.0 with prompt history in all Analyse modes, cross-panel annotation links, cosine similarity in divergence, and ten guided exercises. In active use for teaching and research.
+Mature. Currently at v2.12.0. Recent work adds the Grammar Probe (new Investigate tier) with prevalence, continuation-logprobs, and geometric-analysis phases shipped; ten thematic prompt suites along Purpose and Domain axes; summary-statistics banners across the Analyse modes; cross-panel annotation linking with seven relation types; and a portable `.grammar.json` bundle format for hand-off to Manifold Atlas. In active use for teaching and research.
 
 ## Siblings
 
