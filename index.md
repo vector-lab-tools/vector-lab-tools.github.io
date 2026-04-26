@@ -34,8 +34,9 @@ graph TB
   end
 
   subgraph comparative["Comparative tools (extensive)"]
-    A["Manifold Atlas\nbetween models"]
+    A["Manifold Atlas\nbetween language models"]
     L["LLMbench\nbetween prose outputs"]
+    D["Diffusion Atlas\nbetween image models"]
   end
 
   V -.provenance.-> M
@@ -46,7 +47,7 @@ graph TB
   classDef scope fill:#faf8f2,stroke:#b8941e,color:#1a1a1a,stroke-width:1.2px;
   classDef comp fill:#faf8f2,stroke:#8b3a3a,color:#1a1a1a,stroke-width:1.2px;
   class T,V,M scope;
-  class A,L comp;
+  class A,L,D comp;
 </div>
 
 ### Comparative tools
@@ -65,6 +66,13 @@ graph TB
   <h3><a href="/tools/llmbench.html">LLMbench</a></h3>
   <p class="object">Object: generated prose across models.</p>
   <p>Dual-panel close reading, annotation, logprobs, probability visualisation. The hermeneutic surface instrument.</p>
+</article>
+
+<article class="tool-card comparative">
+  <img class="tool-icon" src="/assets/images/tools/diffusion-atlas.svg" alt="">
+  <h3><a href="/tools/diffusion-atlas.html">Diffusion Atlas (in development)</a></h3>
+  <p class="object">Object: generative trajectories and compositional fidelity across diffusion image models.</p>
+  <p>Denoise trajectory, guidance sweep, latent neighbourhood, compositional bench. Atlas and Bench registers in one instrument.</p>
 </article>
 
 </div>

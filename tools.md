@@ -45,6 +45,23 @@ LLMbench sends a prompt to two models simultaneously and displays their response
 
 </section>
 
+<section class="tool-entry comparative">
+
+<div class="tool-entry-head">
+<img src="/assets/images/tools/diffusion-atlas.svg" alt="" class="tool-icon-lg">
+<div>
+<h2><a href="/tools/diffusion-atlas.html">Diffusion Atlas</a> <small>(in development)</small></h2>
+<p class="object"><em>Tier:</em> comparative model tool. <em>Object:</em> generative trajectories and compositional fidelity across diffusion image models.</p>
+<p><a href="/tools/diffusion-atlas.html">Deep dive</a> · <a href="https://github.com/vector-lab-tools/diffusion-atlas">github.com/vector-lab-tools/diffusion-atlas</a></p>
+</div>
+</div>
+
+Diffusion Atlas reads diffusion image models as vector processes, unifying two surfaces in one instrument: an Atlas register for per-step latents, CFG sweeps, and latent-neighbourhood sampling, and a Bench register for GenEval-style compositional scoring. v0.1 ships four operations across the two registers (Denoise Trajectory, Guidance Sweep, Latent Neighbourhood, Compositional Bench) with hosted backends (Replicate, Fal, Together, Stability) and a local FastAPI + diffusers backend for operations needing per-step latent access.
+
+<p class="tool-meta"><em>Stack:</em> Next.js + TypeScript + Three.js + Plotly; Python + FastAPI + diffusers + torch for the local backend.</p>
+
+</section>
+
 ---
 
 ## Single-model scopes (beta)
