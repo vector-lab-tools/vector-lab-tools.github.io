@@ -47,7 +47,7 @@ Hybrid by design. Hosted APIs (Replicate, Fal, Together, Stability) are the defa
 
 ## Theoretical background
 
-Diffusion Atlas extends the *vector turn* argument from text to image. The manifold framing migrates more cleanly to diffusion than it does to autoregressive text, and the asymmetry is itself an argument the lab wants to develop. A companion essay, working title *Diffractor*, will read the trajectory empirically through a Barad-inflected diffraction lens once the empirical instrument is stable.
+Diffusion Atlas extends the *vector turn* argument from text to image. The manifold framing migrates more cleanly to diffusion than it does to autoregressive text, and the asymmetry is itself an argument the lab wants to develop.
 
 Cross-tool triangulation: Diffusion Atlas (latent vector logic) sits beside [Vectorscope](/tools/vectorscope.html) (token vector logic) as the two regimes of the vector turn the lab can currently inspect. The pair sets up a comparative argument about where vector logic differs between modalities.
 
