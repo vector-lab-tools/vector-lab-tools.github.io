@@ -57,8 +57,8 @@
   <text x="82" y="300" font-family="Georgia, serif" font-size="32" font-style="italic" fill="#b8941e" letter-spacing="0.5">Vector methods for vector theory</text>
 
   <!-- Strapline -->
-  <text x="82" y="380" font-family="Georgia, serif" font-size="22" fill="#6a6866">Five instruments for reading the geometry of</text>
-  <text x="82" y="410" font-family="Georgia, serif" font-size="22" fill="#6a6866">language models, embedding spaces, and theory.</text>
+  <text x="82" y="380" font-family="Georgia, serif" font-size="22" fill="#6a6866">Instruments for reading the geometry of language</text>
+  <text x="82" y="410" font-family="Georgia, serif" font-size="22" fill="#6a6866">models, image models, and theoretical corpora.</text>
 
   <!-- URL -->
   <text x="82" y="550" font-family="Georgia, serif" font-size="20" fill="#1a1a1a" letter-spacing="1">vector-lab-tools.github.io</text>

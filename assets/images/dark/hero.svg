@@ -1,98 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
-  <title>Vector Lab: a field of instruments over the manifold</title>
+  <title>Vector Lab: a manifold rendered as a wireframe field</title>
   <defs>
     <radialGradient id="vignette" cx="50%" cy="55%" r="65%">
-      <stop offset="0%" stop-color="#1a1a1a" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#0f0f0f" stop-opacity="0.9"/>
+      <stop offset="0%" stop-color="#0f0f0f" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0f0f0f" stop-opacity="0.65"/>
     </radialGradient>
-    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#d4af37" stop-opacity="0.15"/>
-    </linearGradient>
   </defs>
 
-  <!-- Background grid (subtle) -->
+  <!-- Subtle background grid -->
   <g stroke="#2a2a28" stroke-width="0.5">
     <path d="M 0 50 H 800 M 0 100 H 800 M 0 150 H 800 M 0 200 H 800 M 0 250 H 800 M 0 300 H 800 M 0 350 H 800"/>
     <path d="M 50 0 V 400 M 100 0 V 400 M 150 0 V 400 M 200 0 V 400 M 250 0 V 400 M 300 0 V 400 M 350 0 V 400 M 400 0 V 400 M 450 0 V 400 M 500 0 V 400 M 550 0 V 400 M 600 0 V 400 M 650 0 V 400 M 700 0 V 400 M 750 0 V 400"/>
   </g>
 
   <!-- Warped manifold (central) -->
-  <g stroke="#d4af37" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.85">
-    <!-- Horizontal wires (latitude) -->
-    <path d="M 180 120 C 320 80, 480 80, 620 120"/>
-    <path d="M 170 160 C 320 120, 480 120, 630 160"/>
-    <path d="M 160 200 C 320 160, 480 160, 640 200"/>
-    <path d="M 160 240 C 320 280, 480 280, 640 240"/>
-    <path d="M 170 280 C 320 320, 480 320, 630 280"/>
-    <path d="M 180 320 C 320 360, 480 360, 620 320"/>
-    <!-- Vertical wires (longitude) -->
-    <path d="M 240 100 C 200 200, 200 200, 240 340"/>
-    <path d="M 320 90 C 270 200, 270 200, 320 350"/>
-    <path d="M 400 85 C 360 200, 360 200, 400 355"/>
-    <path d="M 480 90 C 530 200, 530 200, 480 350"/>
-    <path d="M 560 100 C 600 200, 600 200, 560 340"/>
+  <g stroke="#d4af37" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.95">
+    <path d="M 140 110 C 320 70, 480 70, 660 110"/>
+    <path d="M 130 150 C 320 110, 480 110, 670 150"/>
+    <path d="M 120 195 C 320 155, 480 155, 680 195"/>
+    <path d="M 120 245 C 320 285, 480 285, 680 245"/>
+    <path d="M 130 290 C 320 330, 480 330, 670 290"/>
+    <path d="M 140 330 C 320 370, 480 370, 660 330"/>
+    <path d="M 220 90 C 180 200, 180 200, 220 350"/>
+    <path d="M 310 80 C 260 200, 260 200, 310 360"/>
+    <path d="M 400 75 C 360 200, 360 200, 400 365"/>
+    <path d="M 490 80 C 540 200, 540 200, 490 360"/>
+    <path d="M 580 90 C 620 200, 620 200, 580 350"/>
   </g>
 
   <!-- Axes through origin -->
-  <g stroke="#8b3a3a" stroke-width="0.75" stroke-opacity="0.7">
-    <line x1="100" y1="200" x2="700" y2="200"/>
-    <line x1="400" y1="60" x2="400" y2="340"/>
+  <g stroke="#8b3a3a" stroke-width="0.75" stroke-opacity="0.6">
+    <line x1="80" y1="200" x2="720" y2="200"/>
+    <line x1="400" y1="50" x2="400" y2="350"/>
   </g>
 
   <!-- Sampled points on the manifold -->
-  <g fill="#f5f5f0" opacity="0.9">
-    <circle cx="260" cy="150" r="2"/>
-    <circle cx="340" cy="130" r="2"/>
-    <circle cx="420" cy="125" r="2.5"/>
-    <circle cx="500" cy="135" r="2"/>
-    <circle cx="580" cy="160" r="2"/>
-    <circle cx="230" cy="215" r="2"/>
-    <circle cx="310" cy="210" r="2"/>
+  <g fill="#f5f5f0" opacity="0.85">
+    <circle cx="240" cy="135" r="2"/>
+    <circle cx="320" cy="118" r="2"/>
+    <circle cx="400" cy="113" r="2.5"/>
+    <circle cx="480" cy="123" r="2"/>
+    <circle cx="560" cy="148" r="2"/>
+    <circle cx="210" cy="200" r="2"/>
+    <circle cx="295" cy="190" r="2"/>
     <circle cx="400" cy="200" r="3" fill="#d4af37"/>
-    <circle cx="490" cy="215" r="2"/>
-    <circle cx="570" cy="220" r="2"/>
-    <circle cx="260" cy="280" r="2"/>
-    <circle cx="345" cy="290" r="2"/>
-    <circle cx="425" cy="295" r="2.5"/>
-    <circle cx="510" cy="285" r="2"/>
-    <circle cx="585" cy="270" r="2"/>
+    <circle cx="505" cy="200" r="2"/>
+    <circle cx="590" cy="205" r="2"/>
+    <circle cx="240" cy="265" r="2"/>
+    <circle cx="325" cy="275" r="2"/>
+    <circle cx="405" cy="287" r="2.5"/>
+    <circle cx="490" cy="277" r="2"/>
+    <circle cx="565" cy="255" r="2"/>
+    <circle cx="160" cy="160" r="1.5"/>
+    <circle cx="640" cy="170" r="1.5"/>
+    <circle cx="170" cy="240" r="1.5"/>
+    <circle cx="635" cy="245" r="1.5"/>
+    <circle cx="380" cy="90" r="1.5"/>
+    <circle cx="420" cy="345" r="1.5"/>
   </g>
 
-  <!-- Instrument indicators (five small markers around the manifold) -->
-  <g stroke="#d4af37" fill="none" stroke-width="1.2">
-    <!-- Vectorscope: concentric rings -->
-    <g transform="translate(90,90)">
-      <circle r="14" opacity="0.7"/>
-      <circle r="9" opacity="0.7"/>
-      <circle r="4" opacity="0.7"/>
-    </g>
-    <!-- Theoryscope: three radiating lines (eigendirections) -->
-    <g transform="translate(90,310)">
-      <line x1="-12" y1="-4" x2="12" y2="4" opacity="0.7"/>
-      <line x1="-12" y1="8" x2="12" y2="-8" opacity="0.7"/>
-      <line x1="0" y1="-14" x2="0" y2="14" opacity="0.7"/>
-    </g>
-    <!-- Manifoldscope: single curved patch -->
-    <g transform="translate(710,90)">
-      <path d="M -14 0 Q 0 -10 14 0"/>
-      <path d="M -14 6 Q 0 -4 14 6"/>
-      <path d="M -14 -6 Q 0 -16 14 -6"/>
-    </g>
-    <!-- Manifold Atlas: two overlapping circles -->
-    <g transform="translate(710,310)" stroke="#8b3a3a">
-      <circle cx="-5" r="10" opacity="0.8"/>
-      <circle cx="5" r="10" opacity="0.8"/>
-    </g>
-    <!-- LLMbench: two columns with a divergence mark -->
-    <g transform="translate(400,370)" stroke="#8b3a3a">
-      <line x1="-14" y1="-12" x2="-14" y2="12" stroke-width="1.5"/>
-      <line x1="14" y1="-12" x2="14" y2="12" stroke-width="1.5"/>
-      <path d="M -10 -4 L -4 -4 M -10 2 L 2 2 M -10 8 L -2 8"/>
-      <path d="M 4 -4 L 10 -4 M 0 2 L 10 2 M 2 8 L 10 8"/>
-    </g>
-  </g>
-
-  <!-- Vignette -->
+  <!-- Soft vignette to focus the eye -->
   <rect width="800" height="400" fill="url(#vignette)"/>
 </svg>

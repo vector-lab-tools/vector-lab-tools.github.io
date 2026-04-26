@@ -54,11 +54,11 @@
   <text x="80" y="240" font-family="Optima, Futura, Georgia, serif" font-size="96" font-weight="500" fill="#f5f5f0" letter-spacing="10">VECTOR LAB</text>
 
   <!-- Tagline -->
-  <text x="82" y="300" font-family="Georgia, serif" font-size="32" font-style="italic" fill="#d4af37" letter-spacing="0.5">Research instruments for critical vector theory</text>
+  <text x="82" y="300" font-family="Georgia, serif" font-size="32" font-style="italic" fill="#d4af37" letter-spacing="0.5">Vector methods for vector theory</text>
 
   <!-- Secondary strapline -->
-  <text x="82" y="380" font-family="Georgia, serif" font-size="22" fill="#8a8a82">Five instruments for reading the geometry of</text>
-  <text x="82" y="410" font-family="Georgia, serif" font-size="22" fill="#8a8a82">language models, embedding spaces, and theory.</text>
+  <text x="82" y="380" font-family="Georgia, serif" font-size="22" fill="#8a8a82">Instruments for reading the geometry of language</text>
+  <text x="82" y="410" font-family="Georgia, serif" font-size="22" fill="#8a8a82">models, image models, and theoretical corpora.</text>
 
   <!-- URL -->
   <text x="82" y="550" font-family="Georgia, serif" font-size="20" fill="#f5f5f0" letter-spacing="1">vector-lab-tools.github.io</text>

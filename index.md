@@ -9,7 +9,7 @@ title: Vector Lab
     <p class="tagline">Vector methods for vector theory.</p>
   </div>
   <div class="hero-visual">
-    <img src="/assets/images/hero.svg" alt="A warped manifold surveyed by five small instruments, rendered as a wireframe grid.">
+    <img src="/assets/images/hero.svg" alt="A warped manifold rendered as a wireframe field with sampled points and origin axes.">
   </div>
 </section>
 
@@ -19,7 +19,7 @@ Large language models, the neural networks behind contemporary AI systems such a
 
 We could call this the geometrisation of thought. What has been missing is the corresponding set of tools. Reading papers about the manifold is not the same as inspecting the manifold. Claiming that a model has naturalised market-liberal notions of democracy is not the same as measuring the pull. The work is critical-empirical, and vector tools are needed to address this.
 
-Vector Lab is that toolkit. Five instruments, arranged in two tiers. The inner tier, Vectorscope, Manifoldscope, Theoryscope, opens single objects for intensive inspection: a single open-weight model, a single manifold, a single corpus of theoretical texts. The outer tier, Manifold Atlas and LLMbench, works across models, asking comparative questions at the level of output embeddings and generated prose. The inner tier supplies the anatomical detail. The outer tier provides the comparative grounds on which theoretical claims can be tested.
+Vector Lab is that toolkit. The instruments are arranged in two tiers. The inner tier opens single objects for intensive inspection: a single language model, a single manifold, a single corpus of theoretical texts. The outer tier works across models, asking comparative questions at the level of output embeddings, generated prose, and diffusion trajectories. The inner tier supplies the anatomical detail. The outer tier provides the comparative grounds on which theoretical claims can be tested.
 
 </section>
 
@@ -114,9 +114,11 @@ The tools are designed to explore the new media theoretic landscape of AI, which
 
 ## How the instruments relate
 
-The five instruments work at different scales of the same object. Vectorscope explains the internal geometry of a single open-weight model, reading weights, activations, and attention at every layer. Manifoldscope opens one manifold for sustained close reading, often a manifold produced by a Vectorscope-inspected model, binding geometric measurement to critical interpretation. Manifold Atlas maps the terrain between models, comparing how different embedding models organise the same inputs. Manifoldscope and Atlas are anatomical and cartographic of the same kind of object, one entering a manifold and the other surveying across manifolds.
+The instruments work at two scales and across two modalities. The single-model scopes are anatomical: they open one object (a model, a manifold, a corpus) and read its internal geometry at depth. The comparative tools are cartographic: they survey across many objects (across language models, across diffusion models, across generated outputs) and ask what each kind of geometry has naturalised. Anatomical and cartographic readings are complementary; a finding flagged at the comparative level is sharpened by an anatomical attestation, and an anatomical reading needs the comparative ground to know whether what it has found is local or generic.
 
-Theoryscope stands apart in its object, addressing the geometry of meso structures in vector space rather than the geometry of a model. It opens a reflexive possibility, comparing the eigendirections of a theoretical corpus against the model trained on that corpus. LLMbench is oriented to the hermeneutic reading of generated prose, the level at which models are usually encountered. It sits above the geometric instruments and often serves as the presentation layer for findings that begin lower down.
+The modality split is doing work too. Language models and diffusion models share the underlying vector regime, but their geometries are not interchangeable. The manifold framing migrates more cleanly to diffusion than it does to autoregressive text, and that asymmetry is itself an argument the lab is set up to develop. Theoretical corpora sit alongside the model registers as a third object whose geometry can be read with comparable methods, opening reflexive comparisons between the eigendirections of a body of theory and the model trained on it.
+
+Generated prose is the hermeneutic surface that sits above the geometric work. It is the level at which models are usually encountered, and it is often the presentation layer for findings that begin lower down: a claim tested geometrically can be illustrated, read closely, and compared across models in prose form.
 
 ## Further reading
 
