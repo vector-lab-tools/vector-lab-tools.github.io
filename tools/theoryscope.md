@@ -45,7 +45,7 @@ Next.js frontend, FastAPI backend. Shared geometry library with the other scopes
 
 ## Status
 
-Beta, v0.4.0. Twelve operations live across the Inspect, Flow, and Critique groups; further probes and a Critical Annotations Layer are planned. See the repository for a per-operation status table.
+Beta, v0.8.0. Inspect, Flow, and Critique tabs are all complete (Phase 4A through 4D), and Phase 5A added the Corpus-vs-Model Probe, the reflexive operation that compares the eigendirections of a theoretical corpus against an open-weight model trained on related text. Recent additions include the Symmetry Breaking Map, Phase Diagram, Translated Corpus Probe, and the Relevant / Irrelevant Operator Spectrum on the Flow tab. See the repository for a per-operation status table.
 
 ## Siblings
 

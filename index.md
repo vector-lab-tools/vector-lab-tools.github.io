@@ -70,7 +70,7 @@ graph TB
 
 <article class="tool-card comparative">
   <img class="tool-icon" src="/assets/images/tools/diffusion-atlas.svg" alt="">
-  <h3><a href="/tools/diffusion-atlas.html">Diffusion Atlas (in development)</a></h3>
+  <h3><a href="/tools/diffusion-atlas.html">Diffusion Atlas (alpha)</a></h3>
   <p class="object">Object: generative trajectories and compositional fidelity across diffusion image models.</p>
   <p>Denoise trajectory, guidance sweep, latent neighbourhood, compositional bench. Atlas and Bench registers in one instrument.</p>
 </article>

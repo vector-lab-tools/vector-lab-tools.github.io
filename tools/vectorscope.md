@@ -28,6 +28,7 @@ Commercial embedding APIs return sentence-level composites from separately-train
 - **Attention analysis.** Which heads activate on which inputs, and what structural patterns do they encode? Visualise attention matrices per head, per layer, per token.
 - **Token embedding exploration.** The pre-contextual vocabulary, before any input has been read. Which tokens sit as neighbours, which as antipodes, and which have no neighbours at all?
 - **Signal degradation laboratory.** Run the same input across precision regimes, FP32 through BF16, INT8, INT4, FP4, INT2, and observe how the signal compresses as the medium is quantised. The material substrate of a representation shapes what it can hold; Vectorscope measures the shaping.
+- **Grammar Steering.** Contrastive Activation Addition after Turner et al. (2023) and Rimsky et al. (2024). Phase 1 takes matched (positive, negative) prompt pairs and computes per-layer steering vectors, with diagnostics for norm trajectory, leave-one-out separability, and 3D PCA at any chosen layer. Phase 2 registers a forward hook on the chosen transformer block during generation and adds `scale × steering_vector` at every step, producing a side-by-side gradient of completions across user-supplied scales. A single scalar knob that turns a rhetorical register on and off; the strongest possible evidence that the pattern has an internal representation.
 
 ## Theoretical background
 
@@ -39,7 +40,7 @@ Next.js frontend for the interface and visualisations, FastAPI backend running P
 
 ## Status
 
-Beta. The architecture is stable; individual operations are at varying levels of maturity. See the repository for the current state of each operation and its known limitations.
+Beta, v0.6.0. Twelve original operations plus the Grammar Steering pair (Phase 1 extraction and Phase 2 intervention) are live. Export across every operation in JSON, CSV, PNG, and PDF. The Grammar Steering work is the Vectorscope-side contribution to the three-tool Grammar of Vectors study, paired with LLMbench's Grammar Probe and Manifold Atlas's Grammar of Vectors operation. See the repository for the current state of each operation and its known limitations.
 
 ## Siblings
 

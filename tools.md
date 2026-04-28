@@ -52,7 +52,7 @@ LLMbench sends a prompt to two models simultaneously and displays their response
 <div>
 <h2><a href="/tools/diffusion-atlas.html">Diffusion Atlas</a> <small>(in development)</small></h2>
 <p class="object"><em>Tier:</em> comparative model tool. <em>Object:</em> generative trajectories and compositional fidelity across diffusion image models.</p>
-<p><a href="/tools/diffusion-atlas.html">Deep dive</a> · <a href="https://github.com/vector-lab-tools/diffusion-atlas">github.com/vector-lab-tools/diffusion-atlas</a></p>
+<p><a href="/tools/diffusion-atlas.html">Deep dive</a> · <a href="https://github.com/vector-lab-tools/diffusionatlas">github.com/vector-lab-tools/diffusionatlas</a></p>
 </div>
 </div>
 
