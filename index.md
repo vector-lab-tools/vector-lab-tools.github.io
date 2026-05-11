@@ -162,6 +162,7 @@ Wider background in media theory, critical theory of technology, and the pre-his
 - Hayles, N.K. (2025) *Bacteria to AI: Human Futures with Our Nonhuman Symbionts*. Chicago: University of Chicago Press.
 - Kittler, F. (1997) *Literature, Media, Information Systems*. Abingdon, New York: Routledge.
 - Kittler, F. (1997) ‘There Is No Software’, in *Literature, Media, Information Systems*. Abingdon, New York: Routledge, pp. 147–155.
+- Krämer, S. (2025) ‘How should the generative power of Large Language Models (LLMs) be interpreted? Do chatbots understand linguistic meaning?’, *Philosophy & Digitality*, 2(1), pp. 122–141. Available at: <https://doi.org/10.18716/pd.v2i1.11660>.
 - Liu, L.H. (2023) ‘After Turing: How Philosophy Migrated to the AI Lab’, *Critical Inquiry*, 50(1), pp. 2–30.
 - Manovich, L. (2002) *The Language of New Media*. Cambridge, Mass.: MIT Press.
 - Manovich, L. and Arielli, E. (2024) *Artificial Aesthetics: Generative AI, Arts and Visual Media*.
