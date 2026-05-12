@@ -61,7 +61,7 @@ Next.js, TypeScript, Three.js. Multi-provider adapters with explicit capability 
 
 ## Status
 
-Mature. Currently at v2.12.0. Recent work adds the Grammar Probe (new Investigate tier) with prevalence, continuation-logprobs, and geometric-analysis phases shipped; ten thematic prompt suites along Purpose and Domain axes; summary-statistics banners across the Analyse modes; cross-panel annotation linking with seven relation types; and a portable `.grammar.json` bundle format for hand-off to Manifold Atlas. In active use for teaching and research.
+Mature. Currently at v2.13.0. The Grammar Probe Investigate tier ships Phase A (prevalence), Phase B (continuation logprobs, with a geometry upgrade in v2.12.0), and Phase E (temperature sweep, added in v2.13.0). The pattern library is Atlas-aligned for round-tripping through the `.grammar.json` bundle. Other recent additions: ten thematic prompt suites along Purpose and Domain axes, multi-select pattern selection, summary-statistics banners across the Analyse modes, cross-panel annotation linking with seven relation types. In active use for teaching and research.
 
 ## Siblings
 

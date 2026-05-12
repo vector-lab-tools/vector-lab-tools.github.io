@@ -92,7 +92,7 @@ Next.js 16, React 19, TypeScript 5, Tailwind, Three.js. Talks to the major embed
 
 ## Status
 
-The most mature instrument in the Vector Lab. Sixteen operations live, editorial design system settled, currently at v1.2.0. In active use for research and teaching.
+The most mature instrument in the Vector Lab. Currently at v1.5.2, with sixteen operations live and a deep-dive panel on every visualisation-heavy operation. Recent work includes Grammar of Vectors with Grammar Probe Bundle round-trip from LLMbench (v1.2.0–v1.3.x), Deep Dive Phase 5 enrichment (v1.4.0–v1.4.2), a sticky bottom status bar, Getting Started help, and Ollama CORS handling (v1.4.3–v1.4.4). In active use for research and teaching.
 
 ## Siblings
 
