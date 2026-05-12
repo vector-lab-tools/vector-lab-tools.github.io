@@ -92,7 +92,7 @@ Next.js 16, React 19, TypeScript 5, Tailwind, Three.js. Talks to the major embed
 
 ## Status
 
-The most mature instrument in the Vector Lab. Currently at v1.5.2, with sixteen operations live and a deep-dive panel on every visualisation-heavy operation. Recent work includes Grammar of Vectors with Grammar Probe Bundle round-trip from LLMbench (v1.2.0–v1.3.x), Deep Dive Phase 5 enrichment (v1.4.0–v1.4.2), a sticky bottom status bar, Getting Started help, and Ollama CORS handling (v1.4.3–v1.4.4). In active use for research and teaching.
+The most mature instrument in the Vector Lab. Currently at v1.6.0, with sixteen operations live and a deep-dive panel on every visualisation-heavy operation. v1.6.0 ships browser-direct Ollama, so the deployed Atlas at vector-lab-tools/manifold-atlas can now reach a local Ollama instance for real (origin-aware setup help and Gemma models landed in v1.5.3 first). Earlier recent work includes Grammar of Vectors with Grammar Probe Bundle round-trip from LLMbench (v1.2.0–v1.3.x), Deep Dive Phase 5 enrichment (v1.4.0–v1.4.2), a sticky bottom status bar, Getting Started help, and Ollama CORS handling (v1.4.3–v1.4.4). In active use for research and teaching.
 
 ## Siblings
 

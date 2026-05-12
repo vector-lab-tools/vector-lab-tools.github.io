@@ -37,9 +37,10 @@ Modes are organised across three tiers: Compare, Analyse, and Investigate.
 - **Divergence.** Cross-model divergence metrics including cosine similarity, Jaccard, word overlap (Dice), and uniqueness.
 - **Probs.** Probability visualisation for models that return logprobs: heatmap, pixel map, and 3D probability net.
 
-**Investigate tier** (new in v2.10.0, extended through v2.12.0)
+**Investigate tier**
 
-- **Grammar Probe.** Pattern-specific probes of generation behaviour. Ships with a library of grammatical constructions (Not X but Y, Hyland hedging triplets, tricolon and parallelism, modal stacking), twenty default prompts across six registers, and ten thematic suites organised along Purpose and Domain axes. Phase A runs a prevalence heatmap (prompt × model × temperature). Phase B captures continuation logprobs at each scaffold's fork point; for antithesis patterns, it also plots logprob against cosine(X, Y-phrase) with a Spearman correlation headline, showing whether the construction is rhetorical or collapses into a nearest-neighbour reflex. Results export as a portable `.grammar.json` bundle that Manifold Atlas can import into its Grammar of Vectors operation for paired geometric analysis.
+- **Grammar Probe.** Pattern-specific probes of generation behaviour, organised in five phases that are all now shipped: Phase A (prevalence heatmap, prompt × model × temperature), Phase B (continuation logprobs at each scaffold's fork point, with a Spearman correlation between logprob and cosine(X, Y-phrase) for antithesis patterns), Phase C (forced continuation), Phase D (perturbation), Phase E (temperature sweep). Ships with a library of grammatical constructions (Not X but Y, Hyland hedging triplets, tricolon and parallelism, modal stacking), an Atlas-aligned pattern library, twenty default prompts across six registers, and ten thematic suites along Purpose and Domain axes. Results export as a portable `.grammar.json` bundle that Manifold Atlas can import into its Grammar of Vectors operation for paired geometric analysis. A global Stop button cancels any running phase mid-stream.
+- **Sampling Probe** (added v2.15.0). A new Investigate-tier mode that turns sampling itself into an inspectable surface. Per-token transcript, override audit log, completion-style prompting with editable prompt, Panel B no-flash, transcript-matches strip, sample prompts, and PDF export.
 
 Across the Compare and Analyse modes, ten guided exercises are available as scholarly presets drawing on Hyland, Lakoff and Johnson, Hayden White and others. Each exercise supplies a preset prompt, methodological context, and guided questions.
 
@@ -61,7 +62,7 @@ Next.js, TypeScript, Three.js. Multi-provider adapters with explicit capability 
 
 ## Status
 
-Mature. Currently at v2.13.0. The Grammar Probe Investigate tier ships Phase A (prevalence), Phase B (continuation logprobs, with a geometry upgrade in v2.12.0), and Phase E (temperature sweep, added in v2.13.0). The pattern library is Atlas-aligned for round-tripping through the `.grammar.json` bundle. Other recent additions: ten thematic prompt suites along Purpose and Domain axes, multi-select pattern selection, summary-statistics banners across the Analyse modes, cross-panel annotation linking with seven relation types. In active use for teaching and research.
+Mature. Currently at v2.15.43. All five Grammar Probe phases (A through E) are shipped, with a global Stop button (v2.15.30) and first-class logprobs across the app (v2.15.20). The Sampling Probe is the new Investigate-tier mode (v2.15.0). Browser-direct Ollama landed in the v2.15.30–v2.15.43 range alongside the parallel Atlas work, with a copyable `OLLAMA_ORIGINS` command in the unreachable-error message and a proper README setup section. Compact Deep Dive mode (v2.15.17), per-provider API key persistence, and an onboarding guide round out the recent work. In active use for teaching and research.
 
 ## Siblings
 
