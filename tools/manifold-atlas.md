@@ -40,7 +40,7 @@ The tool packages sixteen operations for the critical testing of vector-theoreti
 - **Vector Logic.** A − B + C = ?, the narrowest test of vector logic. Applied to modern embedding models with critical intent.
 - **Vector Walk.** A particle walking through the manifold from one concept to another, built with Three.js.
 - **Text Vectorisation.** Embedding and inspection of arbitrary text.
-- **Grammar of Vectors.** A critique-tier operation that maps discursive quirks of LLM prose onto cosine geometry. Ships with two antithesis patterns ('Not X but Y' and 'Not just X but Y') across four register batteries (Marketing, AI pedagogical, Political op-ed, Technology discourse), ninety-six curated constructions in total. A threshold at cosine 0.55 separates preserved conceptual opposition from what the tool calls synthetic dialectic, where the construction performs antithesis while the underlying move is a small rotation to a near-neighbour.
+- **Grammar of Vectors.** A critique-tier operation that maps discursive quirks of LLM prose onto cosine geometry. Ships with two antithesis patterns ('Not X but Y' and 'Not just X but Y') across four register batteries (Marketing, AI pedagogical, Political op-ed, Technology discourse), ninety-six curated constructions in total. Cosines are reported with observation-only labels rather than interpretive verdicts: the tool surfaces the geometric relationship for the reader to interpret, leaving the call about whether a given construction performs genuine opposition or a near-neighbour rotation to the analyst.
 
 Each operation makes a theoretical claim empirically testable against the geometry a given model has learned.
 
@@ -54,7 +54,7 @@ Representative items in the library:
 
 - **Hegemony Compass:** pre-loaded tests for Freedom (market liberalism vs emancipatory politics), Democracy (liberal proceduralism vs radical democracy), Intelligence (techno-rationalism vs embodied cognition), Security, and Progress. A new **Hegemonic Defaults Sweep** test (research tier) runs three axis presets in one go, Political Compass (economic-left / right, libertarian / authoritarian), Technology Compass (commons / proprietary, human-centred / techno-solutionist), and Knowledge Compass (critical / empiricist, qualitative / quantitative), followed by a pairwise Distance Matrix over an 18-concept political vocabulary.
 - **Negation Battery:** pre-built sets for political claims, ethical statements, factual assertions, and epistemological claims, runnable 10-40 at a time.
-- **Agonism Test:** eight pre-loaded philosophical debates including Marx vs Burke, Hegel vs Kierkegaard, and Arendt vs Schmitt.
+- **Agonism Test:** forty-eight pre-loaded philosophical debates organised in eight themes (six pairs per theme) including Marx vs Burke, Hegel vs Kierkegaard, and Arendt vs Schmitt, with thematic filtering and observation-only labels rather than interpretive verdicts.
 - **Real Abstraction Test:** twelve concrete use-value to abstract exchange-value pairs after Sohn-Rethel, across domains from clothing to care work.
 - **Silence Detector:** density comparisons across contested domains, such as financial derivatives vs subsistence farming, Silicon Valley vs indigenous ecological knowledge, and corporate management vs care work.
 - **Vector Logic:** pre-loaded analogies including ‘capitalism minus exploitation plus cooperation equals ?’
@@ -92,7 +92,7 @@ Next.js 16, React 19, TypeScript 5, Tailwind, Three.js. Talks to the major embed
 
 ## Status
 
-The most mature instrument in the Vector Lab. Currently at v1.6.0, with sixteen operations live and a deep-dive panel on every visualisation-heavy operation. v1.6.0 ships browser-direct Ollama, so the deployed Atlas at vector-lab-tools/manifold-atlas can now reach a local Ollama instance for real (origin-aware setup help and Gemma models landed in v1.5.3 first). Earlier recent work includes Grammar of Vectors with Grammar Probe Bundle round-trip from LLMbench (v1.2.0–v1.3.x), Deep Dive Phase 5 enrichment (v1.4.0–v1.4.2), a sticky bottom status bar, Getting Started help, and Ollama CORS handling (v1.4.3–v1.4.4). In active use for research and teaching.
+The most mature instrument in the Vector Lab. Currently at v1.8.0, with sixteen operations live and a deep-dive panel on every visualisation-heavy operation. The recent line of work runs: browser-direct Ollama so the deployed Atlas can reach a local Ollama instance for real (v1.6.0, with origin-aware setup help and Gemma models added in v1.5.3 and structured CORS error handling in v1.6.1–v1.6.2); a Negation Gauge "Not A" override (v1.6.3); a Neighbourhood Map fix that suppresses misleading single-group cross-domain bridges (v1.6.4); and a methodological shift on the critique-tier operations to observation-only labels rather than interpretive verdicts, with the Agonism Test expanded to forty-eight pairs across eight themes (v1.6.5–v1.6.8). v1.7.0 removed the LLMbench Grammar Probe Bundle handover (the two tools operate on different manifolds, so the round-trip claim was misleading); v1.8.0 is the release marker on top of that decision. Earlier recent work also includes the Grammar of Vectors operation, Deep Dive Phase 5 enrichment (v1.4.0–v1.4.2), a sticky bottom status bar, and Getting Started help. In active use for research and teaching.
 
 ## Siblings
 
