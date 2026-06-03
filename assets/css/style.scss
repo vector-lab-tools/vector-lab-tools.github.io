@@ -83,10 +83,10 @@ body {
   color: var(--vl-text);
   border: none;
 
-  .brand-mark {
-    width: 36px;
-    height: 36px;
-    display: block;
+  .brand-block {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
   }
 
   .brand-text {
@@ -96,6 +96,15 @@ body {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--vl-text);
+  }
+
+  .brand-tagline {
+    font-family: $serif;
+    font-style: italic;
+    font-size: 0.78rem;
+    color: var(--vl-muted);
+    margin-top: 0.2rem;
+    letter-spacing: 0.01em;
   }
 
   &:hover .brand-text { color: var(--vl-blue); }

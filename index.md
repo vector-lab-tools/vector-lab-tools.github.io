@@ -3,16 +3,6 @@ layout: default
 title: Vector Lab
 ---
 
-<section class="hero">
-  <div class="hero-text">
-    <h1>Vector Lab</h1>
-    <p class="tagline">Vector methods for vector theory.</p>
-  </div>
-  <div class="hero-visual">
-    <img src="/assets/images/hero.svg" alt="A warped manifold rendered as a wireframe field with sampled points and origin axes.">
-  </div>
-</section>
-
 <section class="lede">
 
 Large language models, the neural networks behind contemporary AI systems such as ChatGPT, Gemini, and Claude, reorganise meaning as geometry. Every token, every concept, every sentence is assigned a position in a high-dimensional vector space whose axes are no-one's axes and whose distances no-one chose. What any given model can say about democracy, about poltics, the economy, society, or everyday life is filtered through this vector space. Questions even about contested ideas of intelligence are constrained by the geometry that model has learned. And that geometry carries the sedimented assumptions of the corpus, the labour regime, and the economic pressures that produced it.
