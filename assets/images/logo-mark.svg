@@ -1,33 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="#0a1f44">
   <title>Vector Lab mark</title>
-  <!-- Sparse field dots: wider vector field at low opacity -->
-  <g fill="#0a1f44" opacity="0.3">
-    <circle cx="4" cy="6" r="0.7"/>
-    <circle cx="14" cy="2" r="0.7"/>
-    <circle cx="32" cy="2" r="0.7"/>
-    <circle cx="60" cy="4" r="0.7"/>
-    <circle cx="62" cy="22" r="0.7"/>
-    <circle cx="2" cy="30" r="0.7"/>
-    <circle cx="60" cy="44" r="0.7"/>
-    <circle cx="4" cy="56" r="0.7"/>
-    <circle cx="22" cy="62" r="0.7"/>
-    <circle cx="48" cy="60" r="0.7"/>
-    <circle cx="54" cy="58" r="0.7"/>
-    <circle cx="58" cy="60" r="0.7"/>
-  </g>
-  <!-- Ring of dots around the VL: 8 dots evenly distributed -->
-  <g fill="#0a1f44" opacity="0.55">
-    <circle cx="32" cy="10" r="1.5"/>
-    <circle cx="48" cy="16" r="1.5"/>
-    <circle cx="54" cy="32" r="1.5"/>
-    <circle cx="48" cy="48" r="1.5"/>
-    <circle cx="32" cy="54" r="1.5"/>
-    <circle cx="16" cy="48" r="1.5"/>
-    <circle cx="10" cy="32" r="1.5"/>
-    <circle cx="16" cy="16" r="1.5"/>
-  </g>
-  <!-- V: lower sub-manifold (baseline y=42) -->
-  <polyline points="17,22 25,42 33,22" stroke="#0a1f44" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <!-- L: upper sub-manifold (baseline y=38, raised 4 units relative to V) -->
-  <polyline points="38,18 38,38 48,38" stroke="#0a1f44" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- V: outer chevron, two thick arms meeting at the apex -->
+  <polygon points="4,6 16,6 32,42 48,6 60,6 32,58"/>
+  <!-- L: nested inside the V's negative space, foot extending into the right arm -->
+  <polygon points="22,14 28,14 28,32 40,32 40,38 22,38"/>
 </svg>
