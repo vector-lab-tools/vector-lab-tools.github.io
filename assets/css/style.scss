@@ -83,6 +83,13 @@ body {
   color: var(--vl-text);
   border: none;
 
+  .brand-mark {
+    width: 30px;
+    height: 30px;
+    display: block;
+    flex-shrink: 0;
+  }
+
   .brand-block {
     display: flex;
     flex-direction: column;
