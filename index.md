@@ -110,7 +110,7 @@ The vector lab tools are designed to open the "vector box" of artificial intelli
 
 The result is a set of instruments that do things other research tools do not. Vectorscope runs the same inputs across precision regimes, FP32 through BF16, INT8, INT4, FP4, INT2, to observe how signal degrades as the medium is quantised, on the principle that the material substrate of a representation shapes what it can hold. Manifoldscope treats each manifold as a geometric object (intrinsic dimension, curvature, density) and as an ideological object (what it naturalises, suppresses, sediments), binding measure to critique so that no interpretive claim goes without its attestation. Theoryscope applies renormalisation-group and eigenvector methods to corpora of theoretical texts, asking which positions are fixed points under coarse-graining and which traditions are universality classes of one another. Manifold Atlas runs fifteen operations across multiple embedding models, turning particular vector-theoretic claims into empirically testable propositions. LLMbench sets two models' prose outputs side by side and enables the dual-panel close reading that hermeneutic work requires.
 
-The tools are designed to explore the new media theoretic landscape of AI, which are listed in each repository's documentation and developed in the essays that motivate them. Critical work on large language models has, for a decade, been constrained by a tooling deficit. Either work with commercial APIs, and accept the interpretive costs, or do without tools and write essays that assert what a geometry looks like without ever seeing one. Vector Lab is an attempt to close that gap, to produce instruments that are continuous with the theoretical project rather than imported from outside it, and to make them public so that others can use, extend, or disagree with the work they do.
+The tools are designed to explore the new media-theoretic terrain of AI, which are listed in each repository's documentation and developed in the essays that motivate them. Critical work on large language models has, for a decade, been constrained by a tooling deficit. Either work with commercial APIs, and accept the interpretive costs, or do without tools and write essays that assert what a geometry looks like without ever seeing one. Vector Lab is an attempt to close that gap, to produce instruments that are continuous with the theoretical project rather than imported from outside it, and to make them public so that others can use, extend, or disagree with the work they do.
 
 ## How the instruments relate
 
@@ -126,12 +126,12 @@ The tools operationalise claims developed across the vector theory sequence on S
 
 ### The vector theory sequence (Stunlaw)
 
-- [*The Vector Medium*](https://stunlaw.blogspot.com/2026/03/the-vector-medium.html) — names the vector regime as a periodising category for contemporary media.
+- [*The Vector Medium*](https://stunlaw.blogspot.com/2026/03/the-vector-medium.html), names the vector regime as a periodising category for contemporary media.
 - [*Vector Theory*](https://stunlaw.blogspot.com/2026/02/vector-theory.html?m=1) - gives the theoretisation of the move from digital to vectors. 
-- [*Generation Vector*](https://stunlaw.blogspot.com/2026/02/generation-vector.html) — examines the implications for a generation that is surrounded by AI.
-- [*What Is Vector Space?*](https://stunlaw.blogspot.com/2026/03/what-is-vector-space.html) — characterises vector space as a new medium constituted by dimensionality. Vectorscope is the empirical instrument that follows.
-- *What Is the Manifold?* Coming soon! — develops the manifold as the medium through which large language models render meaning legible. Manifold Atlas and Manifoldscope follow.
-- *What Is Theory Space?* Coming soon !— names the space of counterfactual media from which any particular manifold is selected.
+- [*Generation Vector*](https://stunlaw.blogspot.com/2026/02/generation-vector.html), examines the implications for a generation that is surrounded by AI.
+- [*What Is Vector Space?*](https://stunlaw.blogspot.com/2026/03/what-is-vector-space.html), characterises vector space as a new medium constituted by dimensionality. Vectorscope is the empirical instrument that follows.
+- *What Is the Manifold?* Coming soon, develops the manifold as the medium through which large language models render meaning legible. Manifold Atlas and Manifoldscope follow.
+- *What Is Theory Space?* Coming soon, names the space of counterfactual media from which any particular manifold is selected.
 
 ### Books and longer work on Vectors
 

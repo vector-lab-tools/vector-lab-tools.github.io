@@ -20,7 +20,7 @@ Theoryscope maps a corpus of theoretical texts as a high-dimensional point cloud
 
 ## Why Theoryscope
 
-Manifold Atlas and Vectorscope both take a model as their object. Theoryscope extends the same critical posture to intellectual fields: the corpus of critical theory, the literature on AI ethics, a single theorist's output, a tradition across time. This is the move that lets the Vector Lab address not just the geometry of the machine but the geometry of the thought written about the machine. It opens a reflexive possibility: compare the eigendirections of a theoretical corpus against the eigendirections of a model trained on that corpus.
+Manifold Atlas and Vectorscope both take a model as their object. Theoryscope extends the same critical posture to intellectual fields: the corpus of critical theory, the literature on AI ethics, a single theorist's output, a tradition across time. This is the move that lets the Vector Lab extend from the geometry of the machine to the geometry of the thought written about the machine. It opens a reflexive possibility: compare the eigendirections of a theoretical corpus against the eigendirections of a model trained on that corpus.
 
 ## Operations
 
