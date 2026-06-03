@@ -8,7 +8,7 @@
   </defs>
 
   <!-- Subtle background grid -->
-  <g stroke="#d9d4c5" stroke-width="0.5">
+  <g stroke="#ede6d2" stroke-width="0.5">
     <path d="M 0 50 H 800 M 0 100 H 800 M 0 150 H 800 M 0 200 H 800 M 0 250 H 800 M 0 300 H 800 M 0 350 H 800"/>
     <path d="M 50 0 V 400 M 100 0 V 400 M 150 0 V 400 M 200 0 V 400 M 250 0 V 400 M 300 0 V 400 M 350 0 V 400 M 400 0 V 400 M 450 0 V 400 M 500 0 V 400 M 550 0 V 400 M 600 0 V 400 M 650 0 V 400 M 700 0 V 400 M 750 0 V 400"/>
   </g>
@@ -60,7 +60,4 @@
     <circle cx="380" cy="90" r="1.5"/>
     <circle cx="420" cy="345" r="1.5"/>
   </g>
-
-  <!-- Soft vignette to focus the eye -->
-  <rect width="800" height="400" fill="url(#vignette)"/>
 </svg>
