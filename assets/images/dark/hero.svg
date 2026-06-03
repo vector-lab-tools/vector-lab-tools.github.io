@@ -14,7 +14,7 @@
   </g>
 
   <!-- Warped manifold (central) -->
-  <g stroke="#d4af37" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.95">
+  <g stroke="#6a8fc8" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.95">
     <path d="M 140 110 C 320 70, 480 70, 660 110"/>
     <path d="M 130 150 C 320 110, 480 110, 670 150"/>
     <path d="M 120 195 C 320 155, 480 155, 680 195"/>
@@ -29,7 +29,7 @@
   </g>
 
   <!-- Axes through origin -->
-  <g stroke="#8b3a3a" stroke-width="0.75" stroke-opacity="0.6">
+  <g stroke="#b97070" stroke-width="0.75" stroke-opacity="0.6">
     <line x1="80" y1="200" x2="720" y2="200"/>
     <line x1="400" y1="50" x2="400" y2="350"/>
   </g>
@@ -43,7 +43,7 @@
     <circle cx="560" cy="148" r="2"/>
     <circle cx="210" cy="200" r="2"/>
     <circle cx="295" cy="190" r="2"/>
-    <circle cx="400" cy="200" r="3" fill="#d4af37"/>
+    <circle cx="400" cy="200" r="3" fill="#6a8fc8"/>
     <circle cx="505" cy="200" r="2"/>
     <circle cx="590" cy="205" r="2"/>
     <circle cx="240" cy="265" r="2"/>

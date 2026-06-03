@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <title>Manifoldscope</title>
   <!-- Single manifold patch: torus-like warped surface -->
-  <g stroke="#d4af37" fill="none" stroke-width="1.1" stroke-linecap="round">
+  <g stroke="#c9a456" fill="none" stroke-width="1.1" stroke-linecap="round">
     <!-- Outer silhouette of a torus-like manifold -->
     <ellipse cx="32" cy="32" rx="24" ry="14" stroke-opacity="0.9"/>
     <!-- Inner hole -->

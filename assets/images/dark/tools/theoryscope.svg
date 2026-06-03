@@ -17,10 +17,10 @@
     <circle cx="24" cy="52" r="1.5"/>
   </g>
   <!-- Two eigenvector axes through centroid, at an angle (computed, not asserted) -->
-  <g stroke="#d4af37" stroke-width="1.3" stroke-linecap="round">
+  <g stroke="#c9a456" stroke-width="1.3" stroke-linecap="round">
     <line x1="8" y1="24" x2="56" y2="40"/>
     <line x1="22" y1="56" x2="42" y2="8"/>
   </g>
   <!-- Centroid -->
-  <circle cx="32" cy="32" r="2" fill="#d4af37"/>
+  <circle cx="32" cy="32" r="2" fill="#c9a456"/>
 </svg>

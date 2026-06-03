@@ -44,8 +44,8 @@ graph TB
   A -.surface reading.-> L
   T -.eigendirections of theory.-> V
 
-  classDef scope fill:#faf8f2,stroke:#b8941e,color:#1a1a1a,stroke-width:1.2px;
-  classDef comp fill:#faf8f2,stroke:#8b3a3a,color:#1a1a1a,stroke-width:1.2px;
+  classDef scope fill:#f7f4ea,stroke:#a8854d,color:#181818,stroke-width:1.2px;
+  classDef comp fill:#f7f4ea,stroke:#7a2e2e,color:#181818,stroke-width:1.2px;
   class T,V,M scope;
   class A,L,D comp;
 </div>

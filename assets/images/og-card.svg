@@ -6,8 +6,8 @@
       <stop offset="100%" stop-color="#f2ede0"/>
     </linearGradient>
     <radialGradient id="glow" cx="50%" cy="45%" r="60%">
-      <stop offset="0%" stop-color="#b8941e" stop-opacity="0.06"/>
-      <stop offset="100%" stop-color="#b8941e" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#0a1f44" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0a1f44" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
@@ -36,7 +36,7 @@
   </g>
 
   <!-- Large manifold on the right -->
-  <g transform="translate(720,120)" stroke="#b8941e" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.95">
+  <g transform="translate(720,120)" stroke="#0a1f44" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.95">
     <path d="M 30 60 C 110 30, 290 30, 370 60"/>
     <path d="M 20 120 C 110 80, 290 80, 380 120"/>
     <path d="M 15 180 C 110 140, 290 140, 385 180"/>
@@ -48,13 +48,13 @@
     <path d="M 250 20 C 290 150, 290 270, 250 400"/>
     <path d="M 330 30 C 360 150, 360 270, 330 390"/>
   </g>
-  <circle cx="920" cy="330" r="5" fill="#b8941e"/>
+  <circle cx="920" cy="330" r="5" fill="#0a1f44"/>
 
   <!-- Wordmark -->
   <text x="80" y="240" font-family="Optima, Futura, Georgia, serif" font-size="96" font-weight="500" fill="#1a1a1a" letter-spacing="10">VECTOR LAB</text>
 
   <!-- Tagline -->
-  <text x="82" y="300" font-family="Georgia, serif" font-size="32" font-style="italic" fill="#b8941e" letter-spacing="0.5">Vector methods for vector theory</text>
+  <text x="82" y="300" font-family="Georgia, serif" font-size="32" font-style="italic" fill="#0a1f44" letter-spacing="0.5">Vector methods for vector theory</text>
 
   <!-- Strapline -->
   <text x="82" y="380" font-family="Georgia, serif" font-size="22" fill="#6a6866">Instruments for reading the geometry of language</text>
@@ -64,5 +64,5 @@
   <text x="82" y="550" font-family="Georgia, serif" font-size="20" fill="#1a1a1a" letter-spacing="1">vector-lab-tools.github.io</text>
 
   <!-- Bottom rule -->
-  <line x1="80" y1="500" x2="260" y2="500" stroke="#b8941e" stroke-width="1" opacity="0.7"/>
+  <line x1="80" y1="500" x2="260" y2="500" stroke="#0a1f44" stroke-width="1" opacity="0.7"/>
 </svg>
