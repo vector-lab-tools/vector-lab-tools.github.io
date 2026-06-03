@@ -5,17 +5,17 @@
 // Light is default; dark is activated by html[data-theme="dark"].
 
 :root {
-  --vl-bg: #fbf9f1;
+  --vl-bg: #ffffff;                          /* clean white, academic */
   --vl-surface: #ffffff;
-  --vl-surface-alt: #f3eee0;
+  --vl-surface-alt: #f5f6f8;                 /* cool grey for code blocks, panels */
   --vl-text: #181818;
-  --vl-muted: #5a584f;
+  --vl-muted: #5a5d68;                       /* cool muted, replaces the warm earth tone */
   --vl-blue: #0a1f44;                        /* Oxford blue, primary brand and links */
   --vl-blue-hover: #2a4a7f;
   --vl-blue-underline: rgba(10, 31, 68, 0.35);
-  --vl-sand: #a8854d;                        /* muted gold, inner-tier scope accent */
+  --vl-sand: #a8854d;                        /* manuscript-gold inner-tier accent */
   --vl-burgundy: #7a2e2e;                    /* outer-tier comparative accent */
-  --vl-rule: #d4cdb8;
+  --vl-rule: #e2e4ea;                        /* cool grey rule */
   --vl-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
