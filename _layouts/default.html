@@ -6,8 +6,9 @@
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ site.description | strip_newlines }}">
 
-  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
-  <link rel="alternate icon" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+  {%- assign asset_v = site.time | date: '%s' -%}
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}?v={{ asset_v }}">
+  <link rel="alternate icon" href="{{ '/assets/images/favicon.svg' | relative_url }}?v={{ asset_v }}">
 
   <meta property="og:title" content="{{ page.title | default: site.title }}">
   <meta property="og:description" content="{{ site.description | strip_newlines }}">
@@ -29,13 +30,13 @@
     })();
   </script>
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ asset_v }}">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="{{ '/' | relative_url }}" aria-label="Vector Lab home">
-        <img src="{{ '/assets/images/logo-mark.svg' | relative_url }}" alt="" class="brand-mark" data-theme-asset>
+        <img src="{{ '/assets/images/logo-mark.svg' | relative_url }}?v={{ asset_v }}" alt="" class="brand-mark" data-theme-asset>
         <span class="brand-block">
           <span class="brand-text">Vector Lab</span>
           <span class="brand-tagline">Vector methods for vector theory</span>
