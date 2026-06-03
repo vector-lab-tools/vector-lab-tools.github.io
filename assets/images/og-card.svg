@@ -2,7 +2,7 @@
   <title>Vector Lab. Vector methods for vector theory.</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#faf8f2"/>
+      <stop offset="0%" stop-color="#fbf9f1"/>
       <stop offset="100%" stop-color="#f2ede0"/>
     </linearGradient>
     <radialGradient id="glow" cx="50%" cy="45%" r="60%">
