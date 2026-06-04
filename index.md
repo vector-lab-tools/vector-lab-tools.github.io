@@ -128,6 +128,7 @@ The tools operationalise claims developed across the vector theory sequence on S
 - Beguš, N. (2025) *Artificial Humanities*. University of Michigan Press.
 - Berry, D. M. (2014) *Critical Theory and the Digital*. Bloomsbury.
 - Berry, D.M. (2025) ‘Synthetic media and computational capitalism: towards a critical theory of artificial intelligence’, *AI & SOCIETY*, 40(7), pp. 5257–5269. Available at: https://doi.org/10.1007/s00146-025-02265-2.
+- Berry, D.M. (2026) ‘Prompt anxiety and the algorithmic politics of uncertainty’, *AI & SOCIETY* [Preprint]. Available at: https://doi.org/10.1007/s00146-026-03093-8.
 - Dobson, J.E. (2022) ‘Vector hermeneutics: On the interpretation of vector space models of text’, *Digital Scholarship in the Humanities*, 37(1), pp. 81–93. Available at: https://doi.org/10.1093/llc/fqab079.
 - Impett, L. and Offert, F. (2026) *Vector Media*. University of Minnesota Press.
 - Kittler, F. (1999) *Gramophone, Film, Typewriter*. Stanford University Press.
