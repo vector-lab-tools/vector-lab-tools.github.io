@@ -20,7 +20,7 @@ Vectorscope opens a single open-weight language model for forensic inspection. I
 
 ## Why Vectorscope
 
-Commercial embedding APIs return sentence-level composites from separately-trained embedding models, the output of a pipeline rather than a window into the model itself. That is fine for some applications and inadequate for critical work on how language models actually organise meaning. Vectorscope privileges open-weight models where every layer can be inspected: weights, attention matrices, hidden states, token embeddings, and the operations that compose them. The tool is designed to make the internal geometry of a model legible, on its own terms, at the resolution the question demands.
+Commercial embedding APIs return sentence-level composites from separately-trained embedding models, the output of a pipeline rather than a window into the model itself. That is fine for some applications and inadequate for critical work on how language models actually organise meaning. Vectorscope privileges open-weight models where every layer can be inspected: weights, attention matrices, hidden states, token embeddings, and the operations that compose them. The tool is designed to make the internal geometry of a model readable, on its own terms, at the resolution the question demands.
 
 ## Operations
 
@@ -32,7 +32,7 @@ Commercial embedding APIs return sentence-level composites from separately-train
 
 ## Theoretical background
 
-Vectorscope is the empirical instrument that follows from the essays [*What Is Vector Space?*](https://stunlaw.blogspot.com/2026/03/what-is-vector-space.html) and [*Vector Theory*](https://stunlaw.blogspot.com/2026/02/vector-theory.html). Where those essays characterise vector space as a new medium constituted by dimensionality, Vectorscope is the instrument that makes that space legible. The signal-degradation laboratory implements the methodological commitment of the Leverhulme Centre for Vector Media bid, treating precision regime as a material parameter that shapes meaning.
+Vectorscope is the empirical instrument that follows from the essays [*What Is Vector Space?*](https://stunlaw.blogspot.com/2026/03/what-is-vector-space.html) and [*Vector Theory*](https://stunlaw.blogspot.com/2026/02/vector-theory.html). Where those essays characterise vector space as a new medium constituted by dimensionality, Vectorscope is the instrument that makes that space readable. The signal-degradation laboratory implements the methodological commitment of the Leverhulme Centre for Vector Media bid, treating precision regime as a material parameter that shapes meaning.
 
 ## Stack
 

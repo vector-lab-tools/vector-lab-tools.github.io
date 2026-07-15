@@ -77,7 +77,7 @@ Diffusion Atlas reads diffusion image models as vector processes, unifying two s
 </div>
 </div>
 
-Vectorscope opens a single open-weight language model for forensic inspection. Where commercial embedding APIs return sentence-level composites from a separately-trained embedding model, Vectorscope works directly with open weights so that activations, attention, and token embeddings are legible at every layer. The signal-degradation capability runs the same inputs across precision regimes (FP32, BF16, INT8, INT4, FP4, INT2) to observe how meaning compresses as the medium is quantised.
+Vectorscope opens a single open-weight language model for forensic inspection. Where commercial embedding APIs return sentence-level composites from a separately-trained embedding model, Vectorscope works directly with open weights so that activations, attention, and token embeddings are readable at every layer. The signal-degradation capability runs the same inputs across precision regimes (FP32, BF16, INT8, INT4, FP4, INT2) to observe how meaning compresses as the medium is quantised.
 
 <p class="tool-meta"><em>Stack:</em> Next.js and FastAPI, with PyTorch and transformers for model loading.</p>
 
