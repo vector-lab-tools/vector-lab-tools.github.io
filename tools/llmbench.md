@@ -35,7 +35,7 @@ Modes are organised across three tiers: Compare, Analyse, and Investigate.
 - **Stochastic.** Repeated generation from the same model to see the distribution of responses.
 - **Temperature.** Generation across temperature settings to see how stochasticity plays at different parameter values.
 - **Divergence.** Cross-model divergence metrics including cosine similarity, Jaccard, word overlap (Dice), and uniqueness.
-- **Probs.** Probability visualisation for models that return logprobs: heatmap, pixel map, and 3D probability net.
+- **Probs.** Probability visualisation for models that return logprobs: heatmap, pixel map, and 3D probability net, with a display toggle between perplexity (effective number of candidates) and Shannon entropy in bits.
 
 **Investigate tier**
 
@@ -62,7 +62,7 @@ Next.js, TypeScript, Three.js. Multi-provider adapters with explicit capability 
 
 ## Status
 
-Mature. Now at v2.2, a milestone bump marking the local-Ollama path: LLMbench runs end-to-end against a local open-weight model from a deployed origin, with full token-level instrumentation. Ollama logprobs are wired through all four logprob endpoints (Compare overlay, Sampling Probe, Grammar Probe Phase B, Probs), so the same per-token reading that worked against hosted models now works against Gemma, Llama, Qwen, Phi, and DeepSeek running locally. The cumulative v2.15.34–v2.15.47 work brought browser-direct generation, structured error rendering, a copyable `OLLAMA_ORIGINS` command in the unreachable-error message, a proper README Ollama setup section, and a Design Rationale paragraph on why the closer the model sits to the researcher the more direct the reading becomes. All five Grammar Probe phases (A through E) and the Sampling Probe Investigate-tier mode are shipped. In active use for teaching and research.
+Mature. Now at v2.2.25. Since the v2.2 milestone marking the local-Ollama path, the main additions have been methodological. Per-token uncertainty can be read as perplexity (default) or Shannon entropy in bits, and the unseen long tail of the top-K distribution is folded in as a residual bucket so the reported perplexity is an explicit lower bound on the full-vocabulary value (v2.2.8–v2.2.11). Ollama logprobs remain wired through all four logprob endpoints (Compare overlay, Sampling Probe, Grammar Probe Phase B, Probs), so the same per-token reading works against Gemma, Llama, Qwen, Phi, and DeepSeek running locally. Recent v2.2.x work also brought a sticky prompt bar reachable from any view, a Vector Lab branding refresh, `gemini-2.0-flash` as the default Google model, and logprob fixes for Hugging Face and OpenAI-compatible providers. All five Grammar Probe phases (A through E) and the Sampling Probe Investigate-tier mode are shipped. In active use for teaching and research.
 
 ## Siblings
 
