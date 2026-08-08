@@ -24,14 +24,15 @@ Without vector theory, a cosine similarity of 0.95 between "fair" and "not fair"
 
 ## Operations
 
-The tool packages sixteen operations for the critical testing of vector-theoretic claims:
+The tool packages seventeen operations for the critical testing of vector-theoretic claims, with Calibration establishing the scale against which the others are read:
 
+- **Calibration.** Per-model, per-register measurement of the manifold's usable scale. Reports the floor (mean pairwise cosine over unrelated texts, measured separately for bare terms, short declaratives, and prose), the topical ceiling, the cone half-angle, dispersion and percentiles, and the norm behaviour. Every downstream operation declares the register it works in and is read against the appropriate floor; the full calibration record sits in each operation's Deep Dive.
 - **Concept Distance.** Cosine similarity for two terms across enabled models, with angular separation, euclidean distance, vector norms, and top contributing dimensions.
 - **Neighbourhood Map.** The local structure of the manifold around a concept, rendered as an interactive 3D scatter plot with cluster detection, connection mesh, and cross-domain analysis.
 - **Negation Gauge.** A statement and its auto-generated negation, measured for similarity. How much space the manifold actually gives to negation.
 - **Negation Battery.** Automatic runs of 10-40 negation tests, with report card, collapse rate, and CSV export.
 - **Semantic Sectioning.** Interpolation between two anchor concepts to reveal what lies between them.
-- **Concept Drift.** How context warps the manifold's positioning of a concept, visualised as a drift cloud.
+- **Vector Drift.** How context warps the manifold's positioning of a concept, visualised as a drift cloud.
 - **Hegemony Compass.** A contested concept placed between two competing ideological clusters; which side does the manifold pull it toward?
 - **Real Abstraction Test.** Contrasts a concrete use-value description with its abstract exchange-value equivalent, after Sohn-Rethel.
 - **Silence Detector.** Local density across domains. Dense regions are low-resolution (diverse realities compressed); sparse regions are high-resolution (fine-grained distinctions preserved).
@@ -39,8 +40,9 @@ The tool packages sixteen operations for the critical testing of vector-theoreti
 - **Agonism Test.** Pre-loaded philosophical debates. Does the manifold preserve genuine opposition, or collapse it into proximity?
 - **Vector Logic.** A − B + C = ?, the narrowest test of vector logic. Applied to modern embedding models with critical intent.
 - **Vector Walk.** A particle walking through the manifold from one concept to another, built with Three.js.
+- **Persistent Homology.** Topological features of the manifold above cosine geometry: connected components, loops, and voids across scales, with the persistence of each feature reported as evidence for genuine structural presence rather than sampling artefact.
 - **Text Vectorisation.** Embedding and inspection of arbitrary text.
-- **Grammar of Vectors.** A critique-tier operation that maps discursive quirks of LLM prose onto cosine geometry. Ships with two antithesis patterns ('Not X but Y' and 'Not just X but Y') across four register batteries (Marketing, AI pedagogical, Political op-ed, Technology discourse), ninety-six curated constructions in total. Cosines are reported with observation-only labels rather than interpretive verdicts: the tool surfaces the geometric relationship for the reader to interpret, leaving the call about whether a given construction performs genuine opposition or a near-neighbour rotation to the analyst.
+- **Grammar of Vectors.** A critique-tier operation that maps discursive quirks of LLM prose onto cosine geometry. Ships with five antithesis grammars (Not X but Y, Not just X but Y, It's not X it's Y, While X, Y, and What matters is not X but Y) across four register batteries (Marketing, AI pedagogical, Political op-ed, Technology discourse), around 240 curated constructions in total. The gap between rhetorical opposition and geometric reality, what the tool calls *synthetic dialectic*, is the empirical object. Cosines are reported with observation-only labels rather than interpretive verdicts.
 
 Each operation makes a theoretical claim empirically testable against the geometry a given model has learned.
 
@@ -64,7 +66,7 @@ Representative items in the library:
 
 Tests bundle operations into named sequences, runnable in one click and exportable as a single composite dataset. Eight tests ship with the current version:
 
-- **Grammar of Vectors Sweep** (research). Both launch grammars ('Not X but Y' and 'Not just X but Y') across all four register batteries, around a hundred pairs per model per run. Empirical backbone for the Grammar of Vectors argument on synthetic dialectic in LLM prose.
+- **Grammar of Vectors Sweep** (research). All five antithesis grammars across all four register batteries in eleven steps, around 280 embeddings per model per run. Empirical backbone for the Grammar of Vectors argument on synthetic dialectic in LLM prose.
 - **Hegemonic Defaults Sweep** (research). Three Hegemony Compass probes plus a Distance Matrix over eighteen political concepts. Tests which ideological framings the manifold has naturalised as defaults.
 - **'Fake' News Test** (research). All four pre-built batteries plus the eight-pair Agonism Test, ninety-six claim-and-counter-claim tests per model. Exposes the structural condition behind the fake-news problem, a medium whose geometry cannot sustain truth-and-falsehood.
 - **Political Contestation Test** (research). Ten steps mixing Concept Distance, Semantic Sectioning, and Negation Gauge across politically contested pairs.
@@ -84,7 +86,9 @@ Operations export to CSV, JSON, PDF, or PNG depending on the visualisation. Expo
 
 ## Theoretical background
 
-Manifold Atlas follows from [*The Vector Medium*](https://stunlaw.blogspot.com/2026/03/the-vector-medium.html) and [*What Is the Manifold?*](https://stunlaw.blogspot.com/). The tool names operations after vector-theoretic concepts (negation gauge, hegemony compass, real abstraction test) rather than statistical generics, so the connection between theory and instrument is explicit.
+Manifold Atlas operationalises Berry's [*Vector Theory*](https://doi.org/10.1007/s13347-026-01162-w) (*Philosophy & Technology*, 2026), together with the Stunlaw essays [*The Vector Medium*](https://stunlaw.blogspot.com/2026/03/the-vector-medium.html) and [*What Is the Manifold?*](https://stunlaw.blogspot.com/). The tool names operations after vector-theoretic concepts (negation gauge, hegemony compass, real abstraction test) rather than statistical generics, so the connection between theory and instrument is explicit.
+
+**Verdict vocabulary.** Since v1.17.0, every operation reports its finding on a single five-phrase scale, "Almost the same, Barely different, Somewhat different, Clearly different, Far apart", read against the register's calibrated floor and ceiling. Earlier per-operation vocabularies had drifted toward interpretive verdicts ("Fully abstracted: the manifold has completed the real abstraction") that handed down the theoretical conclusion as though it were the measurement. The tool now reports distance; the theoretical reading belongs in the interpretation.
 
 ## Stack
 
@@ -92,7 +96,13 @@ Next.js 16, React 19, TypeScript 5, Tailwind, Three.js. Talks to the major embed
 
 ## Status
 
-The most mature instrument in the Vector Lab. Currently at v1.8.0, with sixteen operations live and a deep-dive panel on every visualisation-heavy operation. The recent line of work runs: browser-direct Ollama so the deployed Atlas can reach a local Ollama instance for real (v1.6.0, with origin-aware setup help and Gemma models added in v1.5.3 and structured CORS error handling in v1.6.1–v1.6.2); a Negation Gauge "Not A" override (v1.6.3); a Neighbourhood Map fix that suppresses misleading single-group cross-domain bridges (v1.6.4); and a methodological shift on the critique-tier operations to observation-only labels rather than interpretive verdicts, with the Agonism Test expanded to forty-eight pairs across eight themes (v1.6.5–v1.6.8). v1.7.0 removed the LLMbench Grammar Probe Bundle handover (the two tools operate on different manifolds, so the round-trip claim was misleading); v1.8.0 is the release marker on top of that decision. Earlier recent work also includes the Grammar of Vectors operation, Deep Dive Phase 5 enrichment (v1.4.0–v1.4.2), a sticky bottom status bar, and Getting Started help. In active use for research and teaching.
+The most mature instrument in the Vector Lab. Currently at v1.17.2, with seventeen operations live and a deep-dive panel on every visualisation-heavy operation. Two lines of work have dominated since v1.8:
+
+**Calibration (v1.9.0–v1.14.2).** Every operation is now read against a measured scale rather than against the raw cosine axis. Calibration reports the floor per register (bare terms, short declaratives, prose), the topical ceiling, the cone half-angle, dispersion and percentiles, dimension statistics against a sample ceiling, and norm behaviour. Live calibration reporting, a model radius, a foldable scale, cache provenance and verification, and the bridge rendered as a dimension line arrived across this series. The full calibration record sits in each operation's Deep Dive.
+
+**One verdict vocabulary (v1.15.0–v1.17.2).** Every operation now reports its finding on a single five-phrase scale, "Almost the same, Barely different, Somewhat different, Clearly different, Far apart", read against the register's calibrated floor and ceiling. Earlier per-operation vocabularies had drifted toward interpretive verdicts that handed down the theoretical conclusion as though it were the measurement. Negation verdicts now describe distance, not recognition; Real Abstraction no longer declares that abstraction has been completed. v1.17.2 also drops the pre-print Stunlaw citation for Vector Theory in favour of the published version in *Philosophy & Technology*.
+
+Other recent additions include Persistent Homology as an operation on the manifold's topology above cosine geometry; the Grammar of Vectors expansion from two grammars to five (with the *synthetic dialectic* concept now named in the tool); the canonical Vector Lab branding (navy V mark, v1.8.1); and a Runner Library of seven built-in protocols spanning Demo, Critique, and Research categories. In active use for research and teaching.
 
 ## Siblings
 

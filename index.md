@@ -117,7 +117,7 @@ The tools operationalise claims developed across the vector theory sequence on S
 ### The vector theory sequence (Stunlaw)
 
 - [*The Vector Medium*](https://stunlaw.blogspot.com/2026/03/the-vector-medium.html), names the vector regime as a periodising category for contemporary media.
-- [*Vector Theory*](https://stunlaw.blogspot.com/2026/02/vector-theory.html?m=1) - gives the theoretisation of the move from digital to vectors. 
+- Berry, D. M. (2026) '[Vector Theory](https://doi.org/10.1007/s13347-026-01162-w)', *Philosophy & Technology*. The theoretisation of the move from digital to vectors, open access.
 - [*Generation Vector*](https://stunlaw.blogspot.com/2026/02/generation-vector.html), examines the implications for a generation that is surrounded by AI.
 - [*What Is Vector Space?*](https://stunlaw.blogspot.com/2026/03/what-is-vector-space.html), characterises vector space as a new medium constituted by dimensionality. Vectorscope is the empirical instrument that follows.
 - *What Is the Manifold?* Coming soon, develops the manifold as the medium through which large language models render meaning readable. Manifold Atlas and Manifoldscope follow.

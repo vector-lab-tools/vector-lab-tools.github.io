@@ -52,7 +52,7 @@ The instrument is sampling-aware throughout; the sample is part of the manifold.
 
 ## Theoretical background
 
-Manifoldscope continues lines developed in [*What Is Vector Space?*](https://stunlaw.blogspot.com/2026/03/what-is-vector-space.html), [*Vector Theory*](https://stunlaw.blogspot.com/2026/02/vector-theory.html), and the *AI Critical Theory* book in progress. The manifold as medium shaped by capital, the geometry as ideology topologically encoded, the real abstraction performed at the level of meaning, the negation deficit, the taxonomy of silence: Manifoldscope is the empirical arm that takes those claims from illustration to sustained systematic investigation.
+Manifoldscope continues lines developed in Berry's [*Vector Theory*](https://doi.org/10.1007/s13347-026-01162-w) (*Philosophy & Technology*, 2026), the Stunlaw essay [*What Is Vector Space?*](https://stunlaw.blogspot.com/2026/03/what-is-vector-space.html), and the *AI Critical Theory* book in progress. The manifold as medium shaped by capital, the geometry as ideology topologically encoded, the real abstraction performed at the level of meaning, the negation deficit, the taxonomy of silence: Manifoldscope is the empirical arm that takes those claims from illustration to sustained systematic investigation.
 
 ## Stack
 

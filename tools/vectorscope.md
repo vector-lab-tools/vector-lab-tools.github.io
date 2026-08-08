@@ -32,7 +32,7 @@ Commercial embedding APIs return sentence-level composites from separately-train
 
 ## Theoretical background
 
-Vectorscope is the empirical instrument that follows from the essays [*What Is Vector Space?*](https://stunlaw.blogspot.com/2026/03/what-is-vector-space.html) and [*Vector Theory*](https://stunlaw.blogspot.com/2026/02/vector-theory.html). Where those essays characterise vector space as a new medium constituted by dimensionality, Vectorscope is the instrument that makes that space readable. The signal-degradation laboratory implements the methodological commitment of the Leverhulme Centre for Vector Media bid, treating precision regime as a material parameter that shapes meaning.
+Vectorscope is the empirical instrument that follows from Berry's [*Vector Theory*](https://doi.org/10.1007/s13347-026-01162-w) (*Philosophy & Technology*, 2026) and the Stunlaw essay [*What Is Vector Space?*](https://stunlaw.blogspot.com/2026/03/what-is-vector-space.html). Where those texts characterise vector space as a new medium constituted by dimensionality, Vectorscope is the instrument that makes that space readable. The signal-degradation laboratory implements the methodological commitment of the Leverhulme Centre for Vector Media bid, treating precision regime as a material parameter that shapes meaning.
 
 ## Stack
 
