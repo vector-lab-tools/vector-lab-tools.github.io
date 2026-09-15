@@ -178,4 +178,10 @@ Wider background in media theory, critical theory of technology, and the pre-his
 
 Each repository contains full documentation, dependencies, and setup instructions. Tools are research instruments and are offered as-is under permissive licences. If Vector Lab tools support published research, please cite the specific tool and version, and cite the relevant theoretical essays where the claims being tested are developed.
 
+## References
+
+- Berry, D. M. (2026) '[Vector Theory](https://doi.org/10.1007/s13347-026-01162-w)', *Philosophy & Technology*. Available at: <https://doi.org/10.1007/s13347-026-01162-w>.
+- Haugeland, J. (ed.) (1981) *Mind Design: Philosophy, Psychology, Artificial Intelligence*. Cambridge, MA: The MIT Press.
+- Newell, A. and Simon, H. A. (1987) 'Computer Science as Empirical Inquiry: Symbols and Search', in Haugeland, J. (ed.) *Mind Design: Philosophy, Psychology, Artificial Intelligence*. Cambridge, MA: The MIT Press, pp. 35–66. Originally the tenth Turing Award Lecture, *Communications of the ACM* 19(3), March 1976, pp. 113–126.
+
 {% include mermaid.html %}
