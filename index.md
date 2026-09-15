@@ -9,7 +9,7 @@ title: Vector Lab
 </blockquote>
 
 <blockquote class="epigraph">
-<p>The most difficult aspect of understanding vector theory, and in many ways the most important, concerns what we might call the sub-symbolic layer, the vast architecture of weights that constitutes the actual computational medium of contemporary AI systems. This is not an entirely new problem and Paul Smolensky identified what he called the &ldquo;subsymbolic&rdquo; paradigm in 1988, arguing that connectionist systems operate at a level of description that sits below the symbolic. That is, that the patterns of activation across neural networks do not map neatly onto the concepts, rules, and categories of symbolic representation.</p>
+<p>The most difficult aspect of understanding vector theory, and in many ways the most important, concerns what we might call the sub-symbolic layer, the vast architecture of weights that constitutes the actual computational medium of contemporary AI systems. This is not an entirely new problem and Paul Smolensky identified what he called the &ldquo;subsymbolic&rdquo; paradigm in 1988, arguing that connectionist systems operate at a level of description that sits below the symbolic.</p>
 <cite>David M. Berry (2026)</cite>
 </blockquote>
 
