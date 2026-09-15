@@ -4,6 +4,11 @@ title: Vector Lab
 ---
 
 <blockquote class="epigraph">
+<p>To start with, let us make no assumptions at all about the nature of the Box and its contents, which might be something, say, that has just fallen from a Flying Saucer. We assume, though, that the experimenter has certain given resources for acting on it (e.g. prodding it, shining a light on it) and certain given resources for observing its behaviour (e.g. photographing it, recording its temperature)&hellip; We now see the experimenter much like the engineer in a ship, who sits before a set of levers and telegraphs by which he may act on the engines, and who can observe the results on a row of dials. The representation, though it may seem unnatural, is in fact, of course, capable of representing the great majority of natural systems, even if biological or economic.</p>
+<cite>W. Ross Ashby (1956)</cite>
+</blockquote>
+
+<blockquote class="epigraph">
 <p>Neither machines nor programs are black boxes; they are artifacts that have been designed, both hardware and software, and we can open them up and look inside. We can relate their structure to their behavior and draw many lessons.</p>
 <cite>Allen Newell and Herbert A. Simon (1987: 36)</cite>
 </blockquote>
@@ -183,6 +188,7 @@ Each repository contains full documentation, dependencies, and setup instruction
 
 ## References
 
+- Ashby, W. R. (1956) *An Introduction to Cybernetics*. London: Chapman & Hall.
 - Berry, D. M. (2026) '[Vector Theory](https://doi.org/10.1007/s13347-026-01162-w)', *Philosophy & Technology*. Available at: <https://doi.org/10.1007/s13347-026-01162-w>.
 - Haugeland, J. (ed.) (1981) *Mind Design: Philosophy, Psychology, Artificial Intelligence*. Cambridge, MA: The MIT Press.
 - Newell, A. and Simon, H. A. (1987) 'Computer Science as Empirical Inquiry: Symbols and Search', in Haugeland, J. (ed.) *Mind Design: Philosophy, Psychology, Artificial Intelligence*. Cambridge, MA: The MIT Press, pp. 35–66. Originally the tenth Turing Award Lecture, *Communications of the ACM* 19(3), March 1976, pp. 113–126.
