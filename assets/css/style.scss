@@ -224,6 +224,26 @@ blockquote {
   font-style: italic;
 }
 
+.epigraph {
+  max-width: 44rem;
+  margin: 0 auto 2.5rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  border-left: 3px solid var(--vl-blue);
+  color: var(--vl-muted);
+  font-style: italic;
+  font-size: 1.02rem;
+  line-height: 1.55;
+
+  p { margin: 0 0 0.65em; }
+
+  cite {
+    display: block;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: var(--vl-muted);
+  }
+}
+
 code, pre {
   font-family: "SF Mono", "Menlo", "Consolas", monospace;
   background: var(--vl-surface-alt);

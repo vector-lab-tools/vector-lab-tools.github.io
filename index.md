@@ -3,6 +3,11 @@ layout: default
 title: Vector Lab
 ---
 
+<blockquote class="epigraph">
+<p>Neither machines nor programs are black boxes; they are artifacts that have been designed, both hardware and software, and we can open them up and look inside. We can relate their structure to their behavior and draw many lessons.</p>
+<cite>Allen Newell and Herbert A. Simon (1987: 36)</cite>
+</blockquote>
+
 <section class="lede">
 
 Large language models, the neural networks behind contemporary AI systems such as ChatGPT, Gemini, and Claude, reorganise meaning as geometry. Every token, every concept, every sentence is assigned a position in a high-dimensional vector space whose axes are no-one's axes and whose distances no-one chose. What any given model can say about democracy, about poltics, the economy, society, or everyday life is filtered through this vector space. Questions even about contested ideas of intelligence are constrained by the geometry that model has learned. And that geometry carries the sedimented assumptions of the corpus, the labour regime, and the economic pressures that produced it.
