@@ -4,7 +4,7 @@ title: Vector Lab
 ---
 
 <blockquote class="epigraph">
-<p>To start with, let us make no assumptions at all about the nature of the Box and its contents, which might be something, say, that has just fallen from a Flying Saucer. We assume, though, that the experimenter has certain given resources for acting on it (e.g. prodding it, shining a light on it) and certain given resources for observing its behaviour (e.g. photographing it, recording its temperature)&hellip; We now see the experimenter much like the engineer in a ship, who sits before a set of levers and telegraphs by which he may act on the engines, and who can observe the results on a row of dials. The representation, though it may seem unnatural, is in fact, of course, capable of representing the great majority of natural systems, even if biological or economic.</p>
+<p>To start with, let us make no assumptions at all about the nature of the [Black] Box and its contents, which might be something, say, that has just fallen from a Flying Saucer. We assume, though, that the experimenter has certain given resources for acting on it (e.g. prodding it, shining a light on it) and certain given resources for observing its behaviour (e.g. photographing it, recording its temperature)&hellip; We now see the experimenter much like the engineer in a ship, who sits before a set of levers and telegraphs by which he may act on the engines, and who can observe the results on a row of dials. The representation, though it may seem unnatural, is in fact, of course, capable of representing the great majority of natural systems, even if biological or economic.</p>
 <cite>W. Ross Ashby (1956)</cite>
 </blockquote>
 
