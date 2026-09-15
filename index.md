@@ -14,8 +14,8 @@ title: Vector Lab
 </blockquote>
 
 <blockquote class="epigraph">
-<p>The most difficult aspect of understanding vector theory, and in many ways the most important, concerns what we might call the sub-symbolic layer, the vast architecture of weights that constitutes the actual computational medium of contemporary AI systems. This is not an entirely new problem and Paul Smolensky identified what he called the &ldquo;subsymbolic&rdquo; paradigm in 1988, arguing that connectionist systems operate at a level of description that sits below the symbolic.</p>
-<cite>David M. Berry (2026)</cite>
+<p>Whilst voltage is the physical materiality of the digital configuration, vector space is a form of mathematical materiality, a materiality of relation rather than substance which creates the conditions of possibility for new forms of computation I call vector theory.</p>
+<cite>David M. Berry (2026: 2)</cite>
 </blockquote>
 
 <section class="lede">
