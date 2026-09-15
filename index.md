@@ -8,6 +8,11 @@ title: Vector Lab
 <cite>Allen Newell and Herbert A. Simon (1987: 36)</cite>
 </blockquote>
 
+<blockquote class="epigraph">
+<p>The most difficult aspect of understanding vector theory, and in many ways the most important, concerns what we might call the sub-symbolic layer, the vast architecture of weights that constitutes the actual computational medium of contemporary AI systems. This is not an entirely new problem and Paul Smolensky identified what he called the &ldquo;subsymbolic&rdquo; paradigm in 1988, arguing that connectionist systems operate at a level of description that sits below the symbolic. That is, that the patterns of activation across neural networks do not map neatly onto the concepts, rules, and categories of symbolic representation.</p>
+<cite>David M. Berry (2026)</cite>
+</blockquote>
+
 <section class="lede">
 
 Large language models, the neural networks behind contemporary AI systems such as ChatGPT, Gemini, and Claude, reorganise meaning as geometry. Every token, every concept, every sentence is assigned a position in a high-dimensional vector space whose axes are no-one's axes and whose distances no-one chose. What any given model can say about democracy, about poltics, the economy, society, or everyday life is filtered through this vector space. Questions even about contested ideas of intelligence are constrained by the geometry that model has learned. And that geometry carries the sedimented assumptions of the corpus, the labour regime, and the economic pressures that produced it.
