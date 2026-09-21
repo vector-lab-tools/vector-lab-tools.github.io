@@ -3,25 +3,10 @@ layout: default
 title: Vector Lab
 ---
 
-<div class="epigraph-carousel" data-interval="10000" aria-label="Epigraphs">
-  <blockquote class="epigraph is-active" aria-hidden="false">
-    <p>To start with, let us make no assumptions at all about the nature of the [Black] Box and its contents, which might be something, say, that has just fallen from a Flying Saucer. We assume, though, that the experimenter has certain given resources for acting on it (e.g. prodding it, shining a light on it) and certain given resources for observing its behaviour (e.g. photographing it, recording its temperature)&hellip; We now see the experimenter much like the engineer in a ship, who sits before a set of levers and telegraphs by which he may act on the engines, and who can observe the results on a row of dials. The representation, though it may seem unnatural, is in fact, of course, capable of representing the great majority of natural systems, even if biological or economic.</p>
-    <cite>W. Ross Ashby (1956)</cite>
-  </blockquote>
-  <blockquote class="epigraph" aria-hidden="true">
-    <p>Neither machines nor programs are black boxes; they are artifacts that have been designed, both hardware and software, and we can open them up and look inside. We can relate their structure to their behavior and draw many lessons.</p>
-    <cite>Allen Newell and Herbert A. Simon (1987: 36)</cite>
-  </blockquote>
-  <blockquote class="epigraph" aria-hidden="true">
-    <p>Whilst voltage is the physical materiality of the digital configuration, vector space is a form of mathematical materiality, a materiality of relation rather than substance which creates the conditions of possibility for new forms of computation I call vector theory.</p>
-    <cite>David M. Berry (2026: 2)</cite>
-  </blockquote>
-  <div class="epigraph-dots" role="tablist" aria-label="Choose epigraph">
-    <button type="button" class="epigraph-dot is-active" data-index="0" aria-label="Ashby (1956)" aria-current="true"></button>
-    <button type="button" class="epigraph-dot" data-index="1" aria-label="Newell and Simon (1987)" aria-current="false"></button>
-    <button type="button" class="epigraph-dot" data-index="2" aria-label="Berry (2026)" aria-current="false"></button>
-  </div>
-</div>
+<blockquote class="epigraph">
+<p>To start with, let us make no assumptions at all about the nature of the [Black] Box and its contents, which might be something, say, that has just fallen from a Flying Saucer. We assume, though, that the experimenter has certain given resources for acting on it (e.g. prodding it, shining a light on it) and certain given resources for observing its behaviour (e.g. photographing it, recording its temperature)&hellip; We now see the experimenter much like the engineer in a ship, who sits before a set of levers and telegraphs by which he may act on the engines, and who can observe the results on a row of dials. The representation, though it may seem unnatural, is in fact, of course, capable of representing the great majority of natural systems, even if biological or economic.</p>
+<cite>W. Ross Ashby (1956)</cite>
+</blockquote>
 
 <section class="lede" markdown="1">
 
@@ -112,6 +97,11 @@ graph TB
 
 </div>
 
+<blockquote class="epigraph">
+<p>Neither machines nor programs are black boxes; they are artifacts that have been designed, both hardware and software, and we can open them up and look inside. We can relate their structure to their behavior and draw many lessons.</p>
+<cite>Allen Newell and Herbert A. Simon (1987: 36)</cite>
+</blockquote>
+
 ## Theoretical Background
 
 The vector lab tools are designed to open the "vector box" of artificial intelligence. The key argument is that there is a shift from the digital to the vector. Our tools and approaches have to correspondingly shift also. Commercial embedding APIs return sentence-level composites from separately-trained embedding models, the output of a pipeline rather than a window into the representations themselves. This is fine for some tasks. It is inadequate for critical work. If we want to know what the geometry of a particular model has sedimented, we have to work with open-weight models where the weights, activations, and token embeddings can be read at every layer. Vector Lab tools therefore privilege open-weight models wherever the question requires internal access, and treat commercial outputs as a separate object, the retrieval surface, with its own interest.
@@ -127,6 +117,11 @@ The instruments work at two scales and across two modalities. The single-model s
 The modality split is doing work too. Language models and diffusion models share the underlying vector regime, but their geometries are not interchangeable. The manifold framing migrates more cleanly to diffusion than it does to autoregressive text, and that asymmetry is itself an argument the lab is set up to develop. Theoretical corpora sit alongside the model registers as a third object whose geometry can be read with comparable methods, opening reflexive comparisons between the eigendirections of a body of theory and the model trained on it.
 
 Generated prose is the hermeneutic surface that sits above the geometric work. It is the level at which models are usually encountered, and it is often the presentation layer for findings that begin lower down: a claim tested geometrically can be illustrated, read closely, and compared across models in prose form.
+
+<blockquote class="epigraph">
+<p>Whilst voltage is the physical materiality of the digital configuration, vector space is a form of mathematical materiality, a materiality of relation rather than substance which creates the conditions of possibility for new forms of computation I call vector theory.</p>
+<cite>David M. Berry (2026: 2)</cite>
+</blockquote>
 
 ## Further reading
 
@@ -199,61 +194,3 @@ Each repository contains full documentation, dependencies, and setup instruction
 - Newell, A. and Simon, H. A. (1987) 'Computer Science as Empirical Inquiry: Symbols and Search', in Haugeland, J. (ed.) *Mind Design: Philosophy, Psychology, Artificial Intelligence*. Cambridge, MA: The MIT Press, pp. 35–66. Originally the tenth Turing Award Lecture, *Communications of the ACM* 19(3), March 1976, pp. 113–126.
 
 {% include mermaid.html %}
-
-<script>
-  (function () {
-    var carousel = document.querySelector('.epigraph-carousel');
-    if (!carousel) return;
-    var items = Array.prototype.slice.call(carousel.querySelectorAll('.epigraph'));
-    var dots  = Array.prototype.slice.call(carousel.querySelectorAll('.epigraph-dot'));
-    if (items.length < 2) return;
-
-    var i = 0;
-    var interval = parseInt(carousel.getAttribute('data-interval'), 10) || 10000;
-    var timer = null;
-    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    function measureAndSize() {
-      var active = items[i];
-      if (!active) return;
-      carousel.style.minHeight = active.scrollHeight + 'px';
-    }
-
-    function show(n) {
-      i = ((n % items.length) + items.length) % items.length;
-      items.forEach(function (el, idx) {
-        var on = idx === i;
-        el.classList.toggle('is-active', on);
-        el.setAttribute('aria-hidden', on ? 'false' : 'true');
-      });
-      dots.forEach(function (el, idx) {
-        var on = idx === i;
-        el.classList.toggle('is-active', on);
-        el.setAttribute('aria-current', on ? 'true' : 'false');
-      });
-      measureAndSize();
-    }
-
-    function next() { show(i + 1); }
-    function start() { if (reduceMotion) return; stop(); timer = setInterval(next, interval); }
-    function stop()  { if (timer) { clearInterval(timer); timer = null; } }
-
-    dots.forEach(function (dot) {
-      dot.addEventListener('click', function () {
-        show(parseInt(dot.getAttribute('data-index'), 10) || 0);
-        stop();
-      });
-    });
-
-    carousel.addEventListener('mouseenter', stop);
-    carousel.addEventListener('mouseleave', start);
-    carousel.addEventListener('focusin', stop);
-    carousel.addEventListener('focusout', start);
-
-    window.addEventListener('resize', measureAndSize);
-    window.addEventListener('load', measureAndSize);
-
-    measureAndSize();
-    start();
-  })();
-</script>
