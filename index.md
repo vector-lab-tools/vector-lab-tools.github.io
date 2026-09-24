@@ -97,12 +97,12 @@ graph TB
 
 </div>
 
+## Theoretical Background
+
 <blockquote class="epigraph">
 <p>Neither machines nor programs are black boxes; they are artifacts that have been designed, both hardware and software, and we can open them up and look inside. We can relate their structure to their behavior and draw many lessons.</p>
 <cite>Allen Newell and Herbert A. Simon (1987: 36)</cite>
 </blockquote>
-
-## Theoretical Background
 
 The vector lab tools are designed to open the "vector box" of artificial intelligence. The key argument is that there is a shift from the digital to the vector. Our tools and approaches have to correspondingly shift also. Commercial embedding APIs return sentence-level composites from separately-trained embedding models, the output of a pipeline rather than a window into the representations themselves. This is fine for some tasks. It is inadequate for critical work. If we want to know what the geometry of a particular model has sedimented, we have to work with open-weight models where the weights, activations, and token embeddings can be read at every layer. Vector Lab tools therefore privilege open-weight models wherever the question requires internal access, and treat commercial outputs as a separate object, the retrieval surface, with its own interest.
 
@@ -118,12 +118,12 @@ The modality split is doing work too. Language models and diffusion models share
 
 Generated prose is the hermeneutic surface that sits above the geometric work. It is the level at which models are usually encountered, and it is often the presentation layer for findings that begin lower down: a claim tested geometrically can be illustrated, read closely, and compared across models in prose form.
 
+## Further reading
+
 <blockquote class="epigraph">
 <p>Whilst voltage is the physical materiality of the digital configuration, vector space is a form of mathematical materiality, a materiality of relation rather than substance which creates the conditions of possibility for new forms of computation I call vector theory.</p>
 <cite>David M. Berry (2026: 2)</cite>
 </blockquote>
-
-## Further reading
 
 The tools operationalise claims developed across the vector theory sequence on Stunlaw and in the wider research programme. The essays are the conceptual statements; the tools are the empirical instruments that test, extend, and sometimes contradict them.
 
