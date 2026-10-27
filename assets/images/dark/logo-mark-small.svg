@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <title>Vector Lab mark (small)</title>
-  <polygon fill="#8a90ff" points="12,18 88,18 50,86"/>
+  <polygon points="6.03,14.50 93.97,14.50 86.03,21.50 13.97,21.50" fill="#8a90ff"/>
+  <polygon points="93.97,14.50 50.00,93.17 48.05,82.32 83.99,18.01" fill="#a68aff"/>
+  <polygon points="50.00,93.17 6.03,14.50 16.01,18.01 51.95,82.32" fill="#80b0ff"/>
 </svg>

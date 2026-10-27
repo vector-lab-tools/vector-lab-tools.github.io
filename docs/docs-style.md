@@ -70,12 +70,16 @@ Wrap width about 1060px.
 
 Each tool keeps its own wordmark and glyph; that is its identity. Parent references are plain text links to the hub. The hub is the one surface that carries the family mark, so tool pages do not inline the parent glyph.
 
-If an app bundles a copy of the Vector Lab mark (for a "Part of Vector Lab" badge in the app chrome, say), use the right variant for the display size:
+If an app bundles a copy of the Vector Lab mark (for a "Part of Vector Lab" badge in the app chrome, say), use the files on the hub:
 
-- **42 px and above (header, hero, modal):** the four-path wireframe tetrahedron. `assets/images/logo-mark.svg` on the hub (stroke 2.6, theme-aware via inline style).
-- **Below ~40 px (status bar, inline badge, favicon):** the filled silhouette. `assets/images/logo-mark-small.svg` on the hub. The interior edges of the wireframe collapse into a smudge under 32 px.
+- `assets/images/logo-mark.svg` for the light-theme asset.
+- `assets/images/dark/logo-mark.svg` for the dark-theme asset.
+- `assets/images/logo-mark-small.svg` and `assets/images/dark/logo-mark-small.svg` for small sizes. Geometry is identical to the main mark; the small variant exists only so tools wanting a dedicated small-size file have one to reference. The mark is three polygon beams, not strokes, so it holds its sharpness at any size.
+- `assets/images/favicon.svg` for the browser favicon, theme-aware via a `@media (prefers-color-scheme: dark)` block.
 
-Both variants carry `viewBox 0 0 100 100` so dimensions behave the same across sizes.
+The mark is an inverted triangle built from three overlapping beams in three slightly different blues (electric #1a1aff, purple-blue #4a2aff, cyan-blue #1a6aff; the dark palette shifts each one lighter). The outer corners mitre into sharp triangle points; the inner edges extend past each mitred corner into the next beam's area, recursing around the triangle. The viewBox is `0 0 100 100` for every variant.
+
+**Caveat for apps with a manual light/dark toggle.** An `<img>`-loaded SVG resolves `prefers-color-scheme` against the operating system, not the embedding document, so the theme-aware inline-style favicon only tracks an app's theme if that app follows the OS preference. An app with a manual toggle should use the dark-asset swap pattern instead: ship both `logo-mark.svg` and the `dark/logo-mark.svg` sibling and swap the `src` attribute when the user toggles. The hub carries both for this reason.
 
 CTA buttons are pills: the primary one is filled with the accent (`Open the app`), the rest outlined.
 
