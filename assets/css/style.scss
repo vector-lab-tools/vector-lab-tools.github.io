@@ -34,19 +34,22 @@ html[data-theme="dark"] {
   --vl-card-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
 }
 
-$wrap: 960px;
-$serif: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
-$display: "Optima", "Futura", "Iowan Old Style", Georgia, serif;
+$wrap: 1080px;
+$serif: "Source Serif 4", Georgia, "Iowan Old Style", serif;
+$display: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+$mono: "IBM Plex Mono", "SF Mono", Menlo, Consolas, monospace;
 
 * { box-sizing: border-box; }
 
 html, body { margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 body {
   background: var(--vl-bg);
   color: var(--vl-text);
   font-family: $serif;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -62,9 +65,14 @@ body {
 // Header
 
 .site-header {
-  background: var(--vl-bg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--vl-bg) 82%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--vl-rule);
-  padding: 1rem 0;
+  padding: 0.65rem 0;
 
   .wrap {
     display: flex;
@@ -98,20 +106,21 @@ body {
 
   .brand-text {
     font-family: $display;
-    font-size: 1.4rem;
-    font-weight: 500;
-    letter-spacing: 0.12em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--vl-text);
   }
 
   .brand-tagline {
-    font-family: $serif;
-    font-style: italic;
-    font-size: 0.78rem;
+    font-family: $mono;
+    font-style: normal;
+    font-size: 0.7rem;
     color: var(--vl-muted);
-    margin-top: 0.2rem;
-    letter-spacing: 0.01em;
+    margin-top: 0.25rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
   }
 
   &:hover .brand-text { color: var(--vl-blue); }
@@ -125,8 +134,8 @@ body {
   a {
     color: var(--vl-muted);
     text-decoration: none;
-    font-family: $display;
-    font-size: 0.95rem;
+    font-family: $mono;
+    font-size: 0.82rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     border-bottom: 1px solid transparent;
@@ -137,6 +146,11 @@ body {
       color: var(--vl-blue);
       border-bottom-color: var(--vl-blue);
     }
+  }
+
+  @media (max-width: 600px) {
+    gap: 0.9rem;
+    .hide-sm { display: none; }
   }
 }
 
@@ -188,33 +202,74 @@ a {
 
 h1, h2, h3, h4 {
   color: var(--vl-text);
-  font-family: $serif;
+  font-family: $display;
   font-weight: 500;
   letter-spacing: 0;
-  line-height: 1.25;
+  line-height: 1.1;
 }
 
-h1 { font-size: 2.4rem; margin: 2rem 0 1rem; letter-spacing: 0; }
+h1 {
+  font-size: clamp(2.6rem, 5.6vw, 3.8rem);
+  margin: 2rem 0 1rem;
+  letter-spacing: -0.005em;
+}
 
 h2 {
-  font-size: 1.75rem;
+  font-size: clamp(2rem, 4.2vw, 3rem);
   margin-top: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--vl-rule);
+  line-height: 1.05;
 }
 
 h3 {
-  font-size: 1.25rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  font-family: $display;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.6rem;
   color: var(--vl-blue);
   font-style: italic;
-  font-family: $serif;
   letter-spacing: 0;
+  line-height: 1.2;
 }
 
 p { margin: 0 0 1.1em; }
+
+// Eyebrow + section-head pattern
+.eyebrow {
+  font-family: $mono;
+  font-size: 0.74rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--vl-sand);
+  margin: 0 0 0.75rem;
+}
+
+.section-head {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 2rem;
+  margin: 3.5rem 0 1.5rem;
+
+  .num {
+    font-family: $mono;
+    font-size: 0.74rem;
+    letter-spacing: 0.2em;
+    color: var(--vl-sand);
+    padding-top: 0.9rem;
+    text-transform: uppercase;
+  }
+
+  h2 { margin: 0; padding: 0; border: 0; }
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+    .num { padding-top: 0; }
+  }
+}
 
 blockquote {
   border-left: 3px solid var(--vl-blue);
@@ -307,7 +362,7 @@ hr { border: 0; border-top: 1px solid var(--vl-rule); margin: 3rem 0; }
 
 .lede {
   margin: 0 auto 3rem;
-  max-width: 44rem;
+  max-width: 40rem;
   font-size: 1.08rem;
 
   p { margin-bottom: 1.25em; }
@@ -319,13 +374,30 @@ hr { border: 0; border-top: 1px solid var(--vl-rule); margin: 3rem 0; }
 
     &::first-letter {
       font-family: $display;
-      font-size: 3.2em;
+      font-size: 3.4em;
+      font-weight: 500;
       float: left;
       line-height: 0.9;
       padding: 0.05em 0.15em 0 0;
       color: var(--vl-blue);
     }
   }
+}
+
+// Prose constrained measure (matches lede)
+.prose { max-width: 40rem; }
+.prose p { margin: 0 0 1.1em; }
+
+// Reveal-on-scroll (optional, class added by small script if present)
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+
+  &.in { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
 }
 
 // Tools grid
@@ -341,9 +413,11 @@ hr { border: 0; border-top: 1px solid var(--vl-rule); margin: 3rem 0; }
   background: var(--vl-surface-alt);
   border: 1px solid var(--vl-rule);
   border-top: 3px solid var(--vl-sand);
-  padding: 1rem 1.1rem;
-  border-radius: 2px;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.25s ease;
+  padding: 1.1rem 1.2rem 1.2rem;
+  border-radius: 14px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.25s ease;
+
+  &:hover { transform: translateY(-2px); }
 
   &:hover {
     box-shadow: var(--vl-card-shadow);
@@ -461,15 +535,16 @@ hr { border: 0; border-top: 1px solid var(--vl-rule); margin: 3rem 0; }
 .mermaid {
   background: var(--vl-surface);
   border: 1px solid var(--vl-rule);
-  border-radius: 2px;
-  padding: 1.25rem 1rem;
+  border-radius: 14px;
+  padding: 1.5rem 1.25rem;
   margin: 1.5rem auto;
-  max-width: 600px;
+  max-width: 720px;
   text-align: center;
   overflow-x: auto;
+  box-shadow: var(--vl-card-shadow);
   transition: background-color 0.25s ease, border-color 0.25s ease;
 
-  svg { max-width: 100%; height: auto; max-height: 320px; }
+  svg { max-width: 100%; height: auto; max-height: 360px; }
 }
 
 // Footer
