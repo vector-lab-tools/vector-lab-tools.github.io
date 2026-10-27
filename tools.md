@@ -18,7 +18,7 @@ Each instrument maintains its own documentation site in its own repo. These page
 <div class="tool-entry-head">
 <img src="/assets/images/tools/manifold-atlas.svg" alt="" class="tool-icon-lg">
 <div>
-<h2>Manifold Atlas</h2>
+<h2><a href="https://vector-lab-tools.github.io/manifold-atlas/">Manifold Atlas</a></h2>
 <p class="object"><em>Tier:</em> comparative model tool. <em>Object:</em> output embeddings across models.</p>
 <p><a href="https://vector-lab-tools.github.io/manifold-atlas/">Docs</a> · <a href="https://github.com/vector-lab-tools/manifold-atlas">Source</a></p>
 </div>
@@ -33,7 +33,7 @@ Compares multiple embedding models' output geometries on the same inputs, with s
 <div class="tool-entry-head">
 <img src="/assets/images/tools/llmbench.svg" alt="" class="tool-icon-lg">
 <div>
-<h2>LLMbench</h2>
+<h2><a href="https://vector-lab-tools.github.io/LLMbench/">LLMbench</a></h2>
 <p class="object"><em>Tier:</em> comparative model tool. <em>Object:</em> generated prose across models.</p>
 <p><a href="https://vector-lab-tools.github.io/LLMbench/">Docs</a> · <a href="https://github.com/vector-lab-tools/LLMbench">Source</a></p>
 </div>
@@ -48,7 +48,7 @@ Dual-panel close reading of two language models answering the same prompt, with 
 <div class="tool-entry-head">
 <img src="/assets/images/tools/diffusion-atlas.svg" alt="" class="tool-icon-lg">
 <div>
-<h2>Diffusion Atlas (alpha)</h2>
+<h2><a href="https://vector-lab-tools.github.io/diffusionatlas/">Diffusion Atlas (alpha)</a></h2>
 <p class="object"><em>Tier:</em> comparative diffusion-model tool. <em>Object:</em> generative trajectories and compositional fidelity across diffusion image models.</p>
 <p><a href="https://vector-lab-tools.github.io/diffusionatlas/">Docs</a> · <a href="https://github.com/vector-lab-tools/diffusionatlas">Source</a></p>
 </div>
@@ -65,7 +65,7 @@ Denoise trajectory, guidance sweep, latent neighbourhood, compositional bench. H
 <div class="tool-entry-head">
 <img src="/assets/images/tools/vectorscope.svg" alt="" class="tool-icon-lg">
 <div>
-<h2>Vectorscope (beta)</h2>
+<h2><a href="https://vector-lab-tools.github.io/vectorscope/">Vectorscope (beta)</a></h2>
 <p class="object"><em>Tier:</em> single-model scope. <em>Object:</em> a single open-weight language model.</p>
 <p><a href="https://vector-lab-tools.github.io/vectorscope/">Docs</a> · <a href="https://github.com/vector-lab-tools/vectorscope">Source</a></p>
 </div>
@@ -80,7 +80,7 @@ Layer-by-layer weights, hidden states, attention, token embeddings, and precisio
 <div class="tool-entry-head">
 <img src="/assets/images/tools/manifoldscope.svg" alt="" class="tool-icon-lg">
 <div>
-<h2>Manifoldscope (beta)</h2>
+<h2><a href="https://vector-lab-tools.github.io/manifoldscope/">Manifoldscope (beta)</a></h2>
 <p class="object"><em>Tier:</em> single-manifold scope. <em>Object:</em> one manifold as a geometric and ideological object.</p>
 <p><a href="https://vector-lab-tools.github.io/manifoldscope/">Docs</a> · <a href="https://github.com/vector-lab-tools/manifoldscope">Source</a></p>
 </div>
@@ -95,7 +95,7 @@ Intrinsic dimension, curvature, density, topology, with a political reading of w
 <div class="tool-entry-head">
 <img src="/assets/images/tools/theoryscope.svg" alt="" class="tool-icon-lg">
 <div>
-<h2>Theoryscope (beta)</h2>
+<h2><a href="https://vector-lab-tools.github.io/theoryscope/">Theoryscope (beta)</a></h2>
 <p class="object"><em>Tier:</em> corpus scope. <em>Object:</em> a corpus of theoretical texts.</p>
 <p><a href="https://vector-lab-tools.github.io/theoryscope/">Docs</a> · <a href="https://github.com/vector-lab-tools/theoryscope">Source</a></p>
 </div>
@@ -111,7 +111,7 @@ A renormalisation-group workbench for corpora of theoretical texts. Coarse-grain
 
 <div class="tool-entry-head">
 <div>
-<h2>Vectorography (alpha)</h2>
+<h2><a href="https://github.com/vector-lab-tools/vectorography">Vectorography (alpha)</a></h2>
 <p class="object"><em>Tier:</em> type design. <em>Object:</em> a vector space of letterforms.</p>
 <p><a href="https://github.com/vector-lab-tools/vectorography">Source</a></p>
 </div>
