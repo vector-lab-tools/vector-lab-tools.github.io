@@ -70,6 +70,13 @@ Wrap width about 1060px.
 
 Each tool keeps its own wordmark and glyph; that is its identity. Parent references are plain text links to the hub. The hub is the one surface that carries the family mark, so tool pages do not inline the parent glyph.
 
+If an app bundles a copy of the Vector Lab mark (for a "Part of Vector Lab" badge in the app chrome, say), use the right variant for the display size:
+
+- **42 px and above (header, hero, modal):** the four-path wireframe tetrahedron. `assets/images/logo-mark.svg` on the hub (stroke 2.6, theme-aware via inline style).
+- **Below ~40 px (status bar, inline badge, favicon):** the filled silhouette. `assets/images/logo-mark-small.svg` on the hub. The interior edges of the wireframe collapse into a smudge under 32 px.
+
+Both variants carry `viewBox 0 0 100 100` so dimensions behave the same across sizes.
+
 CTA buttons are pills: the primary one is filled with the accent (`Open the app`), the rest outlined.
 
 
