@@ -22,7 +22,7 @@ A brief guide to each instrument. Follow the **Deep dive** link on any tool for 
 </div>
 </div>
 
-Manifold Atlas compares multiple embedding models' output geometries on the same inputs. The tool packages fifteen operations for the critical testing of vector-theoretic claims: Concept Distance, Neighbourhood Map, Negation Gauge, Negation Battery, Semantic Sectioning, Concept Drift, Hegemony Compass, Real Abstraction Test, Silence Detector, Distance Matrix, Agonism Test, Vector Logic, Vector Walk, Text Vectorisation, and more. Each operation makes a theoretical claim empirically testable against the geometry that a given model has learned.
+Manifold Atlas compares multiple embedding models' output geometries on the same inputs. The tool packages seventeen operations for the critical testing of vector-theoretic claims, with Calibration establishing the scale against which the others are read: Concept Distance, Neighbourhood Map, Negation Gauge, Negation Battery, Semantic Sectioning, Vector Drift, Hegemony Compass, Real Abstraction Test, Silence Detector, Distance Matrix, Agonism Test, Vector Logic, Vector Walk, Persistent Homology, Text Vectorisation, Grammar of Vectors. Each operation makes a theoretical claim empirically testable against the geometry that a given model has learned.
 
 <p class="tool-meta"><em>Stack:</em> Next.js 16, React 19, TypeScript, Three.js.</p>
 

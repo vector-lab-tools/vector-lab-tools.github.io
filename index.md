@@ -16,7 +16,11 @@ Vector Lab is a toolkit of tools that give different ways of seeing into the man
 
 </section>
 
+<div class="section-head" markdown="1">
+<p class="num">01 · The family</p>
+
 ## The family
+</div>
 
 <div class="mermaid">
 graph TB
@@ -97,7 +101,11 @@ graph TB
 
 </div>
 
-## Theoretical Background
+<div class="section-head" markdown="1">
+<p class="num">02 · Theoretical background</p>
+
+## Theoretical background
+</div>
 
 <blockquote class="epigraph">
 <p>Neither machines nor programs are black boxes; they are artifacts that have been designed, both hardware and software, and we can open them up and look inside. We can relate their structure to their behavior and draw many lessons.</p>
@@ -106,11 +114,15 @@ graph TB
 
 The vector lab tools are designed to open the "vector box" of artificial intelligence. The key argument is that there is a shift from the digital to the vector. Our tools and approaches have to correspondingly shift also. Commercial embedding APIs return sentence-level composites from separately-trained embedding models, the output of a pipeline rather than a window into the representations themselves. This is fine for some tasks. It is inadequate for critical work. If we want to know what the geometry of a particular model has sedimented, we have to work with open-weight models where the weights, activations, and token embeddings can be read at every layer. Vector Lab tools therefore privilege open-weight models wherever the question requires internal access, and treat commercial outputs as a separate object, the retrieval surface, with its own interest.
 
-The result is a set of instruments that do things other research tools do not. Vectorscope runs the same inputs across precision regimes, FP32 through BF16, INT8, INT4, FP4, INT2, to observe how signal degrades as the medium is quantised, on the principle that the material substrate of a representation shapes what it can hold. Manifoldscope treats each manifold as a geometric object (intrinsic dimension, curvature, density) and as an ideological object (what it naturalises, suppresses, sediments), binding measure to critique so that no interpretive claim goes without its attestation. Theoryscope applies renormalisation-group and eigenvector methods to corpora of theoretical texts, asking which positions are fixed points under coarse-graining and which traditions are universality classes of one another. Manifold Atlas runs fifteen operations across multiple embedding models, turning particular vector-theoretic claims into empirically testable propositions. LLMbench sets two models' prose outputs side by side and enables the dual-panel close reading that hermeneutic work requires.
+The result is a set of instruments that do things other research tools do not. Vectorscope runs the same inputs across precision regimes, FP32 through BF16, INT8, INT4, FP4, INT2, to observe how signal degrades as the medium is quantised, on the principle that the material medium of a representation shapes what it can hold. Manifoldscope treats each manifold as a geometric object (intrinsic dimension, curvature, density) and as an ideological object (what it naturalises, suppresses, sediments), binding measure to critique so that no interpretive claim goes without its attestation. Theoryscope applies renormalisation-group and eigenvector methods to corpora of theoretical texts, asking which positions are fixed points under coarse-graining and which traditions are universality classes of one another. Manifold Atlas runs seventeen operations across multiple embedding models, turning particular vector-theoretic claims into empirically testable propositions. LLMbench sets two models' prose outputs side by side and enables the dual-panel close reading that hermeneutic work requires.
 
 The tools are designed to explore the new media-theoretic terrain of AI, which are listed in each repository's documentation and developed in the essays that motivate them. Critical work on large language models has, for a decade, been constrained by a tooling deficit. Either work with commercial APIs, and accept the interpretive costs, or do without tools and write essays that assert what a geometry looks like without ever seeing one. Vector Lab is an attempt to close that gap, to produce instruments that are continuous with the theoretical project rather than imported from outside it, and to make them public so that others can use, extend, or disagree with the work they do.
 
+<div class="section-head" markdown="1">
+<p class="num">03 · How the instruments relate</p>
+
 ## How the instruments relate
+</div>
 
 The instruments work at two scales and across two modalities. The single-model scopes are anatomical: they open one object (a model, a manifold, a corpus) and read its internal geometry at depth. The comparative tools are cartographic: they survey across many objects (across language models, across diffusion models, across generated outputs) and ask what each kind of geometry has naturalised. Anatomical and cartographic readings are complementary; a finding flagged at the comparative level is sharpened by an anatomical attestation, and an anatomical reading needs the comparative ground to know whether what it has found is local or generic.
 
@@ -118,7 +130,11 @@ The modality split is doing work too. Language models and diffusion models share
 
 Generated prose is the hermeneutic surface that sits above the geometric work. It is the level at which models are usually encountered, and it is often the presentation layer for findings that begin lower down: a claim tested geometrically can be illustrated, read closely, and compared across models in prose form.
 
+<div class="section-head" markdown="1">
+<p class="num">04 · Further reading</p>
+
 ## Further reading
+</div>
 
 <blockquote class="epigraph">
 <p>Whilst voltage is the physical materiality of the digital configuration, vector space is a form of mathematical materiality, a materiality of relation rather than substance which creates the conditions of possibility for new forms of computation I call vector theory.</p>
@@ -182,15 +198,42 @@ Wider background in media theory, critical theory of technology, and the pre-his
 - Weizenbaum, J. (1976) *Computer Power and Human Reason: From Judgment to Calculation*. San Francisco: Freeman.
 - Winner, L. (1980) ‘Do Artifacts Have Politics?’, *Daedalus*, 109(1), pp. 121–136.
 
+<div class="section-head" markdown="1">
+<p class="num">05 · Using the tools</p>
+
 ## Using the tools
+</div>
 
 Each repository contains full documentation, dependencies, and setup instructions. Tools are research instruments and are offered as-is under permissive licences. If Vector Lab tools support published research, please cite the specific tool and version, and cite the relevant theoretical essays where the claims being tested are developed.
 
+<div class="section-head" markdown="1">
+<p class="num">06 · References</p>
+
 ## References
+</div>
 
 - Ashby, W. R. (1956) *An Introduction to Cybernetics*. London: Chapman & Hall.
 - Berry, D. M. (2026) '[Vector Theory](https://doi.org/10.1007/s13347-026-01162-w)', *Philosophy & Technology*. Available at: <https://doi.org/10.1007/s13347-026-01162-w>.
 - Haugeland, J. (ed.) (1981) *Mind Design: Philosophy, Psychology, Artificial Intelligence*. Cambridge, MA: The MIT Press.
 - Newell, A. and Simon, H. A. (1987) 'Computer Science as Empirical Inquiry: Symbols and Search', in Haugeland, J. (ed.) *Mind Design: Philosophy, Psychology, Artificial Intelligence*. Cambridge, MA: The MIT Press, pp. 35–66. Originally the tenth Turing Award Lecture, *Communications of the ACM* 19(3), March 1976, pp. 113–126.
+
+<div class="section-head" markdown="1">
+<p class="num">07 · Related</p>
+
+## Related
+</div>
+
+<div class="related">
+  <a href="https://vector-humanities.github.io">
+    <b>Vector Humanities</b>
+    <span>The umbrella programme the Lab sits inside. Essays, methods, teaching, and the wider project of a vector-literate humanities.</span>
+    <span class="url">vector-humanities.github.io</span>
+  </a>
+  <a href="https://stunlaw.blogspot.com">
+    <b>Stunlaw</b>
+    <span>The vector theory sequence as it was first written: short essays on the digital-to-vector shift, the manifold as medium, and the political economy of the vector turn.</span>
+    <span class="url">stunlaw.blogspot.com</span>
+  </a>
+</div>
 
 {% include mermaid.html %}

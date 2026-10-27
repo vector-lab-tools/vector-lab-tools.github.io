@@ -96,7 +96,7 @@ Next.js 16, React 19, TypeScript 5, Tailwind, Three.js. Talks to the major embed
 
 ## Status
 
-The most mature instrument in the Vector Lab. Currently at v1.17.2, with seventeen operations live and a deep-dive panel on every visualisation-heavy operation. Two lines of work have dominated since v1.8:
+The most mature instrument in the Vector Lab. Currently at v1.19.0, with seventeen operations live and a deep-dive panel on every visualisation-heavy operation. Two lines of work have dominated since v1.8:
 
 **Calibration (v1.9.0–v1.14.2).** Every operation is now read against a measured scale rather than against the raw cosine axis. Calibration reports the floor per register (bare terms, short declaratives, prose), the topical ceiling, the cone half-angle, dispersion and percentiles, dimension statistics against a sample ceiling, and norm behaviour. Live calibration reporting, a model radius, a foldable scale, cache provenance and verification, and the bridge rendered as a dimension line arrived across this series. The full calibration record sits in each operation's Deep Dive.
 

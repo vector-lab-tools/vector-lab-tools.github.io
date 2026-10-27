@@ -547,6 +547,60 @@ hr { border: 0; border-top: 1px solid var(--vl-rule); margin: 3rem 0; }
   svg { max-width: 100%; height: auto; max-height: 360px; }
 }
 
+// Related cards (bottom-of-page cross-links)
+
+.related {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin: 1.25rem 0 2rem;
+
+  a {
+    display: block;
+    padding: 1.5rem;
+    border: 1px solid var(--vl-rule);
+    border-radius: 14px;
+    text-decoration: none;
+    color: var(--vl-text);
+    background: var(--vl-surface);
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      border-color: var(--vl-blue);
+      transform: translateY(-2px);
+      box-shadow: var(--vl-card-shadow);
+      color: var(--vl-text);
+    }
+  }
+
+  b {
+    font-family: $display;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  span {
+    color: var(--vl-muted);
+    font-size: 0.93rem;
+    line-height: 1.55;
+  }
+
+  .url {
+    display: block;
+    margin-top: 0.85rem;
+    font-family: $mono;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    color: var(--vl-blue);
+  }
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+  }
+}
+
 // Footer
 
 .site-footer {
