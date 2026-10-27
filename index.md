@@ -53,23 +53,23 @@ graph TB
 
 <article class="tool-card comparative">
   <img class="tool-icon" src="/assets/images/tools/manifold-atlas.svg" alt="">
-  <h3><a href="/tools/manifold-atlas.html">Manifold Atlas</a></h3>
+  <h3><a href="https://vector-lab-tools.github.io/manifold-atlas/">Manifold Atlas</a></h3>
   <p class="object">Object: output embeddings across models.</p>
-  <p>Concept distance, negation gauge, hegemony compass, silence detector, agonism test, vector logic. The comparative cartographic instrument.</p>
+  <p>Concept distance, negation gauge, hegemony compass, silence detector, agonism test, vector logic. The comparative cartographic instrument. <a href="https://vector-lab-tools.github.io/manifold-atlas/">Docs →</a></p>
 </article>
 
 <article class="tool-card comparative">
   <img class="tool-icon" src="/assets/images/tools/llmbench.svg" alt="">
-  <h3><a href="/tools/llmbench.html">LLMbench</a></h3>
+  <h3><a href="https://vector-lab-tools.github.io/LLMbench/">LLMbench</a></h3>
   <p class="object">Object: generated prose across models.</p>
-  <p>Dual-panel close reading, annotation, logprobs, probability visualisation. The hermeneutic surface instrument.</p>
+  <p>Dual-panel close reading, annotation, logprobs, probability visualisation. The hermeneutic surface instrument. <a href="https://vector-lab-tools.github.io/LLMbench/">Docs →</a></p>
 </article>
 
 <article class="tool-card comparative">
   <img class="tool-icon" src="/assets/images/tools/diffusion-atlas.svg" alt="">
-  <h3><a href="/tools/diffusion-atlas.html">Diffusion Atlas (alpha)</a></h3>
+  <h3><a href="https://vector-lab-tools.github.io/diffusionatlas/">Diffusion Atlas (alpha)</a></h3>
   <p class="object">Object: generative trajectories and compositional fidelity across diffusion image models.</p>
-  <p>Denoise trajectory, guidance sweep, latent neighbourhood, compositional bench. Atlas and Bench registers in one instrument.</p>
+  <p>Denoise trajectory, guidance sweep, latent neighbourhood, compositional bench. Atlas and Bench registers in one instrument. <a href="https://vector-lab-tools.github.io/diffusionatlas/">Docs →</a></p>
 </article>
 
 </div>
@@ -80,23 +80,35 @@ graph TB
 
 <article class="tool-card scope">
   <img class="tool-icon" src="/assets/images/tools/vectorscope.svg" alt="">
-  <h3><a href="/tools/vectorscope.html">Vectorscope (beta)</a></h3>
+  <h3><a href="https://vector-lab-tools.github.io/vectorscope/">Vectorscope (beta)</a></h3>
   <p class="object">Object: a single open-weight model.</p>
-  <p>Layer-by-layer weights, hidden states, attention, precision regimes. The anatomical instrument of the lab.</p>
+  <p>Layer-by-layer weights, hidden states, attention, precision regimes. The anatomical instrument of the lab. <a href="https://vector-lab-tools.github.io/vectorscope/">Docs →</a></p>
 </article>
 
 <article class="tool-card scope">
   <img class="tool-icon" src="/assets/images/tools/manifoldscope.svg" alt="">
-  <h3><a href="/tools/manifoldscope.html">Manifoldscope (beta)</a></h3>
+  <h3><a href="https://vector-lab-tools.github.io/manifoldscope/">Manifoldscope (beta)</a></h3>
   <p class="object">Object: a single manifold.</p>
-  <p>Intrinsic dimension, curvature, density, topology, and the political reading of what a geometry sediments or refuses. Measure and critique bound together.</p>
+  <p>Intrinsic dimension, curvature, density, topology, and the political reading of what a geometry sediments or refuses. Measure and critique bound together. <a href="https://vector-lab-tools.github.io/manifoldscope/">Docs →</a></p>
 </article>
 
 <article class="tool-card scope">
   <img class="tool-icon" src="/assets/images/tools/theoryscope.svg" alt="">
-  <h3><a href="/tools/theoryscope.html">Theoryscope (beta)</a></h3>
+  <h3><a href="https://vector-lab-tools.github.io/theoryscope/">Theoryscope (beta)</a></h3>
   <p class="object">Object: a corpus of theoretical texts.</p>
-  <p>Renormalisation-group flow, eigendirections, fixed points, universality classes. A navigable geometry of theory space.</p>
+  <p>Renormalisation-group flow, eigendirections, fixed points, universality classes. A navigable geometry of theory space. <a href="https://vector-lab-tools.github.io/theoryscope/">Docs →</a></p>
+</article>
+
+</div>
+
+### Type design
+
+<div class="tools-grid">
+
+<article class="tool-card scope">
+  <h3><a href="https://github.com/vector-lab-tools/vectorography">Vectorography (alpha)</a></h3>
+  <p class="object">Object: a vector space of letterforms.</p>
+  <p>Type design by traversal: steer across a learned space of glyphs with sliders for weight, width, spacing, x-height and contrast. <a href="https://github.com/vector-lab-tools/vectorography">Source →</a></p>
 </article>
 
 </div>
