@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you cite the Vector Lab, please use the metadata below."
+title: "Vector Lab: Research Instruments for the Vector Medium"
+abstract: >-
+  Vector Lab is a suite of research instruments for working with the geometry
+  of large language models, embedding spaces, and theoretical corpora. The hub
+  site links to each instrument's own documentation and sets the shared design
+  and conventions.
+type: software
+authors:
+  - family-names: Berry
+    given-names: David M.
+    affiliation: University of Sussex
+    orcid: "https://orcid.org/0000-0002-7737-5586"
+repository-code: "https://github.com/vector-lab-tools/vector-lab-tools.github.io"
+url: "https://vector-lab-tools.github.io"
+license: CC-BY-4.0
+version: "1.0.0"
+date-released: "2026-10-29"
+keywords:
+  - vector theory
+  - critical AI
+  - digital humanities
+  - research instruments
