@@ -4,6 +4,13 @@
 
 Landing site and map for Vector Lab tools. Live at <https://vector-lab-tools.github.io>.
 
+## Getting started
+
+- [Get started](https://vector-lab-tools.github.io/get-started.html): two paths, depending on whether you want to close-read model outputs or research embedding spaces.
+- [FAQ](https://vector-lab-tools.github.io/faq.html): API keys for every provider, running Ollama (including the `OLLAMA_ORIGINS` setting and the Safari limitation), and other problems common to all the tools.
+
+Each tool's own documentation covers its setup in detail and has its own FAQ.
+
 ## Citation
 
 Berry, D. M. (2026) *Vector Lab: Research Instruments for the Vector Medium*. [doi:10.5281/zenodo.23763598](https://doi.org/10.5281/zenodo.23763598).

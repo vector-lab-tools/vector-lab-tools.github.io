@@ -26,7 +26,7 @@ Install **Ollama** locally and pull two models: an embedding model (`nomic-embed
 | Tool              | Needs a key for                                                                 | Free local route                                     |
 |-------------------|---------------------------------------------------------------------------------|------------------------------------------------------|
 | LLMbench          | Chat models: OpenAI, Anthropic, Google, HF, OpenRouter, OpenAI-compatible       | Ollama for chat                                      |
-| Manifold Atlas    | Embedding models: OpenAI, Voyage, Google, Cohere, HF                            | Ollama for embeddings                                |
+| Manifold Atlas    | Embedding models: OpenAI, Voyage, Google, Cohere, OpenRouter, HF                | Ollama for embeddings                                |
 | Vectorscope       | Hugging Face token (read scope) only for gated models (Llama 3.2 1B, Mistral 7B v0.3); GPT-2 and Qwen3 need no account | Runs locally through Transformers; weights cache in `~/.cache/huggingface/` after first load |
 | Manifoldscope     | Embedding models (same set as Manifold Atlas), when you want hosted ones        | Runs MiniLM via sentence-transformers out of the box |
 | Theoryscope       | Zotero (to read your library)                                                   | Every embedding runs locally; no provider key needed |
@@ -35,22 +35,22 @@ Install **Ollama** locally and pull two models: an embedding model (`nomic-embed
 
 ### Where do I get an API key for each provider?
 
-- **OpenAI** — <https://platform.openai.com/api-keys>. Starts `sk-`. Paid; no free tier.
-- **Anthropic** — <https://console.anthropic.com/settings/keys>. Starts `sk-ant-`. Paid; no free tier.
-- **Google (Gemini)** — <https://aistudio.google.com/apikey>. Starts `AIza`. Free tier, generous for research.
-- **Hugging Face** — <https://huggingface.co/settings/tokens>. Starts `hf_`. Free inference API, rate limited.
-- **OpenRouter** — <https://openrouter.ai/keys>. Starts `sk-or-`. Pay-as-you-go across many providers.
-- **Voyage AI** — <https://dashboard.voyageai.com/api-keys>. Starts `pa-`. Free tier; recommended by Anthropic for use with Claude.
-- **Cohere** — <https://dashboard.cohere.com/api-keys>. Starts `co-`. Free tier.
-- **Replicate** — <https://replicate.com/account/api-tokens>. Starts `r8_`. Pay-per-second.
-- **Fal** — <https://fal.ai/dashboard/keys>. Pay-per-image.
-- **Zotero** — <https://www.zotero.org/settings/security#applications>. Create a new key, give it library read access.
+- **OpenAI**: <https://platform.openai.com/api-keys>. Starts `sk-`. Paid; no free tier.
+- **Anthropic**: <https://console.anthropic.com/settings/keys>. Starts `sk-ant-`. Paid; no free tier.
+- **Google (Gemini)**: <https://aistudio.google.com/apikey>. Starts `AIza`. Free tier, generous for research.
+- **Hugging Face**: <https://huggingface.co/settings/tokens>. Starts `hf_`. The free hosted route, no payment method needed. A fine-grained token must have the **Inference Providers** permission ticked, or every call returns unauthorised; this one setting accounts for most "my new token doesn't work" reports.
+- **OpenRouter**: <https://openrouter.ai/keys>. Starts `sk-or-`. Pay-as-you-go across many providers. Where a tool treats OpenRouter as an OpenAI-compatible endpoint, the base URL field must be filled in alongside the key; left empty, the call goes to OpenAI, which rejects an OpenRouter key.
+- **Voyage AI**: <https://dashboard.voyageai.com/api-keys>. Starts `pa-`. Free tier; recommended by Anthropic for use with Claude.
+- **Cohere**: <https://dashboard.cohere.com/api-keys>. Starts `co-`. Free tier.
+- **Replicate**: <https://replicate.com/account/api-tokens>. Starts `r8_`. Pay-per-second.
+- **Fal**: <https://fal.ai/dashboard/keys>. Pay-per-image.
+- **Zotero**: <https://www.zotero.org/settings/security#applications>. Create a new key, give it library read access.
 
 ### Are my keys sent anywhere I'm not expecting?
 
 Keys are stored in your browser's `localStorage`, not on any Vector Lab server. What happens next depends on the tool and the provider:
 
-- **Hosted tools** (Manifold Atlas, LLMbench, Diffusion Atlas, served from Vercel): a hosted-provider key passes through the tool's own serverless function, which forwards the request to the provider and keeps no copy of the key or the request.
+- **Hosted apps** (LLMbench, for example, served from Vercel): a hosted-provider key can pass through the app's own serverless function, which forwards the request to the provider and keeps no copy of the key or the request. Each tool's FAQ states its own route.
 - **Locally-run tools** (Vectorscope, Manifoldscope, Theoryscope, running on `http://localhost:3000` through `npm run dev`): the browser calls the provider directly; nothing transits a Vector Lab server at any point.
 - **Ollama, in either case**: no key is involved, and nothing leaves your machine.
 
@@ -66,47 +66,51 @@ Research sessions are usually under a few cents each on paid providers, because 
 ## Running Ollama
 </div>
 
-Ollama runs language and embedding models on your own machine. Every Vector Lab tool can use it in place of a paid provider. The setup is the same across the family.
+Ollama runs language and embedding models on your own machine, with no key and no account. Three tools can use it in place of a hosted provider: Manifold Atlas and Manifoldscope (embeddings) and LLMbench (chat). Vectorscope, Theoryscope and Diffusion Atlas load their models directly and do not use Ollama.
 
 ### Install and pull models
 
 1. Install from <https://ollama.com/download>.
-2. Pull the models the lab uses most:
+2. Pull the two defaults:
    ```
    ollama pull nomic-embed-text
    ollama pull llama3.2
    ```
-   `nomic-embed-text` is a 768-dimensional embedding model and is the safe default for Manifold Atlas, Manifoldscope, Theoryscope. `llama3.2` is a compact chat model for LLMbench and for Theoryscope's Manifold Scan feature.
+   `nomic-embed-text` is the embedding default for Manifold Atlas and Manifoldscope. `llama3.2` is the chat default for LLMbench, and is also what Manifold Atlas's Manifold Scan feature uses to generate related terms.
 3. `ollama serve` (if it is not already running as a background service).
 
-### The browser-direct origins problem
+### The origins problem
 
-The lab's tools run in your browser. Ollama by default rejects requests from any origin other than `localhost`. When your browser at `vector-lab-tools.github.io` calls Ollama at `http://localhost:11434`, Ollama refuses the request as a cross-origin violation. The tool will show a connection error that is not about keys or models; it is about origins.
+This is where nearly everyone stalls. The hosted apps call Ollama directly from your browser. Ollama by default accepts calls only from `localhost`, so when a hosted app at an `https://` address calls `http://localhost:11434`, Ollama refuses it as a cross-origin request. The tool shows a connection error that has nothing to do with keys or models.
 
-The fix is to tell Ollama which origins may call it. Set `OLLAMA_ORIGINS` when you start the server:
-
-```
-OLLAMA_ORIGINS="https://vector-lab-tools.github.io,https://vector-humanities.github.io,http://localhost:3000,http://127.0.0.1:3000" ollama serve
-```
-
-Include every origin from which you run the lab's tools: the hosted sites you use, and any local development servers. On macOS, if Ollama is installed as a service, you can set the variable permanently:
+The fix is to tell Ollama which origins may call it, by setting `OLLAMA_ORIGINS` when you start the server. The origin to list is the **app** you run, not its documentation page. The documentation sites on `vector-lab-tools.github.io` never call Ollama and never need to be listed.
 
 ```
-launchctl setenv OLLAMA_ORIGINS "https://vector-lab-tools.github.io,http://localhost:3000"
+OLLAMA_ORIGINS="https://manifold-atlas.vercel.app,https://llm-bench-mu.vercel.app,http://localhost:3000,http://127.0.0.1:3000" ollama serve
 ```
 
-then restart Ollama.
+Keep only the apps you use. Each app's Settings panel detects the origin you are on and pre-fills this command for you, so copying it from there is the safest route.
 
-### Safari and the hosted sites with Ollama: use another browser
+If you run a tool locally with `npm run dev` on `localhost:3000`, a plain `ollama serve` is enough, since Ollama already accepts `localhost`.
 
-Safari refuses to call `http://localhost` from an `https://` page, even with `OLLAMA_ORIGINS` set. This is a WebKit security policy that cannot be worked around from the lab side. For any **hosted** tool site (Manifold Atlas, LLMbench, Diffusion Atlas, Theoryscope on `vector-lab-tools.github.io`), use **Chrome, Edge, Brave, Arc, or Firefox** for Ollama-backed work.
+On macOS, to make the setting permanent when Ollama runs as a background service:
 
-If you are running a tool **locally** (`http://localhost:3000` via `npm run dev`, which is how Manifoldscope and Vectorscope run), Safari is fine: the browser sees `http://` → `http://localhost`, same protocol, no cross-origin block. Safari is also fine for every part of the lab that doesn't involve a browser-direct Ollama call, whether hosted or local.
+```
+launchctl setenv OLLAMA_ORIGINS "https://manifold-atlas.vercel.app,https://llm-bench-mu.vercel.app,http://localhost:3000"
+```
+
+then quit and restart Ollama.
+
+### Safari
+
+Safari cannot reach a local Ollama from a hosted app. It blocks an `https://` page from calling `http://localhost` whatever `OLLAMA_ORIGINS` says, and this cannot be worked around from the lab side. For Ollama-backed work in the hosted Manifold Atlas or LLMbench, use **Chrome, Firefox, Edge, Arc or Brave**, or run a local copy.
+
+Safari is fine against a local copy on `localhost:3000`, where both sides share an origin, and for every part of the lab that does not call Ollama from the browser.
 
 ### Which Ollama model should I pick?
 
-- **Embedding**: `nomic-embed-text` (768-d, fast) is the general-purpose default. `snowflake-arctic-embed` is larger and better calibrated for English, but slower. `all-minilm` (384-d) is the smallest and useful when you want a model whose floor the rest of the lab calibrates against.
-- **Chat**: `llama3.2` (3B) is the compact default. `gemma3` and `qwen2.5` are reasonable alternatives. `llama3.1:8b` is better for longer-form generation in LLMbench if your machine has the memory.
+- **Embedding**: `nomic-embed-text` is the default. Each tool's docs list the other embedding models it supports.
+- **Chat**: `llama3.2` is the default for LLMbench. `gemma3` and `qwen2.5` also work; larger models need more memory.
 
 All of these are free, all run locally, none send data anywhere.
 
@@ -134,4 +138,4 @@ Each tool carries its own DOI on its repository README; cite the tool you used, 
 
 ### A tool is broken in a way not covered here
 
-Each tool's documentation carries a troubleshooting section with the specific failures that tool produces. Start there. If it is a cross-cutting problem not on this page, let David know and I'll add it.
+Each tool's documentation carries a troubleshooting section with the specific failures that tool produces. Start there. If it is a cross-cutting problem not on this page, open an issue on the [hub repository](https://github.com/vector-lab-tools/vector-lab-tools.github.io/issues).
