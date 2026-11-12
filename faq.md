@@ -48,7 +48,13 @@ Install **Ollama** locally and pull two models: an embedding model (`nomic-embed
 
 ### Are my keys sent anywhere I'm not expecting?
 
-No. Every tool in the lab runs client-side. Keys are stored in your browser's `localStorage` and sent directly to the provider you configured. The lab operates no servers that see your keys or your requests. If you clear your browser data or use a private window, the keys are gone.
+Keys are stored in your browser's `localStorage`, not on any Vector Lab server. What happens next depends on the tool and the provider:
+
+- **Hosted tools** (Manifold Atlas, LLMbench, Diffusion Atlas, served from Vercel): a hosted-provider key passes through the tool's own serverless function, which forwards the request to the provider and keeps no copy of the key or the request.
+- **Locally-run tools** (Vectorscope, Manifoldscope, Theoryscope, running on `http://localhost:3000` through `npm run dev`): the browser calls the provider directly; nothing transits a Vector Lab server at any point.
+- **Ollama, in either case**: no key is involved, and nothing leaves your machine.
+
+Clearing browser data or using a private window drops the keys from the browser. The lab operates no persistent store of them.
 
 ### How much does hosted use cost in practice?
 
