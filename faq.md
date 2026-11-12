@@ -183,6 +183,26 @@ All of these are free, all run locally, none send data anywhere.
 ## Everything else
 </div>
 
+### When was the Vector Lab started, and how has it developed?
+
+The first instrument was LLMbench, begun in February 2026 as a workbench for close-reading the outputs of two language models side by side. Manifold Atlas followed in March 2026, moving from the prose surface to the geometry of embedding spaces.
+
+The Vector Lab itself was founded on 17 April 2026, when the existing tools were brought together under one GitHub organisation, [vector-lab-tools](https://github.com/vector-lab-tools), with this site as its hub. Vectorscope had been started two days earlier; Manifoldscope and Theoryscope began the same day. This gave the lab its two tiers: comparative tools that work across models, and single-model scopes that open one model, one manifold or one corpus for intensive reading. Diffusion Atlas extended the comparative tier to image models later in April, and Vectorography, a type-design instrument, followed in August 2026.
+
+In October 2026 each instrument took over its own documentation site, and the hub became the shared entry point, with this FAQ and the [Get started](get-started.html) page. The lab is developed by David M. Berry at the University of Sussex.
+
+Source code:
+
+- [Vector Lab organisation](https://github.com/vector-lab-tools)
+- [LLMbench](https://github.com/vector-lab-tools/LLMbench)
+- [Manifold Atlas](https://github.com/vector-lab-tools/manifold-atlas)
+- [Vectorscope](https://github.com/vector-lab-tools/vectorscope)
+- [Manifoldscope](https://github.com/vector-lab-tools/manifoldscope)
+- [Theoryscope](https://github.com/vector-lab-tools/theoryscope)
+- [Diffusion Atlas](https://github.com/vector-lab-tools/diffusionatlas)
+- [Vectorography](https://github.com/vector-lab-tools/vectorography)
+- [This hub site](https://github.com/vector-lab-tools/vector-lab-tools.github.io)
+
 ### Which browser should I use?
 
 Chrome, Edge, Brave, Arc, or Firefox for any work that calls Ollama. Safari works for everything else.
