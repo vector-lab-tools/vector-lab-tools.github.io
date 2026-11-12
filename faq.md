@@ -188,4 +188,4 @@ Each tool carries its own DOI on its repository README; cite the tool you used, 
 
 ### A tool is broken in a way not covered here
 
-Each tool's documentation carries a troubleshooting section with the specific failures that tool produces. Start there. If it is a cross-cutting problem not on this page, open an issue on the [hub repository](https://github.com/vector-lab-tools/vector-lab-tools.github.io/issues).
+Each tool's documentation carries a troubleshooting section with the specific failures that tool produces. Start there. If it is not on this page, open an issue on the tool's [repository](https://github.com/vector-lab-tools) to report the problem. If you have a fix, a pull request is welcome.
