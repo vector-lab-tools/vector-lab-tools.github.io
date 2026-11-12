@@ -68,6 +68,14 @@ Order on the landing page:
 
 Wrap width about 1060px.
 
+**Way back to the hub.** Every tool page links back to https://vector-lab-tools.github.io/ in three places, so one is always on screen:
+
+1. A `← Vector Lab` breadcrumb in the sticky header, top-left, above the tool wordmark. Small mono, uppercase, muted, accent on hover. It is a separate link from the wordmark, which stays `#top`. Set `white-space: nowrap` on the wordmark, or a long name breaks onto two lines at 375px; check at phone width.
+2. The hero eyebrow's "Vector Lab" made a visible link, since it already names the family.
+3. The footer link.
+
+Never put the hub link in the main nav row: on mobile it either overflows or is hidden, exactly where a reader is most lost. Use the text breadcrumb, not an icon, as the baseline; a tool that shows the parent mark may add it, but not every tool does.
+
 Each tool keeps its own wordmark and glyph; that is its identity. Parent references are plain text links to the hub. The hub is the one surface that carries the family mark, so tool pages do not inline the parent glyph.
 
 If an app bundles a copy of the Vector Lab mark (for a "Part of Vector Lab" badge in the app chrome, say), use the files on the hub:
