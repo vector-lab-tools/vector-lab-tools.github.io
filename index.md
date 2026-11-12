@@ -14,6 +14,8 @@ Large language models, the neural networks behind contemporary AI systems such a
 
 Vector Lab is a toolkit of tools that give different ways of seeing into the manifold. The instruments are arranged in two tiers. The first tier opens single objects for intensive inspection: a single language model, a single manifold, a single corpus of theoretical texts. The second tier works across models, asking comparative questions at the level of output embeddings (Manifold Atlas), generated prose (e.g. LLMbench), and diffusion trajectories. The first tier supplies the anatomical detail. The second tier provides the comparative grounds on which theoretical claims might be tested.
 
+<p class="cta-row"><a class="cta-primary" href="{{ '/get-started.html' | relative_url }}">Get started →</a> <span class="cta-aside">Pick one of two paths and have a result in twenty minutes.</span></p>
+
 </section>
 
 <div class="section-head" markdown="1">
