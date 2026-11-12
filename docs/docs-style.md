@@ -150,3 +150,5 @@ Page copy follows the house rules:
 - Documentary register. State what is the case.
 - No aphoristic or mirrored closers, no `Not X but Y`, no sentence that restates a paragraph's point at its end. End on the last piece of content.
 - Avoid "legible/legibility" and "honest/honesty".
+
+Wherever a page tells readers how to report a problem, use this line, with the tool's repository linked: "If it is not on this page, open an issue on the tool's repository to report the problem. If you have a fix, a pull request is welcome."
