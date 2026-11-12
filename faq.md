@@ -191,6 +191,8 @@ The Vector Lab itself was founded on 17 April 2026, when the existing tools were
 
 In October 2026 each instrument took over its own documentation site, and the hub became the shared entry point, with this FAQ and the [Get started](get-started.html) page. The lab is developed by David M. Berry at the University of Sussex.
 
+The hub and six of the instruments (LLMbench, Manifold Atlas, Vectorscope, Manifoldscope, Theoryscope and Diffusion Atlas) were built at Copenhagen Business School, Denmark, during an Otto Mønsted Visiting Professorship in 2026. The support of the Otto Mønsted Fond (grant 25-12-1849) is gratefully acknowledged.
+
 Source code:
 
 - [Vector Lab organisation](https://github.com/vector-lab-tools)

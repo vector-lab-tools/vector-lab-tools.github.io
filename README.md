@@ -19,6 +19,10 @@ The concept DOI above always resolves to the latest version. Per-version DOIs ar
 
 Metadata in [CITATION.cff](CITATION.cff).
 
+## Acknowledgement
+
+Built at Copenhagen Business School, Denmark, during an Otto Mønsted Visiting Professorship in 2026. The support of the Otto Mønsted Fond (grant 25-12-1849) is gratefully acknowledged.
+
 ## Licence
 
 Site content under [CC BY 4.0](LICENSE).

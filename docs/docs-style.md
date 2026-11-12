@@ -151,4 +151,6 @@ Page copy follows the house rules:
 - No aphoristic or mirrored closers, no `Not X but Y`, no sentence that restates a paragraph's point at its end. End on the last piece of content.
 - Avoid "legible/legibility" and "honest/honesty".
 
+Funding acknowledgement, for LLMbench, Manifold Atlas, Vectorscope, Manifoldscope, Theoryscope and Diffusion Atlas (not Vectorography). Use it verbatim in the docs page footer, the README and any FAQ history entry; in HTML write the ø as `&oslash;`: "Built at Copenhagen Business School, Denmark, during an Otto Mønsted Visiting Professorship in 2026. The support of the Otto Mønsted Fond (grant 25-12-1849) is gratefully acknowledged."
+
 Wherever a page tells readers how to report a problem, use this line, with the tool's repository linked: "If it is not on this page, open an issue on the tool's repository to report the problem. If you have a fix, a pull request is welcome."
