@@ -23,15 +23,15 @@ Install **Ollama** locally and pull two models: an embedding model (`nomic-embed
 
 ### Which tools need which keys?
 
-| Tool              | Needs a key for                                                                 | Free local route            |
-|-------------------|---------------------------------------------------------------------------------|-----------------------------|
-| LLMbench          | Chat models: OpenAI, Anthropic, Google, HF, OpenRouter, OpenAI-compatible       | Ollama for chat             |
-| Manifold Atlas    | Embedding models: OpenAI, Voyage, Google, Cohere, HF                            | Ollama for embeddings       |
-| Vectorscope       | Hugging Face (to load open-weight models)                                        | Local Transformers          |
-| Manifoldscope     | Embedding models (same set as Manifold Atlas)                                    | Ollama for embeddings       |
-| Theoryscope       | Zotero (for your library) + an embedding provider                                | Ollama for embeddings       |
-| Diffusion Atlas   | Replicate, Fal, or Hugging Face                                                  | Local diffusers backend     |
-| Vectorography     | Nothing. Runs on its own Hugging Face Space.                                     | n/a                         |
+| Tool              | Needs a key for                                                                 | Free local route                                     |
+|-------------------|---------------------------------------------------------------------------------|------------------------------------------------------|
+| LLMbench          | Chat models: OpenAI, Anthropic, Google, HF, OpenRouter, OpenAI-compatible       | Ollama for chat                                      |
+| Manifold Atlas    | Embedding models: OpenAI, Voyage, Google, Cohere, HF                            | Ollama for embeddings                                |
+| Vectorscope       | Hugging Face token (to download gated open-weight models)                       | Local Transformers; models cache after first load    |
+| Manifoldscope     | Embedding models (same set as Manifold Atlas), when you want hosted ones        | Runs MiniLM via sentence-transformers out of the box |
+| Theoryscope       | Zotero (to read your library)                                                   | Every embedding runs locally; no provider key needed |
+| Diffusion Atlas   | Replicate or Fal for hosted generation                                          | Local diffusers backend (downloads weights from HF)  |
+| Vectorography     | Nothing. Runs on its own Hugging Face Space.                                    | n/a                                                  |
 
 ### Where do I get an API key for each provider?
 
