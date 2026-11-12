@@ -149,6 +149,16 @@ A short inline script sets `data-theme` on `<html>` from `localStorage`, and the
 For a site of several pages, put the whole stylesheet in one `docs/style.css` that every page links with `<link rel="stylesheet" href="style.css">` (relative, no leading slash), rather than inlining it on each page. Duplicate the short header and footer HTML per page, and mark the current page's nav link active. The theme-toggle script stays inline on each page.
 
 
+## In-app conventions
+
+The rest of this note covers docs pages. These cover the apps themselves. Reference implementation: vector-lab-tools/LLMbench commits 168dfe0 and 6db914a.
+
+- **Help** opens as sidebar panes, with the header and footer pinned.
+- **Settings** sits centred at no more than 90vh; only the middle scrolls, and its options sit in a row of their own.
+- **Every modal** closes on a backdrop click and on Escape.
+- **Settings edits a draft.** Closing with unsaved changes asks Keep editing / Discard / Save.
+- **A saved model is reconciled on load.** If a provider has retired it, the app falls back to that provider's default rather than failing.
+
 ## Voice
 
 Page copy follows the house rules:
