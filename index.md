@@ -108,9 +108,9 @@ graph TB
 <div class="tools-grid">
 
 <article class="tool-card scope">
-  <h3><a href="https://github.com/vector-lab-tools/vectorography">Vectorography (alpha)</a></h3>
+  <h3><a href="https://vector-lab-tools.github.io/vectorography/">Vectorography (alpha)</a></h3>
   <p class="object">Object: a vector space of letterforms.</p>
-  <p>Type design by traversal: steer across a learned space of glyphs with sliders for weight, width, spacing, x-height and contrast. <a href="https://github.com/vector-lab-tools/vectorography">Source →</a></p>
+  <p>Type design by traversal: steer across a learned space of glyphs with sliders for weight, width, spacing, x-height and contrast. <a href="https://vector-lab-tools.github.io/vectorography/">Docs →</a></p>
 </article>
 
 </div>

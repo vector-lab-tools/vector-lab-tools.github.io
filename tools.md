@@ -111,12 +111,12 @@ A renormalisation-group workbench for corpora of theoretical texts. Coarse-grain
 
 <div class="tool-entry-head">
 <div>
-<h2><a href="https://github.com/vector-lab-tools/vectorography">Vectorography (alpha)</a></h2>
+<h2><a href="https://vector-lab-tools.github.io/vectorography/">Vectorography (alpha)</a></h2>
 <p class="object"><em>Tier:</em> type design. <em>Object:</em> a vector space of letterforms.</p>
-<p><a href="https://github.com/vector-lab-tools/vectorography">Source</a></p>
+<p><a href="https://vector-lab-tools.github.io/vectorography/">Docs</a> · <a href="https://github.com/vector-lab-tools/vectorography">Source</a></p>
 </div>
 </div>
 
-Type design by traversal of a vector space of letterforms, with per-axis sliders for weight, width, spacing, x-height, and contrast. Docs site not yet published.
+Type design by traversal of a vector space of letterforms, with per-axis sliders for weight, width, spacing, x-height, and contrast.
 
 </section>

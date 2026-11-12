@@ -74,7 +74,7 @@ Install **Ollama** locally and pull two models: an embedding model (`nomic-embed
 </div>
 
 <div class="key-card">
-  <h4><a href="https://github.com/vector-lab-tools/vectorography">Vectorography</a></h4>
+  <h4><a href="https://vector-lab-tools.github.io/vectorography/">Vectorography</a></h4>
   <dl>
     <dt>Keys</dt><dd>None.</dd>
     <dt>Free route</dt><dd>Runs as it is.</dd>
