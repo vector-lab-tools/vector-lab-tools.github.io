@@ -17,7 +17,7 @@ The cross-cutting problems that affect every tool. Provider-specific setup, with
 ## Getting API keys
 </div>
 
-### What's the cheapest way to try the lab?
+### What's the easiest way to run the vector lab?
 
 Install **Ollama** locally and pull two models: an embedding model (`nomic-embed-text`) and a chat model (`llama3.2` is a reasonable default). Nothing else is required. No keys, no paid providers, no rate limits. Instructions in [Running Ollama](#running-ollama) below. The free path also works with **Hugging Face Inference** for embedding tools, which gives you access to models you cannot run locally in exchange for sign-up and a rate limit.
 
