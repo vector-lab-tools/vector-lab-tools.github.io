@@ -91,9 +91,11 @@ launchctl setenv OLLAMA_ORIGINS "https://vector-lab-tools.github.io,http://local
 
 then restart Ollama.
 
-### Safari does not work for browser-direct Ollama
+### Safari and the hosted sites with Ollama: use another browser
 
-Safari refuses to call `http://localhost` from an `https://` page, even with `OLLAMA_ORIGINS` set. This is a WebKit security policy that cannot be worked around from the lab side. Use **Chrome, Edge, Brave, Arc, or Firefox** for any work that calls Ollama from the browser. Safari is fine for every other part of the lab.
+Safari refuses to call `http://localhost` from an `https://` page, even with `OLLAMA_ORIGINS` set. This is a WebKit security policy that cannot be worked around from the lab side. For any **hosted** tool site (Manifold Atlas, LLMbench, Diffusion Atlas, Theoryscope on `vector-lab-tools.github.io`), use **Chrome, Edge, Brave, Arc, or Firefox** for Ollama-backed work.
+
+If you are running a tool **locally** (`http://localhost:3000` via `npm run dev`, which is how Manifoldscope and Vectorscope run), Safari is fine: the browser sees `http://` → `http://localhost`, same protocol, no cross-origin block. Safari is also fine for every part of the lab that doesn't involve a browser-direct Ollama call, whether hosted or local.
 
 ### Which Ollama model should I pick?
 
