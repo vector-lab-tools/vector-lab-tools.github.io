@@ -653,6 +653,65 @@ hr { border: 0; border-top: 1px solid var(--vl-rule); margin: 3rem 0; }
   font-style: italic;
 }
 
+// Tools page: quick table
+
+.table-scroll {
+  overflow-x: auto;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.tools-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+
+  th {
+    font-family: $mono;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--vl-sand);
+    text-align: left;
+    padding: 0 1rem 0.6rem 0;
+    border-bottom: 1px solid var(--vl-text);
+  }
+
+  td {
+    padding: 0.7rem 1rem 0.7rem 0;
+    border-bottom: 1px solid var(--vl-rule);
+    vertical-align: top;
+  }
+
+  td:first-child a {
+    font-family: $display;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--vl-text);
+    border-bottom: none;
+    white-space: nowrap;
+  }
+
+  td:first-child a:hover { color: var(--vl-blue); }
+
+  td:nth-child(2) { color: var(--vl-muted); }
+
+  td:nth-child(3) {
+    font-family: $mono;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+  }
+
+  td:last-child { white-space: nowrap; }
+}
+
+.table-note {
+  font-size: 0.85rem;
+  color: var(--vl-muted);
+  margin: 0 0 2rem;
+}
+
 // FAQ: which tools need which keys
 
 .keys-grid {

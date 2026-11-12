@@ -11,6 +11,60 @@ title: Tools
 
 Each instrument maintains its own documentation site in its own repo. These pages carry the install path, API-key setup, worked examples, screenshots, and troubleshooting that users actually need to get going. The Vector Lab umbrella site links to them.
 
+<div class="table-scroll">
+<table class="tools-table">
+  <thead>
+    <tr><th>Instrument</th><th>Reads</th><th>Status</th><th>Links</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://vector-lab-tools.github.io/LLMbench/">LLMbench</a></td>
+      <td>Prose from two models, side by side</td>
+      <td>Stable</td>
+      <td><a href="https://vector-lab-tools.github.io/LLMbench/">Docs</a> · <a href="https://llm-bench-mu.vercel.app">App</a> · <a href="https://github.com/vector-lab-tools/LLMbench">Source</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://vector-lab-tools.github.io/manifold-atlas/">Manifold Atlas</a></td>
+      <td>Embedding geometry across models</td>
+      <td>Stable</td>
+      <td><a href="https://vector-lab-tools.github.io/manifold-atlas/">Docs</a> · <a href="https://manifold-atlas.vercel.app">App</a> · <a href="https://github.com/vector-lab-tools/manifold-atlas">Source</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://vector-lab-tools.github.io/diffusionatlas/">Diffusion Atlas</a></td>
+      <td>Image models' generative trajectories</td>
+      <td>Alpha</td>
+      <td><a href="https://vector-lab-tools.github.io/diffusionatlas/">Docs</a> · <a href="https://github.com/vector-lab-tools/diffusionatlas">Source</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://vector-lab-tools.github.io/vectorscope/">Vectorscope</a></td>
+      <td>One open-weight model, layer by layer</td>
+      <td>Beta</td>
+      <td><a href="https://vector-lab-tools.github.io/vectorscope/">Docs</a> · <a href="https://github.com/vector-lab-tools/vectorscope">Source</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://vector-lab-tools.github.io/manifoldscope/">Manifoldscope</a></td>
+      <td>One manifold, in depth</td>
+      <td>Beta</td>
+      <td><a href="https://vector-lab-tools.github.io/manifoldscope/">Docs</a> · <a href="https://github.com/vector-lab-tools/manifoldscope">Source</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://vector-lab-tools.github.io/theoryscope/">Theoryscope</a></td>
+      <td>A corpus of theoretical texts</td>
+      <td>Beta</td>
+      <td><a href="https://vector-lab-tools.github.io/theoryscope/">Docs</a> · <a href="https://github.com/vector-lab-tools/theoryscope">Source</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://vector-lab-tools.github.io/vectorography/">Vectorography</a></td>
+      <td>A vector space of letterforms</td>
+      <td>Alpha</td>
+      <td><a href="https://vector-lab-tools.github.io/vectorography/">Docs</a> · <a href="https://github.com/vector-lab-tools/vectorography">Source</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p class="table-note">App links open a hosted version in the browser. The other instruments run locally; each one's docs give the install steps.</p>
+
 ## Comparative tools
 
 <section class="tool-entry comparative" markdown="1">
