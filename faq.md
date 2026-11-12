@@ -159,8 +159,21 @@ Safari is fine against a local copy on `localhost:3000`, where both sides share 
 
 ### Which Ollama model should I pick?
 
-- **Embedding**: `nomic-embed-text` is the default. Each tool's docs list the other embedding models it supports.
-- **Chat**: `llama3.2` is the default for LLMbench. `gemma3` and `qwen2.5` also work; larger models need more memory.
+**Embedding models** (Manifold Atlas, Manifoldscope)
+
+- `nomic-embed-text` (262 MB): the default, if you pull only one.
+- For comparison across models in Manifold Atlas, pull three whose floors are far apart, since agreement between near-identical geometries is not evidence of anything: `all-minilm` (44 MB, lowest floor), `nomic-embed-text` (mid floor), `snowflake-arctic-embed` (638 MB, highest floor). If disk is tight, `all-minilm` and `granite-embedding` together come to 104 MB and still span a usable range.
+- `mxbai-embed-large` (1024d) and `embeddinggemma` (768d) also work in both tools.
+
+**Chat models** (LLMbench)
+
+- `llama3.2` (3B) or `gemma3`: light and quick, the local default.
+- `qwen3`, `phi4`, `mistral`: stronger mid-size options.
+- `llama3.3:70b` or `qwen2.5:72b`: approach the hosted models for quality, if you have the memory.
+
+On a current Ollama every chat model returns token probabilities, so LLMbench's Probs view and probes work with any of them. If the Probs view stays empty, update Ollama.
+
+Pull any of these with `ollama pull <model>`. Each tool's docs give the full reasoning and the floor measurements.
 
 All of these are free, all run locally, none send data anywhere.
 
