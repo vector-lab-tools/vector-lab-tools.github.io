@@ -74,7 +74,7 @@ Each instrument maintains its own documentation site in its own repo. These page
 <div>
 <h2><a href="https://vector-lab-tools.github.io/manifold-atlas/">Manifold Atlas</a></h2>
 <p class="object"><em>Tier:</em> comparative model tool. <em>Object:</em> output embeddings across models.</p>
-<p><a href="https://vector-lab-tools.github.io/manifold-atlas/">Docs</a> · <a href="https://github.com/vector-lab-tools/manifold-atlas">Source</a></p>
+<p><a href="https://vector-lab-tools.github.io/manifold-atlas/">Docs</a> · <a href="https://manifold-atlas.vercel.app">App</a> · <a href="https://github.com/vector-lab-tools/manifold-atlas">Source</a></p>
 </div>
 </div>
 
@@ -89,7 +89,7 @@ Compares multiple embedding models' output geometries on the same inputs, with s
 <div>
 <h2><a href="https://vector-lab-tools.github.io/LLMbench/">LLMbench</a></h2>
 <p class="object"><em>Tier:</em> comparative model tool. <em>Object:</em> generated prose across models.</p>
-<p><a href="https://vector-lab-tools.github.io/LLMbench/">Docs</a> · <a href="https://github.com/vector-lab-tools/LLMbench">Source</a></p>
+<p><a href="https://vector-lab-tools.github.io/LLMbench/">Docs</a> · <a href="https://llm-bench-mu.vercel.app">App</a> · <a href="https://github.com/vector-lab-tools/LLMbench">Source</a></p>
 </div>
 </div>
 

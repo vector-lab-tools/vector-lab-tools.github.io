@@ -680,7 +680,7 @@ hr { border: 0; border-top: 1px solid var(--vl-rule); margin: 3rem 0; }
   td {
     padding: 0.7rem 1rem 0.7rem 0;
     border-bottom: 1px solid var(--vl-rule);
-    vertical-align: top;
+    vertical-align: baseline;
   }
 
   td:first-child a {
