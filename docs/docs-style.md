@@ -70,7 +70,7 @@ Wrap width about 1060px.
 
 **Way back to the hub.** Every tool page links back to https://vector-lab-tools.github.io/ in three places, so one is always on screen:
 
-1. A `← Vector Lab` breadcrumb in the sticky header, top-left, above the tool wordmark. Small mono, uppercase, muted, accent on hover. It is a separate link from the wordmark, which stays `#top`. Set `white-space: nowrap` on the wordmark, or a long name breaks onto two lines at 375px; check at phone width.
+1. A `← Vector Lab` breadcrumb in the sticky header, top-left, above the tool wordmark. Small mono, uppercase, muted, accent on hover. It is a separate link from the wordmark: the wordmark goes to the docs home (`#top` on a single-page site, `index.html` on a multi-page one), and the breadcrumb is the only link that leaves the tool. On a multi-page site the breadcrumb goes on every page, not only the index, since readers arrive at deep pages from search. Set `white-space: nowrap` on the wordmark, or a long name breaks onto two lines at 375px; check at phone width.
 2. The hero eyebrow's "Vector Lab" made a visible link, since it already names the family.
 3. The footer link.
 
