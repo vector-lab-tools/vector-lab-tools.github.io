@@ -653,6 +653,55 @@ hr { border: 0; border-top: 1px solid var(--vl-rule); margin: 3rem 0; }
   font-style: italic;
 }
 
+// FAQ: which tools need which keys
+
+.keys-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2.25rem;
+}
+
+.key-card {
+  background: var(--vl-surface);
+  border: 1px solid var(--vl-rule);
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem 1.2rem;
+
+  h4 {
+    font-family: $display;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 0.7rem;
+    line-height: 1.15;
+
+    a { color: var(--vl-text); border-bottom: none; }
+    a:hover { color: var(--vl-blue); }
+  }
+
+  dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    gap: 0.45rem 0.75rem;
+  }
+
+  dt {
+    font-family: $mono;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--vl-sand);
+    padding-top: 0.2rem;
+  }
+
+  dd {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+}
+
 // Related cards (bottom-of-page cross-links)
 
 .related {

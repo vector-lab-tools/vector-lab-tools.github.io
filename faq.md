@@ -23,15 +23,65 @@ Install **Ollama** locally and pull two models: an embedding model (`nomic-embed
 
 ### Which tools need which keys?
 
-| Tool              | Needs a key for                                                                 | Free local route                                     |
-|-------------------|---------------------------------------------------------------------------------|------------------------------------------------------|
-| LLMbench          | Chat models: OpenAI, Anthropic, Google, HF, OpenRouter, OpenAI-compatible       | Ollama for chat                                      |
-| Manifold Atlas    | Embedding models: OpenAI, Voyage, Google, Cohere, OpenRouter, HF                | Ollama for embeddings                                |
-| Vectorscope       | Hugging Face token (read scope) only for gated models (Llama 3.2 1B, Mistral 7B v0.3); GPT-2 and Qwen3 need no account | Runs locally through Transformers; weights cache in `~/.cache/huggingface/` after first load |
-| Manifoldscope     | Embedding models (same set as Manifold Atlas), when you want hosted ones        | Runs MiniLM via sentence-transformers out of the box |
-| Theoryscope       | Zotero (to read your library)                                                   | Every embedding runs locally; no provider key needed |
-| Diffusion Atlas   | Replicate or Fal for hosted generation                                          | Local diffusers backend (downloads weights from HF)  |
-| Vectorography     | Nothing. Runs on its own Hugging Face Space.                                    | n/a                                                  |
+<div class="keys-grid">
+
+<div class="key-card">
+  <h4><a href="https://vector-lab-tools.github.io/LLMbench/">LLMbench</a></h4>
+  <dl>
+    <dt>Keys</dt><dd>One chat provider: OpenAI, Anthropic, Google, Hugging Face, OpenRouter, or any OpenAI-compatible endpoint.</dd>
+    <dt>Free route</dt><dd>Ollama, no key.</dd>
+  </dl>
+</div>
+
+<div class="key-card">
+  <h4><a href="https://vector-lab-tools.github.io/manifold-atlas/">Manifold Atlas</a></h4>
+  <dl>
+    <dt>Keys</dt><dd>One embedding provider: OpenAI, Voyage, Google, Cohere, OpenRouter, or Hugging Face.</dd>
+    <dt>Free route</dt><dd>Ollama, no key. Hugging Face is free but needs a token.</dd>
+  </dl>
+</div>
+
+<div class="key-card">
+  <h4><a href="https://vector-lab-tools.github.io/manifoldscope/">Manifoldscope</a></h4>
+  <dl>
+    <dt>Keys</dt><dd>None by default. Hosted embedding providers are optional.</dd>
+    <dt>Free route</dt><dd>Built in: MiniLM through sentence-transformers. Ollama also works.</dd>
+  </dl>
+</div>
+
+<div class="key-card">
+  <h4><a href="https://vector-lab-tools.github.io/vectorscope/">Vectorscope</a></h4>
+  <dl>
+    <dt>Keys</dt><dd>A Hugging Face token, only for gated models such as Llama 3.2 and Mistral 7B.</dd>
+    <dt>Free route</dt><dd>GPT-2 and Qwen3 load with no account.</dd>
+  </dl>
+</div>
+
+<div class="key-card">
+  <h4><a href="https://vector-lab-tools.github.io/theoryscope/">Theoryscope</a></h4>
+  <dl>
+    <dt>Keys</dt><dd>A Zotero key, read access, to load your library.</dd>
+    <dt>Free route</dt><dd>All models run locally. No provider key.</dd>
+  </dl>
+</div>
+
+<div class="key-card">
+  <h4><a href="https://vector-lab-tools.github.io/diffusionatlas/">Diffusion Atlas</a></h4>
+  <dl>
+    <dt>Keys</dt><dd>Replicate or Fal, for hosted image generation.</dd>
+    <dt>Free route</dt><dd>The local backend, which downloads weights from Hugging Face.</dd>
+  </dl>
+</div>
+
+<div class="key-card">
+  <h4><a href="https://github.com/vector-lab-tools/vectorography">Vectorography</a></h4>
+  <dl>
+    <dt>Keys</dt><dd>None.</dd>
+    <dt>Free route</dt><dd>Runs as it is.</dd>
+  </dl>
+</div>
+
+</div>
 
 ### Where do I get an API key for each provider?
 
