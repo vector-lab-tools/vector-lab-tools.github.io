@@ -27,7 +27,7 @@ Install **Ollama** locally and pull two models: an embedding model (`nomic-embed
 |-------------------|---------------------------------------------------------------------------------|------------------------------------------------------|
 | LLMbench          | Chat models: OpenAI, Anthropic, Google, HF, OpenRouter, OpenAI-compatible       | Ollama for chat                                      |
 | Manifold Atlas    | Embedding models: OpenAI, Voyage, Google, Cohere, HF                            | Ollama for embeddings                                |
-| Vectorscope       | Hugging Face token (to download gated open-weight models)                       | Local Transformers; models cache after first load    |
+| Vectorscope       | Hugging Face token (read scope) only for gated models (Llama 3.2 1B, Mistral 7B v0.3); GPT-2 and Qwen3 need no account | Runs locally through Transformers; weights cache in `~/.cache/huggingface/` after first load |
 | Manifoldscope     | Embedding models (same set as Manifold Atlas), when you want hosted ones        | Runs MiniLM via sentence-transformers out of the box |
 | Theoryscope       | Zotero (to read your library)                                                   | Every embedding runs locally; no provider key needed |
 | Diffusion Atlas   | Replicate or Fal for hosted generation                                          | Local diffusers backend (downloads weights from HF)  |
