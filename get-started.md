@@ -26,7 +26,7 @@ The Vector Lab is seven instruments. Two questions will put you at the right sta
 <article class="path-card">
   <p class="eyebrow">Path 2</p>
   <h2>I want to research the internals of embedding spaces</h2>
-  <p>Cosine geometry, calibration, negation gauges, hegemony compasses, persistent homology. The manifold is the object; the prose is downstream.</p>
+  <p>Watch a particle cross a manifold from one concept to another. Measure how much space a model actually gives to negation. Place a contested concept between two ideological clusters and see which side it drifts to. The manifold is the object; the prose is downstream.</p>
   <p class="path-primary">
     <strong>Start with Manifold Atlas.</strong> <a href="https://vector-lab-tools.github.io/manifold-atlas/">Docs →</a>
   </p>
