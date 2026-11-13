@@ -135,7 +135,7 @@ A short inline script sets `data-theme` on `<html>` from `localStorage`, and the
 - A **light-default** page can run the script at the end of `<body>`.
 - A **dark-default** page runs the script **inline in `<head>`**, before any CSS paints, or the first paint flashes light on every load. Default the CSS to dark under `:root` as well, so a page with JavaScript off still opens dark.
 - **Icons:** the moon shows in light mode and the sun in dark mode (the icon names the theme a click goes to), as on the hub, LLMbench, Theoryscope and Vectorography. Exactly one icon must show in each theme. Check both themes after editing these rules: if the default rule hides one icon and a theme rule hides the other, the button is empty.
-- **Nav at phone width:** the header nav plus toggle must fit 375 px. With more than four links, mark the section links `hide-sm` and keep FAQ and the toggle visible, or let the nav wrap. Check `document.documentElement.scrollWidth` at 375 px; it should be 375.
+- **Nav at phone width:** the header nav plus toggle must fit 375 px. With more than four links, mark the section links `hide-sm` and keep FAQ and the toggle visible, or let the nav wrap. Check `document.documentElement.scrollWidth` at 375 px; it should be 375. The breadcrumb adds a column to the header, so check after adding it. Tables and `pre` blocks get their own `overflow-x: auto` so they scroll in their own box (Manifold Atlas 0f2a7e9).
 
 
 ## Pitfalls
