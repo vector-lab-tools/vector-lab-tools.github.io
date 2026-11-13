@@ -319,7 +319,11 @@ hr { border: 0; border-top: 1px solid var(--vl-rule); margin: 3rem 0; }
 
 // Content
 
-.content { padding: 2rem 0 4rem; }
+.content { padding-block: 2rem 4rem; }
+
+@media (max-width: 600px) {
+  .wrap { padding-inline: 1.1rem; }
+}
 
 // Hero
 
