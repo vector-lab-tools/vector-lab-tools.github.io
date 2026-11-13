@@ -219,7 +219,9 @@ No. Language and embedding model outputs are stochastic by default. Many of the 
 
 ### How do I cite the lab?
 
-Each tool carries its own DOI on its repository README; cite the tool you used, pinned to the version. If you want to cite the Vector Lab as a whole, the hub has a concept DOI: [doi:10.5281/zenodo.23763598](https://doi.org/10.5281/zenodo.23763598).
+Cite the article first: Berry, D. M. (2026) 'Vector Theory: Epistemology, Political Economy, and Probabilistic Computation', *Philosophy & Technology*, 39, [doi:10.1007/s13347-026-01162-w](https://doi.org/10.1007/s13347-026-01162-w). It sets out the theory the instruments operationalise.
+
+Then cite the tool you used, pinned to the version, with its Zenodo DOI from its repository README or docs page. To cite the Vector Lab as a whole rather than one tool, the hub has a concept DOI: [doi:10.5281/zenodo.23763598](https://doi.org/10.5281/zenodo.23763598).
 
 ### A tool is broken in a way not covered here
 

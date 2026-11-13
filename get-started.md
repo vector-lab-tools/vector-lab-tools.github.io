@@ -98,7 +98,7 @@ A route from a first run to a result you can put in a thesis chapter. Each step 
   <ul class="step-list">
     <li><strong>Record the conditions of every run:</strong> the model and provider, the date, the tool version, and settings such as temperature. Hosted models change without notice, so a result is tied to its date.</li>
     <li><strong>Keep the exports.</strong> Both instruments export results; archive them with your notes so a figure can be traced back to its run.</li>
-    <li><strong>Cite the tool and its version.</strong> Both instruments have a DOI, given on the repository and the docs page (Manifold Atlas: <a href="https://vector-lab-tools.github.io/manifold-atlas/#cite">Citing</a>). Cite <em>Vector Theory</em> where your argument draws on it.</li>
+    <li><strong>Cite the article first, then the tool.</strong> The preferred citation for work using the lab is Berry, D. M. (2026) 'Vector Theory: Epistemology, Political Economy, and Probabilistic Computation', <em>Philosophy &amp; Technology</em>, 39, <a href="https://doi.org/10.1007/s13347-026-01162-w">doi:10.1007/s13347-026-01162-w</a>. Add the tool and the version you used as a second reference, with its Zenodo DOI from the repository or docs page (Manifold Atlas: <a href="https://vector-lab-tools.github.io/manifold-atlas/#cite">Citing</a>). The "Cite this repository" button on each GitHub repository gives both.</li>
   </ul>
 </li>
 
