@@ -71,7 +71,7 @@ A route from a first run to a result you can put in a thesis chapter. Each step 
 <li class="step">
   <p class="eyebrow">Step 3 · Weeks two and three</p>
   <h3>Design your own study</h3>
-  <p>A single striking output is an observation, not a finding. The instruments are built for comparison, and the case studies show the method:</p>
+  <p>The instruments are built for comparison, and the case studies show the method:</p>
   <ul class="step-list">
     <li><strong>Compare across models.</strong> One model's output describes that model. Run at least two, and if possible three, before claiming anything about language models in general.</li>
     <li><strong>Repeat runs.</strong> Generation is stochastic. In LLMbench, run the same prompt more than once and fix the temperature you report.</li>
@@ -98,7 +98,7 @@ A route from a first run to a result you can put in a thesis chapter. Each step 
   <ul class="step-list">
     <li><strong>Record the conditions of every run:</strong> the model and provider, the date, the tool version, and settings such as temperature. Hosted models change without notice, so a result is tied to its date.</li>
     <li><strong>Keep the exports.</strong> Both instruments export results; archive them with your notes so a figure can be traced back to its run.</li>
-    <li><strong>Cite the tool and its version.</strong> Each instrument has a DOI on its repository and its docs page (Manifold Atlas: <a href="https://vector-lab-tools.github.io/manifold-atlas/#cite">Citing</a>). Cite <em>Vector Theory</em> where your argument draws on it.</li>
+    <li><strong>Cite the tool and its version.</strong> Both instruments have a DOI, given on the repository and the docs page (Manifold Atlas: <a href="https://vector-lab-tools.github.io/manifold-atlas/#cite">Citing</a>). Cite <em>Vector Theory</em> where your argument draws on it.</li>
   </ul>
 </li>
 
