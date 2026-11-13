@@ -149,6 +149,34 @@ A short inline script sets `data-theme` on `<html>` from `localStorage`, and the
 For a site of several pages, put the whole stylesheet in one `docs/style.css` that every page links with `<link rel="stylesheet" href="style.css">` (relative, no leading slash), rather than inlining it on each page. Duplicate the short header and footer HTML per page, and mark the current page's nav link active. The theme-toggle script stays inline on each page.
 
 
+## Citation
+
+The *Vector Theory* article is the preferred citation for every tool; the tool's own Zenodo DOI is the second reference.
+
+**CITATION.cff.** Keep the software metadata at the top level, including the tool's Zenodo concept DOI under `identifiers` (four tools currently omit it), and add this block so GitHub's "Cite this repository" offers the article first. The hub's file is the reference copy.
+
+```yaml
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Berry
+      given-names: David M.
+      affiliation: University of Sussex
+      orcid: "https://orcid.org/0000-0002-7737-5586"
+  title: "Vector Theory: Epistemology, Political Economy, and Probabilistic Computation"
+  journal: "Philosophy & Technology"
+  year: 2026
+  volume: 39
+  doi: 10.1007/s13347-026-01162-w
+  url: "https://doi.org/10.1007/s13347-026-01162-w"
+```
+
+Check the ORCID against its checksum before any release; an invalid one makes Zenodo skip the deposit without an error. After the first release that carries this block, check the new Zenodo record still describes the software and not the article.
+
+**In the app.** Put a cite line in the About panel and in every export (CSV, JSON, PDF, image captions), so it travels with any figure made from the tool:
+
+"Cite: Berry, D. M. (2026) 'Vector Theory: Epistemology, Political Economy, and Probabilistic Computation', Philosophy & Technology, 39. doi:10.1007/s13347-026-01162-w. Tool: <name> v<version>, doi:<concept DOI>."
+
 ## In-app conventions
 
 The rest of this note covers docs pages. These cover the apps themselves. Reference implementation: vector-lab-tools/LLMbench commits 168dfe0 and 6db914a.
