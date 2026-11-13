@@ -35,7 +35,7 @@ The Vector Lab is seven instruments. Two questions will put you at the right sta
 
 </div>
 
-<p class="browse-all">Or <a href="{{ '/tools.html' | relative_url }}">browse the full family</a>. Stuck on API keys or Ollama? See the <a href="{{ '/faq.html' | relative_url }}">FAQ</a>.</p>
+<p class="browse-all">Or <a href="{{ '/tools.html' | relative_url }}">browse the full family</a>. Teaching a class? See <a href="{{ '/teaching.html' | relative_url }}">activities for students</a>. Stuck on API keys or Ollama? See the <a href="{{ '/faq.html' | relative_url }}">FAQ</a>.</p>
 
 <div class="section-head" markdown="1">
 <p class="num">01 · A first month</p>
