@@ -547,6 +547,52 @@ hr { border: 0; border-top: 1px solid var(--vl-rule); margin: 3rem 0; }
   svg { max-width: 100%; height: auto; max-height: 360px; }
 }
 
+// Get started: onboarding steps
+
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem;
+  counter-reset: step;
+  display: grid;
+  gap: 1rem;
+}
+
+.step {
+  background: var(--vl-surface);
+  border: 1px solid var(--vl-rule);
+  border-left: 3px solid var(--vl-blue);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+
+  .eyebrow { margin: 0 0 0.3rem; }
+
+  h3 {
+    font-style: normal;
+    color: var(--vl-text);
+    margin: 0 0 0.5rem;
+    font-size: 1.45rem;
+  }
+
+  p { margin: 0 0 0.6rem; font-size: 0.98rem; }
+
+  .step-links,
+  .step-list {
+    margin: 0.2rem 0 0.4rem;
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+    line-height: 1.55;
+
+    li { margin-bottom: 0.35rem; }
+  }
+
+  .step-note {
+    font-size: 0.88rem;
+    color: var(--vl-muted);
+    margin: 0.4rem 0 0;
+  }
+}
+
 // Hub CTA row (sits under the lede, pointing to Get started)
 
 .cta-row {
