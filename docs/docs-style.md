@@ -186,6 +186,7 @@ The rest of this note covers docs pages. These cover the apps themselves. Refere
 - **Every modal** closes on a backdrop click and on Escape.
 - **Settings edits a draft.** Closing with unsaved changes asks Keep editing / Discard / Save.
 - **A saved model is reconciled on load.** If a provider has retired it, the app falls back to that provider's default rather than failing.
+- **Fonts are self-hosted with `next/font/local`** (David's decision, 2026-11-13). `next/font/google` fetches the fonts at build time, and a failed fetch fails the build (two Manifold Atlas deploys). The woff2 files (Latin subset) live in `src/app/fonts/` with each family's `OFL.txt`, and the CSS variable names stay as they were (`--font-libre-baskerville`, `--font-source-serif`, `--font-inter`), so no stylesheet changes. Reference implementation: Manifold Atlas.
 
 ## Voice
 
